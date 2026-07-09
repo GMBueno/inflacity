@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import CityScene from './components/CityScene.jsx';
 import InfoPanel from './components/InfoPanel.jsx';
 import TimelineControl from './components/TimelineControl.jsx';
-import Legend from './components/Legend.jsx';
 import Tooltip from './components/Tooltip.jsx';
 import { parseUnifiedCsv } from './data/parseUnified.js';
 import { IPCA_GROUPS } from './data/groups.js';
@@ -211,13 +210,6 @@ export default function App() {
             onHover={setHoveredId}
             onSelect={setSelectedId}
             cameraResetKey={cameraResetKey}
-          />
-
-          <Legend
-            selectedId={selectedId}
-            onSelectGroup={(id) =>
-              setSelectedId((cur) => (cur === id ? null : id))
-            }
           />
 
           <TimelineControl

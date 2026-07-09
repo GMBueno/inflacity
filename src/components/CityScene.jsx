@@ -1,4 +1,4 @@
-import { Suspense, useMemo, useRef } from 'react';
+import { Suspense, useEffect, useMemo, useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import {
   OrbitControls,
@@ -13,6 +13,11 @@ import {
   calculateAccumulatedIndex,
   calculateTwelveMonthInflation,
 } from '../data/inflationMath.js';
+
+const DEFAULT_CAM = [14, 12, 16];
+const DEFAULT_TARGET = [0, 3, 0];
+const WALK_SPEED = 14; // unidades/s no plano XZ
+const MAX_DISTANCE = 84; // ~2× o zoom out anterior (42)
 
 /**
  * Canvas 3D da Cidade da Inflação.
@@ -40,10 +45,11 @@ export default function CityScene({
         onPointerMissed={() => onSelect?.(null)}
       >
         <color attach="background" args={['#070b14']} />
-        <fog attach="fog" args={['#070b14', 28, 70]} />
+        <fog attach="fog" args={['#070b14', 40, 120]} />
 
-        <PerspectiveCamera makeDefault position={[14, 12, 16]} fov={42} />
+        <PerspectiveCamera makeDefault position={DEFAULT_CAM} fov={42} />
         <CameraController resetKey={cameraResetKey} />
+        <WalkControls speed={WALK_SPEED} />
 
         <ambientLight intensity={0.32} color="#8ba3c7" />
         <hemisphereLight
@@ -89,9 +95,9 @@ export default function CityScene({
             color="#000"
           />
           <Stars
-            radius={80}
-            depth={40}
-            count={1200}
+            radius={120}
+            depth={50}
+            count={1400}
             factor={3}
             saturation={0}
             fade
@@ -103,11 +109,11 @@ export default function CityScene({
           makeDefault
           enablePan
           enableZoom
-          minPolarAngle={0.25}
+          minPolarAngle={0.15}
           maxPolarAngle={Math.PI / 2.15}
-          minDistance={8}
-          maxDistance={42}
-          target={[0, 3, 0]}
+          minDistance={6}
+          maxDistance={MAX_DISTANCE}
+          target={DEFAULT_TARGET}
           enableDamping
           dampingFactor={0.06}
         />
@@ -123,11 +129,114 @@ function CameraController({ resetKey }) {
   useFrame(() => {
     if (resetKey !== lastKey.current) {
       lastKey.current = resetKey;
-      camera.position.set(14, 12, 16);
+      camera.position.set(...DEFAULT_CAM);
       if (controls) {
-        controls.target.set(0, 3, 0);
+        controls.target.set(...DEFAULT_TARGET);
         controls.update();
       }
+    }
+  });
+
+  return null;
+}
+
+/**
+ * WASD: move câmera + alvo do orbit no plano XZ, relativo à direção da vista.
+ * (W/S frente/trás, A/D esquerda/direita — como “andar” na cidade.)
+ */
+function WalkControls({ speed = 14 }) {
+  const { camera, controls } = useThree();
+  const keys = useRef({ w: false, a: false, s: false, d: false });
+
+  useEffect(() => {
+    const isTypingTarget = (el) => {
+      if (!el || !(el instanceof HTMLElement)) return false;
+      const tag = el.tagName;
+      return (
+        tag === 'INPUT' ||
+        tag === 'TEXTAREA' ||
+        tag === 'SELECT' ||
+        el.isContentEditable
+      );
+    };
+
+    const setKey = (code, pressed) => {
+      switch (code) {
+        case 'KeyW':
+        case 'ArrowUp':
+          keys.current.w = pressed;
+          break;
+        case 'KeyS':
+        case 'ArrowDown':
+          keys.current.s = pressed;
+          break;
+        case 'KeyA':
+        case 'ArrowLeft':
+          keys.current.a = pressed;
+          break;
+        case 'KeyD':
+        case 'ArrowRight':
+          keys.current.d = pressed;
+          break;
+        default:
+          break;
+      }
+    };
+
+    const onDown = (e) => {
+      if (isTypingTarget(e.target)) return;
+      if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+        e.preventDefault();
+      }
+      setKey(e.code, true);
+    };
+    const onUp = (e) => setKey(e.code, false);
+    const onBlur = () => {
+      keys.current = { w: false, a: false, s: false, d: false };
+    };
+
+    window.addEventListener('keydown', onDown);
+    window.addEventListener('keyup', onUp);
+    window.addEventListener('blur', onBlur);
+    return () => {
+      window.removeEventListener('keydown', onDown);
+      window.removeEventListener('keyup', onUp);
+      window.removeEventListener('blur', onBlur);
+    };
+  }, []);
+
+  useFrame((_, delta) => {
+    const k = keys.current;
+    if (!k.w && !k.a && !k.s && !k.d) return;
+
+    // Direção no plano horizontal a partir da câmera
+    const forward = new THREE.Vector3();
+    camera.getWorldDirection(forward);
+    forward.y = 0;
+    if (forward.lengthSq() < 1e-6) {
+      // Olhando quase vertical: usa -Z mundial
+      forward.set(0, 0, -1);
+    } else {
+      forward.normalize();
+    }
+
+    const right = new THREE.Vector3()
+      .crossVectors(forward, new THREE.Vector3(0, 1, 0))
+      .normalize();
+
+    const move = new THREE.Vector3();
+    if (k.w) move.add(forward);
+    if (k.s) move.sub(forward);
+    if (k.d) move.add(right);
+    if (k.a) move.sub(right);
+
+    if (move.lengthSq() < 1e-8) return;
+    move.normalize().multiplyScalar(speed * Math.min(delta, 0.05));
+
+    camera.position.add(move);
+    if (controls?.target) {
+      controls.target.add(move);
+      controls.update();
     }
   });
 
