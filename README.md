@@ -6,12 +6,13 @@ Visualização 3D interativa da **inflação acumulada dos 9 grandes grupos do I
 - **20 andares** = preços dobraram (+100%)  
 - Altura = `10 × índice acumulado`, calculado só com **variação mensal**
 
-Histórico unificado: **jan/2012 → mês mais recente** (SIDRA tabelas 1419 + 7060).
+Histórico unificado: **jul/2006 → mês mais recente** (SIDRA tabelas **2938 + 1419 + 7060**).
 
 ## Como rodar
 
 ```bash
 # 1) Coloque os exports do SIDRA em public/data/
+#    - tabela2938.csv  (grupos IPCA, jul/2006–dez/2011)
 #    - tabela1419.csv  (grupos IPCA, jan/2012–dez/2019)
 #    - tabela7060.csv  (grupos IPCA, jan/2020 em diante)
 
@@ -37,21 +38,27 @@ npm run preview
 
 | Arquivo | Período | Papel |
 |---------|---------|--------|
+| `public/data/tabela2938.csv` | jul/2006 – dez/2011 | Entrada SIDRA |
 | `public/data/tabela1419.csv` | jan/2012 – dez/2019 | Entrada SIDRA |
 | `public/data/tabela7060.csv` | jan/2020 → | Entrada SIDRA |
 | `public/data/ipca_grupos_unificado.csv` | unificado | **Usado pelo app** |
 
 O script `npm run build:data` (`scripts/build-ipca-dataset.js`):
 
-1. Lê os dois CSVs do SIDRA (parser tolerante a matriz/longo, `;`/`,`, decimais BR)
+1. Lê os três CSVs do SIDRA (parser tolerante a matriz/longo, `;`/`,`, decimais BR)
 2. Filtra só **IPCA - Variação mensal**
 3. Mapeia os **9 grupos** (código primeiro; nome normalizado só como fallback)
 4. Normaliza datas para `YYYY-MM-01`
-5. Resolve sobreposição: **1419 até 2019**, **7060 a partir de 2020**
+5. Resolve sobreposição por período canônico:
+   - **2938** até dez/2011  
+   - **1419** de jan/2012 a dez/2019  
+   - **7060** a partir de jan/2020  
 6. Escreve o CSV unificado com colunas estáveis:
 
 ```text
 date,year,month,group_code,group_name,short_name,monthly_variation,source_table
+2006-07-01,2006,7,1,Alimentação e bebidas,Alimentação,0.09,2938
+...
 2012-01-01,2012,1,1,Alimentação e bebidas,Alimentação,0.86,1419
 ...
 2020-01-01,2020,1,1,Alimentação e bebidas,Alimentação,0.39,7060
@@ -83,6 +90,7 @@ O acumulado **não** vem do SIDRA — só a variação mensal.
 
 ```text
 public/data/
+  tabela2938.csv
   tabela1419.csv
   tabela7060.csv
   ipca_grupos_unificado.csv   ← gerado
@@ -106,10 +114,10 @@ src/
 | Arrastar / scroll | Orbitar e zoom |
 | Hover | Tooltip |
 | Clique | Painel com detalhes |
-| Slider de data | Data final (desde a base, tipicamente jan/2012) |
+| Slider de data | Data final (desde a base, tipicamente jul/2006) |
 | Acumulado / 12 meses | Métrica de altura |
 | Reset câmera | Enquadramento inicial |
 
 ## Fonte
 
-IBGE — IPCA, tabelas SIDRA **1419** e **7060**. Visualização local; sem backend.
+IBGE — IPCA, tabelas SIDRA **2938**, **1419** e **7060**. Visualização local; sem backend.

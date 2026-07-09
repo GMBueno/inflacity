@@ -108,7 +108,7 @@ export default function InfoPanel({ building, mode, onClose }) {
       <div className="info-panel__hint">
         <strong>Como ler:</strong> cada prédio começa com 10 andares na
         data-base. Se os preços dobraram desde então, o prédio terá 20 andares.
-        Altura = 10 × índice acumulado (só variação mensal, desde jan/2012).
+        Altura = 10 × índice acumulado (só variação mensal, desde a data-base).
       </div>
     </aside>
   );

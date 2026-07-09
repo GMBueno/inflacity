@@ -12,7 +12,7 @@ import {
   formatDateKey,
 } from './data/inflationMath.js';
 
-/** Dataset unificado (1419 + 7060) gerado por `npm run build:data` */
+/** Dataset unificado (2938 + 1419 + 7060) gerado por `npm run build:data` */
 const CSV_URL = '/data/ipca_grupos_unificado.csv';
 
 /**
@@ -152,8 +152,9 @@ export default function App() {
             {needsBuildData ? (
               <>
                 Rode <code>npm run build:data</code> para gerar o dataset
-                unificado a partir de <code>tabela1419.csv</code> e{' '}
-                <code>tabela7060.csv</code> em <code>public/data/</code>.
+                unificado a partir de <code>tabela2938.csv</code>,{' '}
+                <code>tabela1419.csv</code> e <code>tabela7060.csv</code> em{' '}
+                <code>public/data/</code>.
               </>
             ) : (
               <>
@@ -195,7 +196,7 @@ export default function App() {
           <span className="pill pill--muted">
             {formatDateKey(baseDate)} → {formatDateKey(endDate)}
           </span>
-          <span className="pill pill--muted">Fonte: IBGE / SIDRA 1419+7060</span>
+          <span className="pill pill--muted">Fonte: IBGE / SIDRA 2938+1419+7060</span>
         </div>
       </header>
 

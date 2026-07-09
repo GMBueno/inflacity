@@ -1,5 +1,6 @@
 /**
  * Gera public/data/ipca_grupos_unificado.csv a partir de:
+ *   - public/data/tabela2938.csv  (jul/2006 – dez/2011)
  *   - public/data/tabela1419.csv  (jan/2012 – dez/2019)
  *   - public/data/tabela7060.csv  (jan/2020 em diante)
  *
@@ -14,10 +15,17 @@ import Papa from 'papaparse';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'public', 'data');
-
-const INPUT_1419 = path.join(DATA_DIR, 'tabela1419.csv');
-const INPUT_7060 = path.join(DATA_DIR, 'tabela7060.csv');
 const OUTPUT = path.join(DATA_DIR, 'ipca_grupos_unificado.csv');
+
+/**
+ * Fontes SIDRA na ordem cronológica.
+ * Em sobreposição de datas, preferredSource() escolhe a tabela canônica.
+ */
+const SOURCES = [
+  { id: '2938', file: path.join(DATA_DIR, 'tabela2938.csv'), label: 'jul/2006–dez/2011' },
+  { id: '1419', file: path.join(DATA_DIR, 'tabela1419.csv'), label: 'jan/2012–dez/2019' },
+  { id: '7060', file: path.join(DATA_DIR, 'tabela7060.csv'), label: 'jan/2020→' },
+];
 
 /** 9 grupos canônicos do IPCA */
 const CANONICAL_GROUPS = [
@@ -586,34 +594,58 @@ function parseSidraFile(filePath, sourceTable) {
   };
 }
 
-function mergeDatasets(ds1419, ds7060) {
-  // Prefer 1419 até 2019-12, 7060 a partir de 2020-01
-  const byKey = new Map(); // date|group_code
+/**
+ * Tabela preferida por período (estruturas de ponderação do IPCA):
+ *   até 2011-12 → 2938
+ *   2012-01 … 2019-12 → 1419
+ *   2020-01 em diante → 7060
+ */
+function preferredSource(dateIso) {
+  const ym = String(dateIso).slice(0, 7);
+  if (ym >= '2020-01') return '7060';
+  if (ym >= '2012-01') return '1419';
+  return '2938';
+}
 
-  function put(rec, prefer) {
-    const key = `${rec.date}|${rec.group_code}`;
-    const existing = byKey.get(key);
-    if (!existing) {
-      byKey.set(key, rec);
-      return;
-    }
-    // Preferência por tabela conforme regra de datas
-    const ym = rec.date.slice(0, 7);
-    if (ym >= '2020-01') {
-      if (prefer === '7060' || rec.source_table === '7060') byKey.set(key, rec);
-    } else {
-      if (prefer === '1419' || rec.source_table === '1419') byKey.set(key, rec);
+/**
+ * Junta N datasets. Em duplicata date+group_code, mantém a tabela preferida
+ * para aquele mês; se ela não tiver valor, usa qualquer outra disponível.
+ * @param {Array<{ records: object[] }>} datasets
+ */
+function mergeDatasets(datasets) {
+  /** @type {Map<string, Map<string, object>>} */
+  const buckets = new Map();
+
+  for (const ds of datasets) {
+    for (const rec of ds.records) {
+      const key = `${rec.date}|${rec.group_code}`;
+      if (!buckets.has(key)) buckets.set(key, new Map());
+      buckets.get(key).set(String(rec.source_table), rec);
     }
   }
 
-  for (const rec of ds1419.records) put(rec, '1419');
-  for (const rec of ds7060.records) put(rec, '7060');
+  const fallbackOrder = ['7060', '1419', '2938'];
+  const final = [];
 
-  // Resolve conflitos restantes: se 7060 e 1419 no mesmo mês, preferir por ano
-  const final = Array.from(byKey.values()).sort(
+  for (const [key, bySource] of buckets) {
+    const date = key.split('|')[0];
+    const pref = preferredSource(date);
+    let rec = bySource.get(pref);
+    if (!rec) {
+      for (const id of fallbackOrder) {
+        if (bySource.has(id)) {
+          rec = bySource.get(id);
+          break;
+        }
+      }
+    }
+    if (!rec) rec = bySource.values().next().value;
+    if (rec) final.push(rec);
+  }
+
+  final.sort(
     (a, b) => a.date.localeCompare(b.date) || a.group_code - b.group_code
   );
-
   return final;
 }
 
@@ -703,26 +735,44 @@ function writeUnifiedCsv(records) {
 
 function main() {
   console.log('Cidade da Inflação — build do dataset unificado IPCA\n');
+  console.log(
+    'Fontes:',
+    SOURCES.map((s) => `${s.id} (${s.label})`).join(' · ')
+  );
 
-  const ds1419 = parseSidraFile(INPUT_1419, '1419');
-  const ds7060 = parseSidraFile(INPUT_7060, '7060');
+  const datasets = [];
+  for (const src of SOURCES) {
+    if (!fs.existsSync(src.file)) {
+      throw new Error(
+        `Arquivo não encontrado: ${src.file}\n` +
+          `Coloque tabela${src.id}.csv em public/data/ e rode npm run build:data.`
+      );
+    }
+    datasets.push(parseSidraFile(src.file, src.id));
+  }
 
-  const merged = mergeDatasets(ds1419, ds7060);
+  const merged = mergeDatasets(datasets);
 
   console.log('\n========== Dataset unificado ==========');
-  console.log(`Linhas lidas (não vazias): 1419=${ds1419.rawLines}, 7060=${ds7060.rawLines}`);
-  console.log(
-    `Linhas normalizadas: 1419=${ds1419.records.length}, 7060=${ds7060.records.length}`
-  );
-  console.log(`Menor/maior data 1419: ${ds1419.minDate} → ${ds1419.maxDate}`);
-  console.log(`Menor/maior data 7060: ${ds7060.minDate} → ${ds7060.maxDate}`);
-  console.log(`Grupos 1419: ${ds1419.groups.join(', ')}`);
-  console.log(`Grupos 7060: ${ds7060.groups.join(', ')}`);
+  for (const ds of datasets) {
+    console.log(
+      `Tabela ${ds.records[0]?.source_table || '?'}: ` +
+        `linhas arquivo=${ds.rawLines}, normalizadas=${ds.records.length}, ` +
+        `datas ${ds.minDate} → ${ds.maxDate}, grupos [${ds.groups.join(', ')}]`
+    );
+  }
   console.log(`Quantidade final de linhas: ${merged.length}`);
   if (merged.length) {
     console.log(`Menor data final: ${merged[0].date}`);
     console.log(`Maior data final: ${merged[merged.length - 1].date}`);
   }
+
+  // Contagem por source_table no resultado
+  const bySrc = {};
+  for (const r of merged) {
+    bySrc[r.source_table] = (bySrc[r.source_table] || 0) + 1;
+  }
+  console.log('Linhas finais por source_table:', bySrc);
 
   validateMissingMonths(merged);
   writeUnifiedCsv(merged);
@@ -730,10 +780,11 @@ function main() {
   console.log(`\n✓ Escrito: ${OUTPUT}`);
   console.log(`  (${merged.length} linhas de dados + cabeçalho)`);
 
-  // Sanity: 9 grupos × ~meses
   const nGroups = new Set(merged.map((r) => r.group_code)).size;
   const nMonths = new Set(merged.map((r) => r.date)).size;
-  console.log(`  ${nGroups} grupos × ${nMonths} meses ≈ ${nGroups * nMonths} (esperado se completo)`);
+  console.log(
+    `  ${nGroups} grupos × ${nMonths} meses ≈ ${nGroups * nMonths} (esperado se completo)`
+  );
 }
 
 main();
