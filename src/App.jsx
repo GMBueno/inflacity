@@ -12,7 +12,8 @@ import {
 } from './data/inflationMath.js';
 
 /** Dataset unificado (2938 + 1419 + 7060) gerado por `npm run build:data` */
-const CSV_URL = '/data/ipca_grupos_unificado.csv';
+// BASE_URL do Vite termina com "/" (ex.: "/" local, "/inflacity/" no GitHub Pages)
+const CSV_URL = `${import.meta.env.BASE_URL}data/ipca_grupos_unificado.csv`;
 
 /**
  * Cidade da Inflação — app principal.

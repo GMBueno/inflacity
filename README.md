@@ -34,6 +34,16 @@ npm run build
 npm run preview
 ```
 
+## GitHub Pages
+
+O deploy é automático via GitHub Actions (`.github/workflows/deploy-pages.yml`) em todo push na `main`.
+
+1. No repositório: **Settings → Pages → Source = GitHub Actions**
+2. Faça push na `main` (ou rode o workflow manualmente em **Actions**)
+3. Site: [https://gmbueno.github.io/inflacity/](https://gmbueno.github.io/inflacity/)
+
+O workflow roda `npm run build:data` e `npm run build` com `VITE_BASE=/inflacity/`.
+
 ## Pipeline de dados
 
 | Arquivo | Período | Papel |
