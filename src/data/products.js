@@ -124,17 +124,23 @@ function hashColor(code) {
   return `hsl(${hue} 65% 55%)`;
 }
 
-/** Grade de posições para N prédios (relativo ao centro da ilha). */
-export function getProductPositions(count, cols = 6, spacing = 4.2) {
+/**
+ * Grade urbana para N prédios com avenidas entre quarteirões.
+ * cols padrão 5 → ruas mais largas e leitura de “cidade”.
+ */
+export function getProductPositions(count, cols = 5, spacing = 7.2) {
   const positions = [];
   const rows = Math.ceil(count / cols);
   for (let i = 0; i < count; i++) {
     const row = Math.floor(i / cols);
     const col = i % cols;
+    // leve jitter de quarteirão para não parecer grade militar
+    const jx = ((i * 17) % 5) * 0.08 - 0.16;
+    const jz = ((i * 13) % 5) * 0.08 - 0.16;
     positions.push({
       index: i,
-      x: (col - (cols - 1) / 2) * spacing,
-      z: (row - (rows - 1) / 2) * spacing,
+      x: (col - (cols - 1) / 2) * spacing + jx,
+      z: (row - (rows - 1) / 2) * spacing + jz,
     });
   }
   return positions;

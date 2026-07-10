@@ -286,7 +286,7 @@ export default function App() {
               className={activeIsland === 'groups' ? 'active' : ''}
               onClick={() => goToIsland('groups')}
             >
-              Ilha dos Grupos
+              Cidade dos Grupos
             </button>
             <button
               type="button"
@@ -294,7 +294,7 @@ export default function App() {
               onClick={() => goToIsland('selected')}
               disabled={!productsParsed}
             >
-              Ilha dos Selecionados
+              Cidade dos Selecionados
             </button>
           </div>
 

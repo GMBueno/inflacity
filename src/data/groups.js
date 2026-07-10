@@ -87,18 +87,19 @@ export const IPCA_GROUPS = [
 ];
 
 /**
- * Posições dos prédios na cidade (grade 3×3 com espaçamento de avenida).
+ * Posições dos 9 prédios em grade 3×3 com avenidas largas entre quarteirões.
+ * Espaçamento generoso para parecer cidade (não amontoado).
  */
 export function getBuildingPositions() {
-  const spacing = 5.2;
+  // Distância centro-a-centro entre quarteirões (~rua + calçada + lote)
+  const block = 9.5;
   const positions = [];
   for (let row = 0; row < 3; row++) {
     for (let col = 0; col < 3; col++) {
-      const i = row * 3 + col;
       positions.push({
-        index: i,
-        x: (col - 1) * spacing,
-        z: (row - 1) * spacing,
+        index: row * 3 + col,
+        x: (col - 1) * block,
+        z: (row - 1) * block,
       });
     }
   }
