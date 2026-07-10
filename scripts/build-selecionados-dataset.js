@@ -36,7 +36,7 @@ const PRODUCT_META = {
   1113014: { name: 'Azeite de oliva', short: 'Azeite', theme: 'oil' },
   1114022: { name: 'Café moído', short: 'Café', theme: 'coffee' },
   1114084: { name: 'Cerveja', short: 'Cerveja', theme: 'beer' },
-  1114087: { name: 'Vinho', short: 'Vinho', theme: 'wine' },
+  // Vinho (1114087) excluído: sem histórico completo na série antiga
   1201: { name: 'Alimentação fora do domicílio', short: 'Fora de casa', theme: 'restaurant' },
   2101001: { name: 'Aluguel residencial', short: 'Aluguel', theme: 'rent' },
   2101002: { name: 'Condomínio', short: 'Condomínio', theme: 'condo' },
@@ -103,6 +103,24 @@ function isMonthlyVariation(text) {
   return t.includes('variacao mensal') || (t.includes('variacao') && t.includes('mensal'));
 }
 
+/** Produtos sem série histórica completa — não entram no dataset. */
+const EXCLUDE_CODES = new Set(['1114087']); // Vinho
+
+/** Mapeia nomes legados (ex.: código 12 na 1419) para código canônico. */
+function resolveCanonicalCode(code, nameFromLabel) {
+  if (PRODUCT_META[code]) return code;
+  const n = normalizeText(nameFromLabel);
+  if (n.includes('alimentacao fora')) return '1201';
+  if (n.includes('microcomputador') || n.includes('computador')) return '3202028';
+  if (n.includes('leite')) return '1111004'; // pasteurizado (2938) / longa vida (7060)
+  if (n.includes('vinho')) return '1114087'; // será excluído
+  // tenta achar por nome no meta
+  for (const [c, meta] of Object.entries(PRODUCT_META)) {
+    if (normalizeText(meta.name) === n) return c;
+  }
+  return code;
+}
+
 function resolveProduct(label) {
   if (!label) return null;
   const raw = String(label).trim();
@@ -111,14 +129,19 @@ function resolveProduct(label) {
 
   const codeMatch = raw.match(/^(\d+)\s*[\.\-–—]\s*(.+)$/);
   if (!codeMatch) return null;
-  const code = codeMatch[1];
   const nameFromLabel = codeMatch[2].trim();
+  const code = resolveCanonicalCode(codeMatch[1], nameFromLabel);
+  if (EXCLUDE_CODES.has(code)) return null;
+
   const meta = PRODUCT_META[code];
+  // Só aceita produtos do conjunto canônico (evita índice geral e itens extras)
+  if (!meta) return null;
+
   return {
     code,
-    name: meta?.name || nameFromLabel,
-    short: meta?.short || (nameFromLabel.length > 14 ? nameFromLabel.slice(0, 12) + '…' : nameFromLabel),
-    theme: meta?.theme || 'default',
+    name: meta.name,
+    short: meta.short,
+    theme: meta.theme,
   };
 }
 
@@ -135,6 +158,24 @@ function parseCsvText(text) {
   return parsed.data.map((row) => row.map((c) => (c == null ? '' : String(c).trim())));
 }
 
+function makeRecord(date, product, monthly, sourceTable) {
+  const [y, m] = date.split('-').map(Number);
+  return {
+    date,
+    year: y,
+    month: m,
+    product_code: product.code,
+    product_name: product.name,
+    short_name: product.short,
+    monthly_variation: monthly,
+    source_table: String(sourceTable),
+    theme: product.theme,
+  };
+}
+
+/**
+ * Formato 7060: produtos nas LINHAS, meses × variáveis nas COLUNAS.
+ */
 function parseProductsAsRows(rows, sourceTable) {
   let monthRowIdx = -1;
   let varRowIdx = -1;
@@ -173,32 +214,99 @@ function parseProductsAsRows(rows, sourceTable) {
   if (monthlyCols.length < 2) return null;
 
   const records = [];
-  let products = 0;
+  const productSet = new Set();
   for (let r = varRowIdx + 1; r < rows.length; r++) {
     const row = rows[r];
     if (!row?.[0]) continue;
     if (/^(fonte|notas|legenda)/i.test(row[0])) break;
     const product = resolveProduct(row[0]);
     if (!product) continue;
-    products++;
+    productSet.add(product.code);
     for (const { col, date } of monthlyCols) {
       const monthly = normalizeSidraNumber(row[col]);
       if (monthly == null) continue;
-      const [y, m] = date.split('-').map(Number);
-      records.push({
-        date,
-        year: y,
-        month: m,
-        product_code: product.code,
-        product_name: product.name,
-        short_name: product.short,
-        monthly_variation: monthly,
-        source_table: String(sourceTable),
-        theme: product.theme,
-      });
+      records.push(makeRecord(date, product, monthly, sourceTable));
     }
   }
-  return { records, products };
+  if (!records.length) return null;
+  return { records, products: productSet.size, format: 'products-as-rows' };
+}
+
+/**
+ * Formato 1419: variável em seção, meses e PRODUTOS nas COLUNAS, Brasil na linha.
+ */
+function parseProductsAsColumns(rows, sourceTable) {
+  const records = [];
+  const productSet = new Set();
+  let sectionsUsed = 0;
+
+  for (let i = 0; i < rows.length; i++) {
+    const sectionText = rows[i].filter(Boolean).join(' ');
+    const cell0 = rows[i][0] || '';
+    if (!isMonthlyVariation(sectionText) && !isMonthlyVariation(cell0)) continue;
+
+    let monthRowIdx = -1;
+    let productRowIdx = -1;
+    let dataRowIdx = -1;
+
+    for (let j = i + 1; j < Math.min(i + 8, rows.length); j++) {
+      const periodCount = rows[j].filter((c) => parsePeriodToDate(c)).length;
+      if (periodCount >= 3 && monthRowIdx < 0) {
+        monthRowIdx = j;
+        continue;
+      }
+      const productCount = rows[j].filter((c) => resolveProduct(c)).length;
+      if (productCount >= 3 && productRowIdx < 0) {
+        productRowIdx = j;
+        continue;
+      }
+      const isBrasil = normalizeText(rows[j][0]) === 'brasil';
+      const numericCount = rows[j].filter((c) => normalizeSidraNumber(c) != null).length;
+      if (
+        (isBrasil || numericCount >= 9) &&
+        dataRowIdx < 0 &&
+        j !== monthRowIdx &&
+        j !== productRowIdx
+      ) {
+        dataRowIdx = j;
+      }
+    }
+
+    if (monthRowIdx < 0 || productRowIdx < 0 || dataRowIdx < 0) continue;
+    sectionsUsed++;
+
+    const monthRow = rows[monthRowIdx];
+    const productRow = rows[productRowIdx];
+    const dataRow = rows[dataRowIdx];
+    const maxCols = Math.max(monthRow.length, productRow.length, dataRow.length);
+
+    let lastDate = null;
+    for (let c = 0; c < maxCols; c++) {
+      const d = parsePeriodToDate(monthRow[c]);
+      if (d) lastDate = d;
+      const product = resolveProduct(productRow[c]);
+      if (!product || !lastDate) continue;
+      const monthly = normalizeSidraNumber(dataRow[c]);
+      if (monthly == null) continue;
+      productSet.add(product.code);
+      records.push(makeRecord(lastDate, product, monthly, sourceTable));
+    }
+  }
+
+  if (!records.length) return null;
+  return {
+    records,
+    products: productSet.size,
+    format: 'products-as-columns',
+    sectionsUsed,
+  };
+}
+
+function parseSelecionadosFile(rows, sourceTable) {
+  return (
+    parseProductsAsRows(rows, sourceTable) ||
+    parseProductsAsColumns(rows, sourceTable)
+  );
 }
 
 function sourceIdFromFilename(file) {
@@ -240,18 +348,19 @@ function main() {
   for (const file of files) {
     const srcId = sourceIdFromFilename(file);
     const rows = parseCsvText(fs.readFileSync(file, 'utf8'));
-    const result = parseProductsAsRows(rows, srcId);
+    const result = parseSelecionadosFile(rows, srcId);
     if (!result) {
       console.warn(`Não foi possível parsear: ${file}`);
       continue;
     }
     totalRaw += result.records.length;
     console.log(
-      `Arquivo ${path.basename(file)} (source=${srcId}): ` +
+      `Arquivo ${path.basename(file)} (source=${srcId}, format=${result.format}): ` +
         `${result.products} produtos, ${result.records.length} registros`
     );
 
     for (const rec of result.records) {
+      if (EXCLUDE_CODES.has(String(rec.product_code))) continue;
       const key = `${rec.date}|${rec.product_code}`;
       if (!buckets.has(key)) buckets.set(key, new Map());
       buckets.get(key).set(rec.source_table, rec);

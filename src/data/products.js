@@ -17,7 +17,7 @@ export const SELECTED_PRODUCTS = [
   { code: '1113014', fullName: 'Azeite de oliva', shortName: 'Azeite', theme: 'oil', color: '#a3e635', emissive: '#4d7c0f' },
   { code: '1114022', fullName: 'Café moído', shortName: 'Café', theme: 'coffee', color: '#78350f', emissive: '#451a03' },
   { code: '1114084', fullName: 'Cerveja', shortName: 'Cerveja', theme: 'beer', color: '#f59e0b', emissive: '#b45309' },
-  { code: '1114087', fullName: 'Vinho', shortName: 'Vinho', theme: 'wine', color: '#7f1d1d', emissive: '#450a0a' },
+  // Vinho removido: sem histórico na tabela antiga (1419)
   { code: '1201', fullName: 'Alimentação fora do domicílio', shortName: 'Fora de casa', theme: 'restaurant', color: '#fb923c', emissive: '#c2410c' },
   { code: '2101001', fullName: 'Aluguel residencial', shortName: 'Aluguel', theme: 'rent', color: '#94a3b8', emissive: '#475569' },
   { code: '2101002', fullName: 'Condomínio', shortName: 'Condomínio', theme: 'condo', color: '#64748b', emissive: '#334155' },

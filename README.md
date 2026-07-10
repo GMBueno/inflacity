@@ -51,7 +51,7 @@ O workflow roda `npm run build:data` e `npm run build` com `VITE_BASE=/inflacity
 | `public/data/tabela2938.csv` | jul/2006 – dez/2011 | Grupos IPCA |
 | `public/data/tabela1419.csv` | jan/2012 – dez/2019 | Grupos IPCA |
 | `public/data/tabela7060.csv` | jan/2020 → | Grupos IPCA |
-| `public/data/selecionados/*.csv` | (varia; hoje ~2020→) | Itens/produtos selecionados |
+| `public/data/selecionados/*.csv` | 2938 (2006–2011) + 1419 (2012–2019) + 7060 (2020→) | Itens selecionados (sem vinho) |
 | `public/data/ipca_grupos_unificado.csv` | unificado | Ilha dos Grupos |
 | `public/data/ipca_selecionados_unificado.csv` | unificado | Ilha dos Selecionados |
 
