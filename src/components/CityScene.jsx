@@ -4,7 +4,6 @@ import {
   OrbitControls,
   PerspectiveCamera,
   Stars,
-  ContactShadows,
 } from '@react-three/drei';
 import * as THREE from 'three';
 import Building from './Building.jsx';
@@ -39,6 +38,7 @@ export default function CityScene({
   onActiveIslandChange,
   onTeleportRequest,
   teleportToken,
+  timeOfDay = 'afternoon', // 'morning' | 'afternoon' | 'night'
 }) {
   return (
     <div className="city-canvas">
@@ -60,7 +60,7 @@ export default function CityScene({
         />
         <WalkControls />
         <IslandTracker onActiveIslandChange={onActiveIslandChange} />
-        <DayNightCycle />
+        <DayNightCycle timeOfDay={timeOfDay} />
 
         <Suspense fallback={null}>
           <WorldEnvironment />
@@ -91,14 +91,7 @@ export default function CityScene({
             roadRows={7}
           />
 
-          <ContactShadows
-            position={[0, 0.05, 0]}
-            opacity={0.35}
-            scale={160}
-            blur={3}
-            far={24}
-            color="#000"
-          />
+          {/* ContactShadows removido: gerava disco escuro sob cada cidade */}
         </Suspense>
 
         <OrbitControls
@@ -361,103 +354,169 @@ function IslandTracker({ onActiveIslandChange }) {
 }
 
 /* ------------------------------------------------------------------ */
-/*  Dia / noite                                                        */
+/*  Iluminação fixa: manhã | tarde | noite (controlada pelo usuário)   */
 /* ------------------------------------------------------------------ */
 
-function DayNightCycle() {
+const TIME_PRESETS = {
+  morning: {
+    sunPos: [28, 18, 22],
+    sunIntensity: 1.15,
+    sunColor: '#fff1d6',
+    moonIntensity: 0,
+    ambient: 0.42,
+    ambientColor: '#e8f0ff',
+    hemiSky: '#c5ddf5',
+    hemiGround: '#6a9b55',
+    hemiIntensity: 0.55,
+    sky: '#9ec9ef',
+    fogNear: 120,
+    fogFar: 300,
+    exposure: 1.08,
+    stars: false,
+  },
+  afternoon: {
+    sunPos: [12, 32, 8],
+    sunIntensity: 1.45,
+    sunColor: '#fff8e8',
+    moonIntensity: 0,
+    ambient: 0.48,
+    ambientColor: '#dceaf8',
+    hemiSky: '#b8d4f0',
+    hemiGround: '#5a8f4a',
+    hemiIntensity: 0.6,
+    sky: '#87b8e0',
+    fogNear: 130,
+    fogFar: 310,
+    exposure: 1.12,
+    stars: false,
+  },
+  night: {
+    sunPos: [-20, 8, -15],
+    sunIntensity: 0.08,
+    sunColor: '#6b7c9c',
+    moonIntensity: 0.45,
+    ambient: 0.18,
+    ambientColor: '#1a2744',
+    hemiSky: '#1e293b',
+    hemiGround: '#0f1a12',
+    hemiIntensity: 0.28,
+    sky: '#070b14',
+    fogNear: 90,
+    fogFar: 240,
+    exposure: 0.95,
+    stars: true,
+  },
+};
+
+function cloneTimePreset(id) {
+  const p = TIME_PRESETS[id] || TIME_PRESETS.afternoon;
+  return { ...p, sunPos: [...p.sunPos] };
+}
+
+function DayNightCycle({ timeOfDay = 'afternoon' }) {
   const sunRef = useRef();
   const moonRef = useRef();
   const ambientRef = useRef();
   const hemiRef = useRef();
-  const { scene } = useThree();
+  const starsRef = useRef();
+  const { scene, gl } = useThree();
   const fogRef = useRef();
+  const target = useRef(cloneTimePreset('afternoon'));
+  const current = useRef(cloneTimePreset('afternoon'));
 
   useEffect(() => {
-    scene.fog = new THREE.Fog('#87b5d9', 55, 160);
+    scene.fog = new THREE.Fog('#a8c8e0', 130, 310);
     fogRef.current = scene.fog;
     return () => {
       scene.fog = null;
     };
   }, [scene]);
 
-  useFrame(({ clock }) => {
-    // Ciclo ~90s
-    const t = (clock.elapsedTime / 90) % 1;
-    const angle = t * Math.PI * 2 - Math.PI / 2;
-    const sunY = Math.sin(angle);
-    const sunX = Math.cos(angle) * 40;
-    const sunZ = Math.sin(angle * 0.3) * 20;
+  useEffect(() => {
+    target.current = cloneTimePreset(timeOfDay);
+  }, [timeOfDay]);
 
-    // dayFactor: 0 noite, 1 dia
-    const dayFactor = THREE.MathUtils.clamp(sunY * 1.2 + 0.35, 0, 1);
-    const nightFactor = 1 - dayFactor;
+  useFrame((_, delta) => {
+    const t = Math.min(1, delta * 2.2); // transição suave ao trocar o toggle
+    const cur = current.current;
+    const tgt = target.current;
+
+    // Lerp numéricos
+    cur.sunIntensity += (tgt.sunIntensity - cur.sunIntensity) * t;
+    cur.moonIntensity += (tgt.moonIntensity - cur.moonIntensity) * t;
+    cur.ambient += (tgt.ambient - cur.ambient) * t;
+    cur.hemiIntensity += (tgt.hemiIntensity - cur.hemiIntensity) * t;
+    cur.fogNear += (tgt.fogNear - cur.fogNear) * t;
+    cur.fogFar += (tgt.fogFar - cur.fogFar) * t;
+    cur.exposure += (tgt.exposure - cur.exposure) * t;
+
+    // Lerp posições do sol
+    for (let i = 0; i < 3; i++) {
+      cur.sunPos[i] += (tgt.sunPos[i] - cur.sunPos[i]) * t;
+    }
 
     if (sunRef.current) {
-      sunRef.current.position.set(sunX, Math.max(sunY * 35, -5), sunZ);
-      sunRef.current.intensity = 0.15 + dayFactor * 1.5;
-      sunRef.current.color.setHSL(0.12, 0.35, 0.55 + dayFactor * 0.35);
+      sunRef.current.position.set(...cur.sunPos);
+      sunRef.current.intensity = cur.sunIntensity;
+      sunRef.current.color.set(tgt.sunColor);
     }
     if (moonRef.current) {
-      moonRef.current.position.set(-sunX * 0.7, Math.max(-sunY * 28, 4), -sunZ);
-      moonRef.current.intensity = nightFactor * 0.35;
+      moonRef.current.position.set(-cur.sunPos[0] * 0.6, 22, -cur.sunPos[2] * 0.6);
+      moonRef.current.intensity = cur.moonIntensity;
     }
     if (ambientRef.current) {
-      ambientRef.current.intensity = 0.12 + dayFactor * 0.35;
+      ambientRef.current.intensity = cur.ambient;
+      ambientRef.current.color.set(tgt.ambientColor);
     }
     if (hemiRef.current) {
-      hemiRef.current.intensity = 0.2 + dayFactor * 0.45;
-      hemiRef.current.color.set(dayFactor > 0.4 ? '#b8d4f0' : '#1e293b');
-      hemiRef.current.groundColor.set(dayFactor > 0.4 ? '#3d4f3a' : '#0a1220');
+      hemiRef.current.intensity = cur.hemiIntensity;
+      hemiRef.current.color.set(tgt.hemiSky);
+      hemiRef.current.groundColor.set(tgt.hemiGround);
     }
 
-    // Céu / névoa
-    const skyDay = new THREE.Color('#87b5d9');
-    const skyDusk = new THREE.Color('#f97316');
-    const skyNight = new THREE.Color('#070b14');
-    let sky;
-    if (dayFactor > 0.55) {
-      sky = skyDay.clone().lerp(skyDusk, 1 - dayFactor);
-    } else if (dayFactor > 0.2) {
-      sky = skyDusk.clone().lerp(skyNight, 1 - dayFactor / 0.55);
-    } else {
-      sky = skyNight.clone();
-    }
-    scene.background = sky;
+    scene.background = new THREE.Color(tgt.sky);
     if (fogRef.current) {
-      fogRef.current.color.copy(sky);
-      fogRef.current.near = 40 + nightFactor * 10;
-      fogRef.current.far = 120 + nightFactor * 20;
+      fogRef.current.color.set(tgt.sky);
+      fogRef.current.near = cur.fogNear;
+      fogRef.current.far = cur.fogFar;
+    }
+    if (gl) gl.toneMappingExposure = cur.exposure;
+
+    if (starsRef.current) {
+      starsRef.current.visible = Boolean(tgt.stars);
     }
   });
 
   return (
     <>
-      <ambientLight ref={ambientRef} intensity={0.3} color="#c7d7ea" />
-      <hemisphereLight ref={hemiRef} args={['#b8d4f0', '#3d4f3a', 0.4]} />
+      <ambientLight ref={ambientRef} intensity={0.48} color="#dceaf8" />
+      <hemisphereLight ref={hemiRef} args={['#b8d4f0', '#5a8f4a', 0.6]} />
       <directionalLight
         ref={sunRef}
         castShadow
-        position={[20, 30, 10]}
-        intensity={1.3}
-        color="#fff4e0"
+        position={[12, 32, 8]}
+        intensity={1.45}
+        color="#fff8e8"
         shadow-mapSize={[2048, 2048]}
-        shadow-camera-far={120}
-        shadow-camera-left={-50}
-        shadow-camera-right={50}
-        shadow-camera-top={50}
-        shadow-camera-bottom={-50}
+        shadow-camera-far={140}
+        shadow-camera-left={-60}
+        shadow-camera-right={60}
+        shadow-camera-top={60}
+        shadow-camera-bottom={-60}
         shadow-bias={-0.0002}
       />
-      <directionalLight ref={moonRef} position={[-15, 12, -10]} intensity={0.15} color="#93c5fd" />
-      <Stars
-        radius={140}
-        depth={60}
-        count={1800}
-        factor={3.5}
-        saturation={0}
-        fade
-        speed={0.2}
-      />
+      <directionalLight ref={moonRef} position={[-15, 22, -10]} intensity={0} color="#93c5fd" />
+      <group ref={starsRef} visible={false}>
+        <Stars
+          radius={140}
+          depth={60}
+          count={1800}
+          factor={3.5}
+          saturation={0}
+          fade
+          speed={0.15}
+        />
+      </group>
     </>
   );
 }
@@ -472,20 +531,22 @@ function WorldEnvironment() {
 
   useFrame(({ clock }) => {
     if (waterRef.current) {
-      waterRef.current.position.y = -0.12 + Math.sin(clock.elapsedTime * 0.55) * 0.03;
+      // Água ligeiramente acima do campo para não sumir por z-fight
+      waterRef.current.position.y = 0.06 + Math.sin(clock.elapsedTime * 0.55) * 0.025;
     }
   });
 
   return (
     <group>
       {/* Campo / chão do mundo (quadrado, gramado — não preto) */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[4, -0.05, 0]} receiveShadow>
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[4, 0, 0]} receiveShadow>
         <planeGeometry args={[180, 140]} />
         <meshStandardMaterial
           map={grassTex}
           roughness={0.95}
           metalness={0.02}
           color="#5a8f4a"
+          side={THREE.DoubleSide}
         />
       </mesh>
 
@@ -573,7 +634,7 @@ function RiverSystem() {
         <mesh
           key={`m${i}`}
           rotation={[-Math.PI / 2, 0, s.angle]}
-          position={[s.x, -0.08, s.z]}
+          position={[s.x, 0, s.z]}
           receiveShadow
           material={waterMat}
         >
@@ -584,7 +645,7 @@ function RiverSystem() {
         <mesh
           key={`w${i}`}
           rotation={[-Math.PI / 2, 0, s.rot]}
-          position={[s.x, -0.08, s.z]}
+          position={[s.x, 0, s.z]}
           material={waterMat}
           receiveShadow
         >
@@ -595,19 +656,19 @@ function RiverSystem() {
         <mesh
           key={`e${i}`}
           rotation={[-Math.PI / 2, 0, s.rot]}
-          position={[s.x, -0.08, s.z]}
+          position={[s.x, 0, s.z]}
           material={waterMat}
           receiveShadow
         >
           <planeGeometry args={[s.w, s.d]} />
         </mesh>
       ))}
-      {/* Lagoas */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-8, -0.07, -38]} material={waterMat}>
-        <circleGeometry args={[6, 24]} />
+      {/* Lagoas (y local 0; o grupo waterRef sobe o conjunto) */}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[-8, 0, -38]} material={waterMat}>
+        <circleGeometry args={[6, 28]} />
       </mesh>
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[48, -0.07, 40]} material={waterMat}>
-        <circleGeometry args={[5.5, 24]} />
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[48, 0, 40]} material={waterMat}>
+        <circleGeometry args={[5.5, 28]} />
       </mesh>
     </group>
   );
@@ -641,7 +702,7 @@ function RiverBanks() {
         <mesh
           key={i}
           rotation={[-Math.PI / 2, 0, (i % 5) * 0.2]}
-          position={[b.x, -0.02, b.z]}
+          position={[b.x, 0.03, b.z]}
           receiveShadow
           material={sand}
         >
@@ -767,29 +828,49 @@ function CityDistrict({
 
   return (
     <group position={[x, 0, z]}>
-      {/* Falésia / base da ilha */}
-      <mesh geometry={cliffGeom} position={[0, 0, 0]} castShadow receiveShadow>
-        <meshStandardMaterial color="#6b5540" roughness={0.95} />
+      {/*
+        Base da cidade: topo VERDE (não disco preto).
+        A falésia é só a lateral (material terra), sem face superior escura.
+      */}
+      <mesh geometry={cliffGeom} castShadow receiveShadow>
+        <meshStandardMaterial color="#7a6a52" roughness={0.95} flatShading={false} />
       </mesh>
-      {/* Superfície gramada orgânica */}
+
+      {/* Superfície gramada — normais para cima + offset para evitar z-fight */}
       <mesh
         geometry={shapeGeom}
         rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, 0.08, 0]}
+        position={[0, 0.12, 0]}
         receiveShadow
+        renderOrder={1}
       >
-        <meshStandardMaterial map={grassTex} roughness={0.92} metalness={0.03} color="#6b9b55" />
+        <meshStandardMaterial
+          map={grassTex}
+          roughness={0.9}
+          metalness={0.02}
+          color="#6fad58"
+          side={THREE.DoubleSide}
+          polygonOffset
+          polygonOffsetFactor={-1}
+          polygonOffsetUnits={-1}
+        />
       </mesh>
-      {/* Faixa de areia na orla */}
+
+      {/* Areia só na borda (anel: shape maior semi-transparente por baixo da grama na orla) */}
       <mesh
         geometry={shapeGeom}
         rotation={[-Math.PI / 2, 0, 0]}
-        position={[0, 0.05, 0]}
-        scale={[1.04, 1.04, 1]}
+        position={[0, 0.1, 0]}
+        scale={[1.06, 1.06, 1]}
         receiveShadow
       >
-        <meshStandardMaterial color="#c4a574" roughness={1} transparent opacity={0.55} />
+        <meshStandardMaterial
+          color="#d2b48c"
+          roughness={1}
+          side={THREE.DoubleSide}
+        />
       </mesh>
+      {/* Grama por cima da areia no miolo (scale 1) — já desenhada acima em y=0.12 */}
 
       {/* Grade de avenidas */}
       <StreetGrid
@@ -803,15 +884,15 @@ function CityDistrict({
       {items.map((b) => (
         <mesh
           key={`lot-${b.group.id}`}
-          position={[b.position.x, 0.11, b.position.z]}
+          position={[b.position.x, 0.14, b.position.z]}
           receiveShadow
         >
           <boxGeometry args={[4.2, 0.06, 4.0]} />
-          <meshStandardMaterial color="#3d4658" roughness={0.85} />
+          <meshStandardMaterial color="#4a5568" roughness={0.85} />
         </mesh>
       ))}
 
-      {/* Parque central */}
+      {/* Parque com lago — fora do cruzamento central das avenidas */}
       <CityPark accent={island.accent} />
 
       {/* Postes de luz nas avenidas */}
@@ -821,7 +902,7 @@ function CityDistrict({
       <DistrictTrees shoreline={island.shoreline} seed={island.id === 'groups' ? 3 : 11} />
 
       {/* Placa da cidade */}
-      <group position={[0, 0.15, -island.halfD - 1]}>
+      <group position={[0, 0.2, -island.halfD - 1]}>
         <mesh castShadow>
           <boxGeometry args={[5.2, 1.2, 0.18]} />
           <meshStandardMaterial color="#0f172a" metalness={0.3} />
@@ -878,16 +959,21 @@ function StreetGrid({ spacing, cols, rows, color }) {
   return (
     <group>
       {roads.map((rd, i) => (
-        <group key={i} position={[rd.x, 0.12, rd.z]}>
+        <group key={i} position={[rd.x, 0.135, rd.z]}>
           <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
             <planeGeometry args={[rd.w, rd.d]} />
-            <meshStandardMaterial color={color || '#2a3344'} roughness={0.75} metalness={0.15} />
+            <meshStandardMaterial
+              color={color || '#3d4a5c'}
+              roughness={0.75}
+              metalness={0.15}
+              side={THREE.DoubleSide}
+            />
           </mesh>
           {/* faixa tracejada */}
           {(rd.w > rd.d ? rd.w : rd.d) > 8 && (
             <mesh rotation={[-Math.PI / 2, 0, rd.w > rd.d ? 0 : Math.PI / 2]} position={[0, 0.01, 0]}>
               <planeGeometry args={[Math.max(rd.w, rd.d) * 0.85, 0.1]} />
-              <meshBasicMaterial color="#eab308" transparent opacity={0.55} />
+              <meshBasicMaterial color="#eab308" transparent opacity={0.55} side={THREE.DoubleSide} />
             </mesh>
           )}
         </group>
@@ -933,27 +1019,37 @@ function StreetLights({ spacing, cols, rows }) {
   );
 }
 
+/** Parque num quarteirão livre (NE do centro), fora do cruzamento das avenidas */
+const PARK_OFFSET = { x: 4.6, z: -4.6 };
+
 function CityPark({ accent }) {
   return (
-    <group position={[0, 0.1, 0]}>
+    <group position={[PARK_OFFSET.x, 0.16, PARK_OFFSET.z]}>
       <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
-        <circleGeometry args={[3.2, 24]} />
-        <meshStandardMaterial color="#4d8a42" roughness={1} />
+        <circleGeometry args={[3.6, 28]} />
+        <meshStandardMaterial color="#4d8a42" roughness={1} side={THREE.DoubleSide} />
       </mesh>
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.02, 0]}>
-        <ringGeometry args={[3.0, 3.25, 24]} />
-        <meshBasicMaterial color={accent} transparent opacity={0.35} side={THREE.DoubleSide} />
+        <ringGeometry args={[3.35, 3.65, 28]} />
+        <meshBasicMaterial color={accent} transparent opacity={0.4} side={THREE.DoubleSide} />
       </mesh>
-      {/* Banco / lago central */}
-      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.03, 0]}>
-        <circleGeometry args={[1.1, 16]} />
-        <meshStandardMaterial color="#2896c8" metalness={0.3} roughness={0.25} />
+      {/* Lago do parque — bem acima do chão, bem azul */}
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.05, 0]}>
+        <circleGeometry args={[1.6, 24]} />
+        <meshStandardMaterial
+          color="#1da2d8"
+          emissive="#0e7490"
+          emissiveIntensity={0.25}
+          metalness={0.35}
+          roughness={0.2}
+          side={THREE.DoubleSide}
+        />
       </mesh>
-      {[-1.4, 1.4].map((ox, i) => (
-        <Tree key={i} x={ox} z={1.2} s={0.85} />
+      {[-1.8, 1.8].map((ox, i) => (
+        <Tree key={i} x={ox} z={1.6} s={0.9} />
       ))}
-      {[-1.2, 1.2].map((ox, i) => (
-        <Tree key={`b${i}`} x={ox} z={-1.3} s={0.7} />
+      {[-1.5, 1.5].map((ox, i) => (
+        <Tree key={`b${i}`} x={ox} z={-1.7} s={0.75} />
       ))}
     </group>
   );
@@ -1072,6 +1168,10 @@ function createIslandGeometry(shoreline) {
   return geom;
 }
 
+/**
+ * Falésia: extrude com topo oculto (só laterais de terra).
+ * O topo escuro era o “disco preto” sob a cidade.
+ */
 function createIslandCliffGeometry(shoreline) {
   const shape = new THREE.Shape();
   shoreline.forEach(([px, pz], i) => {
@@ -1080,14 +1180,34 @@ function createIslandCliffGeometry(shoreline) {
   });
   shape.closePath();
   const geom = new THREE.ExtrudeGeometry(shape, {
-    depth: 0.7,
+    depth: 0.85,
     bevelEnabled: true,
-    bevelThickness: 0.15,
-    bevelSize: 0.25,
+    bevelThickness: 0.12,
+    bevelSize: 0.2,
     bevelSegments: 2,
   });
-  // ExtrudeGeometry cresce em Z; rotacionamos para Y
-  geom.rotateX(-Math.PI / 2);
+  // Extrude em +Z → rotaciona para -Y (base para baixo)
+  geom.rotateX(Math.PI / 2);
+  // Empurra para que o topo fique ~ y=0.08 e a base desça
+  geom.translate(0, -0.85, 0);
+
+  // Remove faces quase horizontais do topo (normais apontando para +Y)
+  // para não aparecer um “disco” escuro sob a grama.
+  const normals = geom.attributes.normal;
+  const indices = geom.index ? Array.from(geom.index.array) : null;
+  if (indices && normals) {
+    const keep = [];
+    for (let i = 0; i < indices.length; i += 3) {
+      const a = indices[i];
+      const ny =
+        (normals.getY(a) + normals.getY(indices[i + 1]) + normals.getY(indices[i + 2])) / 3;
+      // Mantém laterais; descarta topo (ny alto) e fundo (ny bem negativo opcional)
+      if (ny < 0.65) keep.push(indices[i], indices[i + 1], indices[i + 2]);
+    }
+    geom.setIndex(keep);
+    geom.computeVertexNormals();
+  }
+
   return geom;
 }
 

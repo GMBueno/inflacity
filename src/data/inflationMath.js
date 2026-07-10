@@ -81,10 +81,10 @@ export function calculateTwelveMonthInflation(series, endDate = null) {
 
 /**
  * Altura 3D a partir de andares.
- * altura_3d = andares * 0.4
+ * altura_3d = andares * 0.8
  */
 export function floorsToHeight(floors) {
-  return Math.max(floors, 1) * 0.4;
+  return Math.max(floors, 1) * 0.8;
 }
 
 /**

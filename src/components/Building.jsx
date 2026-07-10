@@ -5,7 +5,7 @@ import * as THREE from 'three';
 import { floorsToHeight, formatPct } from '../data/inflationMath.js';
 import BuildingTheme from './BuildingTheme.jsx';
 
-const FLOOR_UNIT = 0.4; // altura por andar
+const FLOOR_UNIT = 0.8; // altura por andar (dobrada vs. escala original)
 const BUILDING_WIDTH = 2.0;
 const BUILDING_DEPTH = 1.85;
 
