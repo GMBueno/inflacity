@@ -3,10 +3,11 @@ import { useFrame } from '@react-three/fiber';
 import { Html, RoundedBox } from '@react-three/drei';
 import * as THREE from 'three';
 import { floorsToHeight, formatPct } from '../data/inflationMath.js';
+import BuildingTheme from './BuildingTheme.jsx';
 
 const FLOOR_UNIT = 0.4; // altura por andar
-const BUILDING_WIDTH = 2.2;
-const BUILDING_DEPTH = 2.0;
+const BUILDING_WIDTH = 2.0;
+const BUILDING_DEPTH = 1.85;
 
 /**
  * Prédio de um grupo do IPCA.
@@ -29,22 +30,27 @@ export default function Building({
   const [ready, setReady] = useState(false);
   const elapsed = useRef(0);
 
-  // Janelas: grid procedural em um canvas texture
+  const theme = group.theme || 'default';
+  const isRice = theme === 'rice';
+
+  // Janelas: grid procedural (arroz usa textura de grãos)
   const windowTexture = useMemo(
-    () => createWindowTexture(group.color),
-    [group.color]
+    () => (isRice ? createRiceTexture() : createWindowTexture(group.color)),
+    [group.color, isRice]
   );
 
   const bodyMaterial = useMemo(() => {
     return new THREE.MeshStandardMaterial({
-      color: new THREE.Color(group.color).multiplyScalar(0.55),
+      color: isRice
+        ? new THREE.Color('#f5f5f4')
+        : new THREE.Color(group.color).multiplyScalar(0.55),
       emissive: new THREE.Color(group.emissive || group.color),
-      emissiveIntensity: 0.15,
-      metalness: 0.35,
-      roughness: 0.45,
+      emissiveIntensity: theme === 'energy' ? 0.35 : 0.15,
+      metalness: theme === 'energy' ? 0.65 : 0.35,
+      roughness: isRice ? 0.85 : 0.45,
       map: windowTexture,
     });
-  }, [group.color, group.emissive, windowTexture]);
+  }, [group.color, group.emissive, windowTexture, theme, isRice]);
 
   const accentMaterial = useMemo(
     () =>
@@ -175,6 +181,22 @@ export default function Building({
         depth={BUILDING_DEPTH}
       />
 
+      {/* Detalhe temático (energia, arroz, posto…) */}
+      <BuildingTheme
+        theme={theme}
+        color={group.color}
+        heightRef={currentHeight}
+        baseY={0.12}
+      />
+
+      {/* Base temática: posto de gasolina */}
+      {(theme === 'gas' || theme === 'ethanol' || theme === 'diesel') && (
+        <mesh position={[0, 0.14, 1.15]} castShadow>
+          <boxGeometry args={[2.6, 0.12, 0.9]} />
+          <meshStandardMaterial color="#1e293b" metalness={0.4} roughness={0.6} />
+        </mesh>
+      )}
+
       {/* Glow no chão quando selecionado */}
       {(selected || hovered) && (
         <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0.02, 0]}>
@@ -300,6 +322,26 @@ function Roof({ heightRef, baseY, color, accentMaterial, width, depth }) {
       </RoundedBox>
     </group>
   );
+}
+
+function createRiceTexture() {
+  const canvas = document.createElement('canvas');
+  canvas.width = 128;
+  canvas.height = 256;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#f5f5f4';
+  ctx.fillRect(0, 0, 128, 256);
+  for (let i = 0; i < 400; i++) {
+    const x = Math.random() * 128;
+    const y = Math.random() * 256;
+    ctx.fillStyle = Math.random() > 0.5 ? '#e7e5e4' : '#d6d3d1';
+    ctx.beginPath();
+    ctx.ellipse(x, y, 2.2, 1.1, Math.random() * Math.PI, 0, Math.PI * 2);
+    ctx.fill();
+  }
+  const tex = new THREE.CanvasTexture(canvas);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  return tex;
 }
 
 /**

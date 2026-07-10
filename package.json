@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "build:data": "node scripts/build-ipca-dataset.js"
+    "build:data": "node scripts/build-ipca-dataset.js && node scripts/build-selecionados-dataset.js"
   },
   "dependencies": {
     "@react-three/drei": "^9.117.3",

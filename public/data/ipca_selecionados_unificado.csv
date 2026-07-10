@@ -1,0 +1,2388 @@
+date,year,month,product_code,product_name,short_name,monthly_variation,source_table,theme
+2020-01-01,2020,1,8,Educação,Educação,0.16,7060,education
+2020-01-01,2020,1,11,Alimentação no domicílio,Alim. domicílio,0.2,7060,pantry
+2020-01-01,2020,1,1107,Carnes,Carnes,-4.03,7060,meat
+2020-01-01,2020,1,1201,Alimentação fora do domicílio,Fora de casa,0.82,7060,restaurant
+2020-01-01,2020,1,2202,Energia elétrica residencial,Energia,0.16,7060,energy
+2020-01-01,2020,1,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-01-01,2020,1,1101002,Arroz,Arroz,1.31,7060,rice
+2020-01-01,2020,1,1101052,Feijão - preto,Feijão,-2.68,7060,beans
+2020-01-01,2020,1,1102006,Macarrão,Macarrão,-0.18,7060,pasta
+2020-01-01,2020,1,1103003,Batata-inglesa,Batata,11.02,7060,potato
+2020-01-01,2020,1,1103028,Tomate,Tomate,13.72,7060,tomato
+2020-01-01,2020,1,1110044,Ovo de galinha,Ovos,0.87,7060,egg
+2020-01-01,2020,1,1111004,Leite longa vida,Leite,-0.38,7060,milk
+2020-01-01,2020,1,1112015,Pão francês,Pão,1.24,7060,bread
+2020-01-01,2020,1,1113014,Azeite de oliva,Azeite,-1.19,7060,oil
+2020-01-01,2020,1,1114022,Café moído,Café,-0.23,7060,coffee
+2020-01-01,2020,1,1114084,Cerveja,Cerveja,-0.49,7060,beer
+2020-01-01,2020,1,1114087,Vinho,Vinho,-0.27,7060,wine
+2020-01-01,2020,1,2101001,Aluguel residencial,Aluguel,0.61,7060,rent
+2020-01-01,2020,1,2101002,Condomínio,Condomínio,1.39,7060,condo
+2020-01-01,2020,1,2101004,Taxa de água e esgoto,Água/esgoto,0.3,7060,water
+2020-01-01,2020,1,2104008,Detergente,Detergente,-0.08,7060,soap
+2020-01-01,2020,1,2201004,Gás de botijão,Gás botijão,0.87,7060,gas_bottle
+2020-01-01,2020,1,3202028,Computador pessoal,Computador,-0.72,7060,computer
+2020-01-01,2020,1,5101001,Ônibus urbano,Ônibus,0.78,7060,bus
+2020-01-01,2020,1,5101010,Passagem aérea,Aérea,-6.75,7060,plane
+2020-01-01,2020,1,5104001,Gasolina,Gasolina,0.89,7060,gas
+2020-01-01,2020,1,5104002,Etanol,Etanol,2.59,7060,ethanol
+2020-01-01,2020,1,5104003,Óleo diesel,Diesel,1.34,7060,diesel
+2020-01-01,2020,1,7101010,Empregado doméstico,Doméstico,0.39,7060,domestic
+2020-01-01,2020,1,7202041,Cigarro,Cigarro,-0.2,7060,cigarette
+2020-02-01,2020,2,8,Educação,Educação,3.7,7060,education
+2020-02-01,2020,2,11,Alimentação no domicílio,Alim. domicílio,0.06,7060,pantry
+2020-02-01,2020,2,1107,Carnes,Carnes,-3.53,7060,meat
+2020-02-01,2020,2,1201,Alimentação fora do domicílio,Fora de casa,0.22,7060,restaurant
+2020-02-01,2020,2,2202,Energia elétrica residencial,Energia,-1.71,7060,energy
+2020-02-01,2020,2,6203,Plano de saúde,Plano saúde,0.59,7060,health
+2020-02-01,2020,2,1101002,Arroz,Arroz,1,7060,rice
+2020-02-01,2020,2,1101052,Feijão - preto,Feijão,2.52,7060,beans
+2020-02-01,2020,2,1102006,Macarrão,Macarrão,-0.49,7060,pasta
+2020-02-01,2020,2,1103003,Batata-inglesa,Batata,-3.65,7060,potato
+2020-02-01,2020,2,1103028,Tomate,Tomate,18.86,7060,tomato
+2020-02-01,2020,2,1110044,Ovo de galinha,Ovos,2.56,7060,egg
+2020-02-01,2020,2,1111004,Leite longa vida,Leite,0.85,7060,milk
+2020-02-01,2020,2,1112015,Pão francês,Pão,0.43,7060,bread
+2020-02-01,2020,2,1113014,Azeite de oliva,Azeite,-0.24,7060,oil
+2020-02-01,2020,2,1114022,Café moído,Café,-0.44,7060,coffee
+2020-02-01,2020,2,1114084,Cerveja,Cerveja,-0.68,7060,beer
+2020-02-01,2020,2,1114087,Vinho,Vinho,0.33,7060,wine
+2020-02-01,2020,2,2101001,Aluguel residencial,Aluguel,0.19,7060,rent
+2020-02-01,2020,2,2101002,Condomínio,Condomínio,0.1,7060,condo
+2020-02-01,2020,2,2101004,Taxa de água e esgoto,Água/esgoto,0.03,7060,water
+2020-02-01,2020,2,2104008,Detergente,Detergente,-0.22,7060,soap
+2020-02-01,2020,2,2201004,Gás de botijão,Gás botijão,0.07,7060,gas_bottle
+2020-02-01,2020,2,3202028,Computador pessoal,Computador,-0.26,7060,computer
+2020-02-01,2020,2,5101001,Ônibus urbano,Ônibus,0.36,7060,bus
+2020-02-01,2020,2,5101010,Passagem aérea,Aérea,-6.85,7060,plane
+2020-02-01,2020,2,5104001,Gasolina,Gasolina,-0.72,7060,gas
+2020-02-01,2020,2,5104002,Etanol,Etanol,0.96,7060,ethanol
+2020-02-01,2020,2,5104003,Óleo diesel,Diesel,-1.38,7060,diesel
+2020-02-01,2020,2,7101010,Empregado doméstico,Doméstico,0.49,7060,domestic
+2020-02-01,2020,2,7202041,Cigarro,Cigarro,-0.11,7060,cigarette
+2020-03-01,2020,3,8,Educação,Educação,0.59,7060,education
+2020-03-01,2020,3,11,Alimentação no domicílio,Alim. domicílio,1.4,7060,pantry
+2020-03-01,2020,3,1107,Carnes,Carnes,-0.3,7060,meat
+2020-03-01,2020,3,1201,Alimentação fora do domicílio,Fora de casa,0.51,7060,restaurant
+2020-03-01,2020,3,2202,Energia elétrica residencial,Energia,0.12,7060,energy
+2020-03-01,2020,3,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-03-01,2020,3,1101002,Arroz,Arroz,1.6,7060,rice
+2020-03-01,2020,3,1101052,Feijão - preto,Feijão,1.24,7060,beans
+2020-03-01,2020,3,1102006,Macarrão,Macarrão,0.02,7060,pasta
+2020-03-01,2020,3,1103003,Batata-inglesa,Batata,8.16,7060,potato
+2020-03-01,2020,3,1103028,Tomate,Tomate,15.74,7060,tomato
+2020-03-01,2020,3,1110044,Ovo de galinha,Ovos,4.67,7060,egg
+2020-03-01,2020,3,1111004,Leite longa vida,Leite,1.75,7060,milk
+2020-03-01,2020,3,1112015,Pão francês,Pão,0.13,7060,bread
+2020-03-01,2020,3,1113014,Azeite de oliva,Azeite,0.03,7060,oil
+2020-03-01,2020,3,1114022,Café moído,Café,1.23,7060,coffee
+2020-03-01,2020,3,1114084,Cerveja,Cerveja,1.24,7060,beer
+2020-03-01,2020,3,1114087,Vinho,Vinho,0.69,7060,wine
+2020-03-01,2020,3,2101001,Aluguel residencial,Aluguel,0.08,7060,rent
+2020-03-01,2020,3,2101002,Condomínio,Condomínio,0.02,7060,condo
+2020-03-01,2020,3,2101004,Taxa de água e esgoto,Água/esgoto,0.12,7060,water
+2020-03-01,2020,3,2104008,Detergente,Detergente,1.33,7060,soap
+2020-03-01,2020,3,2201004,Gás de botijão,Gás botijão,0.6,7060,gas_bottle
+2020-03-01,2020,3,3202028,Computador pessoal,Computador,0.89,7060,computer
+2020-03-01,2020,3,5101001,Ônibus urbano,Ônibus,0.32,7060,bus
+2020-03-01,2020,3,5101010,Passagem aérea,Aérea,-16.75,7060,plane
+2020-03-01,2020,3,5104001,Gasolina,Gasolina,-1.75,7060,gas
+2020-03-01,2020,3,5104002,Etanol,Etanol,-2.82,7060,ethanol
+2020-03-01,2020,3,5104003,Óleo diesel,Diesel,-2.55,7060,diesel
+2020-03-01,2020,3,7101010,Empregado doméstico,Doméstico,0.46,7060,domestic
+2020-03-01,2020,3,7202041,Cigarro,Cigarro,0,7060,cigarette
+2020-04-01,2020,4,8,Educação,Educação,0,7060,education
+2020-04-01,2020,4,11,Alimentação no domicílio,Alim. domicílio,2.24,7060,pantry
+2020-04-01,2020,4,1107,Carnes,Carnes,-2.01,7060,meat
+2020-04-01,2020,4,1201,Alimentação fora do domicílio,Fora de casa,0.76,7060,restaurant
+2020-04-01,2020,4,2202,Energia elétrica residencial,Energia,-0.76,7060,energy
+2020-04-01,2020,4,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-04-01,2020,4,1101002,Arroz,Arroz,3.88,7060,rice
+2020-04-01,2020,4,1101052,Feijão - preto,Feijão,10.41,7060,beans
+2020-04-01,2020,4,1102006,Macarrão,Macarrão,1.14,7060,pasta
+2020-04-01,2020,4,1103003,Batata-inglesa,Batata,22.81,7060,potato
+2020-04-01,2020,4,1103028,Tomate,Tomate,-2.95,7060,tomato
+2020-04-01,2020,4,1110044,Ovo de galinha,Ovos,6.31,7060,egg
+2020-04-01,2020,4,1111004,Leite longa vida,Leite,9.59,7060,milk
+2020-04-01,2020,4,1112015,Pão francês,Pão,-0.49,7060,bread
+2020-04-01,2020,4,1113014,Azeite de oliva,Azeite,2.13,7060,oil
+2020-04-01,2020,4,1114022,Café moído,Café,1.3,7060,coffee
+2020-04-01,2020,4,1114084,Cerveja,Cerveja,0.65,7060,beer
+2020-04-01,2020,4,1114087,Vinho,Vinho,4.4,7060,wine
+2020-04-01,2020,4,2101001,Aluguel residencial,Aluguel,0.05,7060,rent
+2020-04-01,2020,4,2101002,Condomínio,Condomínio,0.38,7060,condo
+2020-04-01,2020,4,2101004,Taxa de água e esgoto,Água/esgoto,0.21,7060,water
+2020-04-01,2020,4,2104008,Detergente,Detergente,0.81,7060,soap
+2020-04-01,2020,4,2201004,Gás de botijão,Gás botijão,0.23,7060,gas_bottle
+2020-04-01,2020,4,3202028,Computador pessoal,Computador,0.89,7060,computer
+2020-04-01,2020,4,5101001,Ônibus urbano,Ônibus,0.11,7060,bus
+2020-04-01,2020,4,5101010,Passagem aérea,Aérea,15.1,7060,plane
+2020-04-01,2020,4,5104001,Gasolina,Gasolina,-9.31,7060,gas
+2020-04-01,2020,4,5104002,Etanol,Etanol,-13.51,7060,ethanol
+2020-04-01,2020,4,5104003,Óleo diesel,Diesel,-6.09,7060,diesel
+2020-04-01,2020,4,7101010,Empregado doméstico,Doméstico,0.33,7060,domestic
+2020-04-01,2020,4,7202041,Cigarro,Cigarro,0,7060,cigarette
+2020-05-01,2020,5,8,Educação,Educação,0.02,7060,education
+2020-05-01,2020,5,11,Alimentação no domicílio,Alim. domicílio,0.33,7060,pantry
+2020-05-01,2020,5,1107,Carnes,Carnes,0.05,7060,meat
+2020-05-01,2020,5,1201,Alimentação fora do domicílio,Fora de casa,0.04,7060,restaurant
+2020-05-01,2020,5,2202,Energia elétrica residencial,Energia,-0.58,7060,energy
+2020-05-01,2020,5,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-05-01,2020,5,1101002,Arroz,Arroz,2.01,7060,rice
+2020-05-01,2020,5,1101052,Feijão - preto,Feijão,7.44,7060,beans
+2020-05-01,2020,5,1102006,Macarrão,Macarrão,0.12,7060,pasta
+2020-05-01,2020,5,1103003,Batata-inglesa,Batata,16.39,7060,potato
+2020-05-01,2020,5,1103028,Tomate,Tomate,-7.34,7060,tomato
+2020-05-01,2020,5,1110044,Ovo de galinha,Ovos,-2.88,7060,egg
+2020-05-01,2020,5,1111004,Leite longa vida,Leite,-1.4,7060,milk
+2020-05-01,2020,5,1112015,Pão francês,Pão,0.27,7060,bread
+2020-05-01,2020,5,1113014,Azeite de oliva,Azeite,-0.21,7060,oil
+2020-05-01,2020,5,1114022,Café moído,Café,1.16,7060,coffee
+2020-05-01,2020,5,1114084,Cerveja,Cerveja,-1.56,7060,beer
+2020-05-01,2020,5,1114087,Vinho,Vinho,-1.57,7060,wine
+2020-05-01,2020,5,2101001,Aluguel residencial,Aluguel,-0.21,7060,rent
+2020-05-01,2020,5,2101002,Condomínio,Condomínio,-0.04,7060,condo
+2020-05-01,2020,5,2101004,Taxa de água e esgoto,Água/esgoto,0,7060,water
+2020-05-01,2020,5,2104008,Detergente,Detergente,1.04,7060,soap
+2020-05-01,2020,5,2201004,Gás de botijão,Gás botijão,-1.16,7060,gas_bottle
+2020-05-01,2020,5,3202028,Computador pessoal,Computador,5.25,7060,computer
+2020-05-01,2020,5,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2020-05-01,2020,5,5101010,Passagem aérea,Aérea,-27.14,7060,plane
+2020-05-01,2020,5,5104001,Gasolina,Gasolina,-4.35,7060,gas
+2020-05-01,2020,5,5104002,Etanol,Etanol,-5.96,7060,ethanol
+2020-05-01,2020,5,5104003,Óleo diesel,Diesel,-6.44,7060,diesel
+2020-05-01,2020,5,7101010,Empregado doméstico,Doméstico,0.31,7060,domestic
+2020-05-01,2020,5,7202041,Cigarro,Cigarro,-0.05,7060,cigarette
+2020-06-01,2020,6,8,Educação,Educação,0.05,7060,education
+2020-06-01,2020,6,11,Alimentação no domicílio,Alim. domicílio,0.45,7060,pantry
+2020-06-01,2020,6,1107,Carnes,Carnes,1.19,7060,meat
+2020-06-01,2020,6,1201,Alimentação fora do domicílio,Fora de casa,0.22,7060,restaurant
+2020-06-01,2020,6,2202,Energia elétrica residencial,Energia,-0.34,7060,energy
+2020-06-01,2020,6,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-06-01,2020,6,1101002,Arroz,Arroz,2.74,7060,rice
+2020-06-01,2020,6,1101052,Feijão - preto,Feijão,6.75,7060,beans
+2020-06-01,2020,6,1102006,Macarrão,Macarrão,0.67,7060,pasta
+2020-06-01,2020,6,1103003,Batata-inglesa,Batata,0.65,7060,potato
+2020-06-01,2020,6,1103028,Tomate,Tomate,-15.04,7060,tomato
+2020-06-01,2020,6,1110044,Ovo de galinha,Ovos,-0.26,7060,egg
+2020-06-01,2020,6,1111004,Leite longa vida,Leite,2.33,7060,milk
+2020-06-01,2020,6,1112015,Pão francês,Pão,-0.2,7060,bread
+2020-06-01,2020,6,1113014,Azeite de oliva,Azeite,2,7060,oil
+2020-06-01,2020,6,1114022,Café moído,Café,0.47,7060,coffee
+2020-06-01,2020,6,1114084,Cerveja,Cerveja,0.44,7060,beer
+2020-06-01,2020,6,1114087,Vinho,Vinho,0.45,7060,wine
+2020-06-01,2020,6,2101001,Aluguel residencial,Aluguel,0.12,7060,rent
+2020-06-01,2020,6,2101002,Condomínio,Condomínio,-0.09,7060,condo
+2020-06-01,2020,6,2101004,Taxa de água e esgoto,Água/esgoto,0.18,7060,water
+2020-06-01,2020,6,2104008,Detergente,Detergente,0.34,7060,soap
+2020-06-01,2020,6,2201004,Gás de botijão,Gás botijão,1.41,7060,gas_bottle
+2020-06-01,2020,6,3202028,Computador pessoal,Computador,4.53,7060,computer
+2020-06-01,2020,6,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2020-06-01,2020,6,5101010,Passagem aérea,Aérea,-26.01,7060,plane
+2020-06-01,2020,6,5104001,Gasolina,Gasolina,3.24,7060,gas
+2020-06-01,2020,6,5104002,Etanol,Etanol,5.74,7060,ethanol
+2020-06-01,2020,6,5104003,Óleo diesel,Diesel,0.04,7060,diesel
+2020-06-01,2020,6,7101010,Empregado doméstico,Doméstico,0.25,7060,domestic
+2020-06-01,2020,6,7202041,Cigarro,Cigarro,-0.09,7060,cigarette
+2020-07-01,2020,7,8,Educação,Educação,-0.12,7060,education
+2020-07-01,2020,7,11,Alimentação no domicílio,Alim. domicílio,0.14,7060,pantry
+2020-07-01,2020,7,1107,Carnes,Carnes,3.68,7060,meat
+2020-07-01,2020,7,1201,Alimentação fora do domicílio,Fora de casa,-0.29,7060,restaurant
+2020-07-01,2020,7,2202,Energia elétrica residencial,Energia,2.59,7060,energy
+2020-07-01,2020,7,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-07-01,2020,7,1101002,Arroz,Arroz,2.2,7060,rice
+2020-07-01,2020,7,1101052,Feijão - preto,Feijão,1.25,7060,beans
+2020-07-01,2020,7,1102006,Macarrão,Macarrão,-0.83,7060,pasta
+2020-07-01,2020,7,1103003,Batata-inglesa,Batata,-24.79,7060,potato
+2020-07-01,2020,7,1103028,Tomate,Tomate,-16.78,7060,tomato
+2020-07-01,2020,7,1110044,Ovo de galinha,Ovos,-2.84,7060,egg
+2020-07-01,2020,7,1111004,Leite longa vida,Leite,3.79,7060,milk
+2020-07-01,2020,7,1112015,Pão francês,Pão,0.17,7060,bread
+2020-07-01,2020,7,1113014,Azeite de oliva,Azeite,0.37,7060,oil
+2020-07-01,2020,7,1114022,Café moído,Café,0.64,7060,coffee
+2020-07-01,2020,7,1114084,Cerveja,Cerveja,-1.2,7060,beer
+2020-07-01,2020,7,1114087,Vinho,Vinho,-0.17,7060,wine
+2020-07-01,2020,7,2101001,Aluguel residencial,Aluguel,0.53,7060,rent
+2020-07-01,2020,7,2101002,Condomínio,Condomínio,-0.18,7060,condo
+2020-07-01,2020,7,2101004,Taxa de água e esgoto,Água/esgoto,0.02,7060,water
+2020-07-01,2020,7,2104008,Detergente,Detergente,-1.08,7060,soap
+2020-07-01,2020,7,2201004,Gás de botijão,Gás botijão,0.11,7060,gas_bottle
+2020-07-01,2020,7,3202028,Computador pessoal,Computador,3.66,7060,computer
+2020-07-01,2020,7,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2020-07-01,2020,7,5101010,Passagem aérea,Aérea,-4.21,7060,plane
+2020-07-01,2020,7,5104001,Gasolina,Gasolina,3.42,7060,gas
+2020-07-01,2020,7,5104002,Etanol,Etanol,0.72,7060,ethanol
+2020-07-01,2020,7,5104003,Óleo diesel,Diesel,4.21,7060,diesel
+2020-07-01,2020,7,7101010,Empregado doméstico,Doméstico,-0.52,7060,domestic
+2020-07-01,2020,7,7202041,Cigarro,Cigarro,1.32,7060,cigarette
+2020-08-01,2020,8,8,Educação,Educação,-3.47,7060,education
+2020-08-01,2020,8,11,Alimentação no domicílio,Alim. domicílio,1.15,7060,pantry
+2020-08-01,2020,8,1107,Carnes,Carnes,3.33,7060,meat
+2020-08-01,2020,8,1201,Alimentação fora do domicílio,Fora de casa,-0.11,7060,restaurant
+2020-08-01,2020,8,2202,Energia elétrica residencial,Energia,0.27,7060,energy
+2020-08-01,2020,8,6203,Plano de saúde,Plano saúde,0.6,7060,health
+2020-08-01,2020,8,1101002,Arroz,Arroz,3.08,7060,rice
+2020-08-01,2020,8,1101052,Feijão - preto,Feijão,-0.45,7060,beans
+2020-08-01,2020,8,1102006,Macarrão,Macarrão,-0.44,7060,pasta
+2020-08-01,2020,8,1103003,Batata-inglesa,Batata,-12.4,7060,potato
+2020-08-01,2020,8,1103028,Tomate,Tomate,12.98,7060,tomato
+2020-08-01,2020,8,1110044,Ovo de galinha,Ovos,-1.11,7060,egg
+2020-08-01,2020,8,1111004,Leite longa vida,Leite,4.84,7060,milk
+2020-08-01,2020,8,1112015,Pão francês,Pão,0.71,7060,bread
+2020-08-01,2020,8,1113014,Azeite de oliva,Azeite,1.97,7060,oil
+2020-08-01,2020,8,1114022,Café moído,Café,-0.68,7060,coffee
+2020-08-01,2020,8,1114084,Cerveja,Cerveja,-0.37,7060,beer
+2020-08-01,2020,8,1114087,Vinho,Vinho,1.11,7060,wine
+2020-08-01,2020,8,2101001,Aluguel residencial,Aluguel,0.32,7060,rent
+2020-08-01,2020,8,2101002,Condomínio,Condomínio,0.27,7060,condo
+2020-08-01,2020,8,2101004,Taxa de água e esgoto,Água/esgoto,0.43,7060,water
+2020-08-01,2020,8,2104008,Detergente,Detergente,0.38,7060,soap
+2020-08-01,2020,8,2201004,Gás de botijão,Gás botijão,0.52,7060,gas_bottle
+2020-08-01,2020,8,3202028,Computador pessoal,Computador,1.7,7060,computer
+2020-08-01,2020,8,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2020-08-01,2020,8,5101010,Passagem aérea,Aérea,-1.97,7060,plane
+2020-08-01,2020,8,5104001,Gasolina,Gasolina,3.22,7060,gas
+2020-08-01,2020,8,5104002,Etanol,Etanol,1.29,7060,ethanol
+2020-08-01,2020,8,5104003,Óleo diesel,Diesel,2.49,7060,diesel
+2020-08-01,2020,8,7101010,Empregado doméstico,Doméstico,-0.26,7060,domestic
+2020-08-01,2020,8,7202041,Cigarro,Cigarro,2.29,7060,cigarette
+2020-09-01,2020,9,8,Educação,Educação,-0.09,7060,education
+2020-09-01,2020,9,11,Alimentação no domicílio,Alim. domicílio,2.89,7060,pantry
+2020-09-01,2020,9,1107,Carnes,Carnes,4.53,7060,meat
+2020-09-01,2020,9,1201,Alimentação fora do domicílio,Fora de casa,0.82,7060,restaurant
+2020-09-01,2020,9,2202,Energia elétrica residencial,Energia,0.07,7060,energy
+2020-09-01,2020,9,6203,Plano de saúde,Plano saúde,-2.31,7060,health
+2020-09-01,2020,9,1101002,Arroz,Arroz,17.98,7060,rice
+2020-09-01,2020,9,1101052,Feijão - preto,Feijão,4.31,7060,beans
+2020-09-01,2020,9,1102006,Macarrão,Macarrão,0.32,7060,pasta
+2020-09-01,2020,9,1103003,Batata-inglesa,Batata,-6.3,7060,potato
+2020-09-01,2020,9,1103028,Tomate,Tomate,11.72,7060,tomato
+2020-09-01,2020,9,1110044,Ovo de galinha,Ovos,0.49,7060,egg
+2020-09-01,2020,9,1111004,Leite longa vida,Leite,6.01,7060,milk
+2020-09-01,2020,9,1112015,Pão francês,Pão,-0.12,7060,bread
+2020-09-01,2020,9,1113014,Azeite de oliva,Azeite,2.61,7060,oil
+2020-09-01,2020,9,1114022,Café moído,Café,0.58,7060,coffee
+2020-09-01,2020,9,1114084,Cerveja,Cerveja,0.4,7060,beer
+2020-09-01,2020,9,1114087,Vinho,Vinho,-0.99,7060,wine
+2020-09-01,2020,9,2101001,Aluguel residencial,Aluguel,0.11,7060,rent
+2020-09-01,2020,9,2101002,Condomínio,Condomínio,0.01,7060,condo
+2020-09-01,2020,9,2101004,Taxa de água e esgoto,Água/esgoto,0.56,7060,water
+2020-09-01,2020,9,2104008,Detergente,Detergente,3.13,7060,soap
+2020-09-01,2020,9,2201004,Gás de botijão,Gás botijão,1.61,7060,gas_bottle
+2020-09-01,2020,9,3202028,Computador pessoal,Computador,3.15,7060,computer
+2020-09-01,2020,9,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2020-09-01,2020,9,5101010,Passagem aérea,Aérea,6.39,7060,plane
+2020-09-01,2020,9,5104001,Gasolina,Gasolina,1.95,7060,gas
+2020-09-01,2020,9,5104002,Etanol,Etanol,2.21,7060,ethanol
+2020-09-01,2020,9,5104003,Óleo diesel,Diesel,2.47,7060,diesel
+2020-09-01,2020,9,7101010,Empregado doméstico,Doméstico,0.06,7060,domestic
+2020-09-01,2020,9,7202041,Cigarro,Cigarro,0.5,7060,cigarette
+2020-10-01,2020,10,8,Educação,Educação,-0.04,7060,education
+2020-10-01,2020,10,11,Alimentação no domicílio,Alim. domicílio,2.57,7060,pantry
+2020-10-01,2020,10,1107,Carnes,Carnes,4.25,7060,meat
+2020-10-01,2020,10,1201,Alimentação fora do domicílio,Fora de casa,0.36,7060,restaurant
+2020-10-01,2020,10,2202,Energia elétrica residencial,Energia,0.03,7060,energy
+2020-10-01,2020,10,6203,Plano de saúde,Plano saúde,0,7060,health
+2020-10-01,2020,10,1101002,Arroz,Arroz,13.36,7060,rice
+2020-10-01,2020,10,1101052,Feijão - preto,Feijão,2.41,7060,beans
+2020-10-01,2020,10,1102006,Macarrão,Macarrão,0.19,7060,pasta
+2020-10-01,2020,10,1103003,Batata-inglesa,Batata,17.01,7060,potato
+2020-10-01,2020,10,1103028,Tomate,Tomate,18.69,7060,tomato
+2020-10-01,2020,10,1110044,Ovo de galinha,Ovos,-0.52,7060,egg
+2020-10-01,2020,10,1111004,Leite longa vida,Leite,-0.71,7060,milk
+2020-10-01,2020,10,1112015,Pão francês,Pão,0.16,7060,bread
+2020-10-01,2020,10,1113014,Azeite de oliva,Azeite,3.14,7060,oil
+2020-10-01,2020,10,1114022,Café moído,Café,-0.08,7060,coffee
+2020-10-01,2020,10,1114084,Cerveja,Cerveja,1.66,7060,beer
+2020-10-01,2020,10,1114087,Vinho,Vinho,0.47,7060,wine
+2020-10-01,2020,10,2101001,Aluguel residencial,Aluguel,0.19,7060,rent
+2020-10-01,2020,10,2101002,Condomínio,Condomínio,0.29,7060,condo
+2020-10-01,2020,10,2101004,Taxa de água e esgoto,Água/esgoto,0.29,7060,water
+2020-10-01,2020,10,2104008,Detergente,Detergente,0.94,7060,soap
+2020-10-01,2020,10,2201004,Gás de botijão,Gás botijão,1.27,7060,gas_bottle
+2020-10-01,2020,10,3202028,Computador pessoal,Computador,1.48,7060,computer
+2020-10-01,2020,10,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2020-10-01,2020,10,5101010,Passagem aérea,Aérea,39.83,7060,plane
+2020-10-01,2020,10,5104001,Gasolina,Gasolina,0.85,7060,gas
+2020-10-01,2020,10,5104002,Etanol,Etanol,1.91,7060,ethanol
+2020-10-01,2020,10,5104003,Óleo diesel,Diesel,-0.44,7060,diesel
+2020-10-01,2020,10,7101010,Empregado doméstico,Doméstico,0.12,7060,domestic
+2020-10-01,2020,10,7202041,Cigarro,Cigarro,-1.55,7060,cigarette
+2020-11-01,2020,11,8,Educação,Educação,-0.02,7060,education
+2020-11-01,2020,11,11,Alimentação no domicílio,Alim. domicílio,3.33,7060,pantry
+2020-11-01,2020,11,1107,Carnes,Carnes,6.54,7060,meat
+2020-11-01,2020,11,1201,Alimentação fora do domicílio,Fora de casa,0.57,7060,restaurant
+2020-11-01,2020,11,2202,Energia elétrica residencial,Energia,0.01,7060,energy
+2020-11-01,2020,11,6203,Plano de saúde,Plano saúde,0,7060,health
+2020-11-01,2020,11,1101002,Arroz,Arroz,6.28,7060,rice
+2020-11-01,2020,11,1101052,Feijão - preto,Feijão,2.2,7060,beans
+2020-11-01,2020,11,1102006,Macarrão,Macarrão,1.14,7060,pasta
+2020-11-01,2020,11,1103003,Batata-inglesa,Batata,29.65,7060,potato
+2020-11-01,2020,11,1103028,Tomate,Tomate,18.45,7060,tomato
+2020-11-01,2020,11,1110044,Ovo de galinha,Ovos,2.22,7060,egg
+2020-11-01,2020,11,1111004,Leite longa vida,Leite,-3.47,7060,milk
+2020-11-01,2020,11,1112015,Pão francês,Pão,2.36,7060,bread
+2020-11-01,2020,11,1113014,Azeite de oliva,Azeite,0.55,7060,oil
+2020-11-01,2020,11,1114022,Café moído,Café,1.59,7060,coffee
+2020-11-01,2020,11,1114084,Cerveja,Cerveja,1.53,7060,beer
+2020-11-01,2020,11,1114087,Vinho,Vinho,0.95,7060,wine
+2020-11-01,2020,11,2101001,Aluguel residencial,Aluguel,0.44,7060,rent
+2020-11-01,2020,11,2101002,Condomínio,Condomínio,0.53,7060,condo
+2020-11-01,2020,11,2101004,Taxa de água e esgoto,Água/esgoto,0.32,7060,water
+2020-11-01,2020,11,2104008,Detergente,Detergente,0.37,7060,soap
+2020-11-01,2020,11,2201004,Gás de botijão,Gás botijão,1.37,7060,gas_bottle
+2020-11-01,2020,11,3202028,Computador pessoal,Computador,-1.12,7060,computer
+2020-11-01,2020,11,5101001,Ônibus urbano,Ônibus,-0.15,7060,bus
+2020-11-01,2020,11,5101010,Passagem aérea,Aérea,3.22,7060,plane
+2020-11-01,2020,11,5104001,Gasolina,Gasolina,1.64,7060,gas
+2020-11-01,2020,11,5104002,Etanol,Etanol,9.23,7060,ethanol
+2020-11-01,2020,11,5104003,Óleo diesel,Diesel,1.57,7060,diesel
+2020-11-01,2020,11,7101010,Empregado doméstico,Doméstico,0.08,7060,domestic
+2020-11-01,2020,11,7202041,Cigarro,Cigarro,-0.11,7060,cigarette
+2020-12-01,2020,12,8,Educação,Educação,0.48,7060,education
+2020-12-01,2020,12,11,Alimentação no domicílio,Alim. domicílio,2.12,7060,pantry
+2020-12-01,2020,12,1107,Carnes,Carnes,3.58,7060,meat
+2020-12-01,2020,12,1201,Alimentação fora do domicílio,Fora de casa,0.77,7060,restaurant
+2020-12-01,2020,12,2202,Energia elétrica residencial,Energia,9.34,7060,energy
+2020-12-01,2020,12,6203,Plano de saúde,Plano saúde,0,7060,health
+2020-12-01,2020,12,1101002,Arroz,Arroz,3.84,7060,rice
+2020-12-01,2020,12,1101052,Feijão - preto,Feijão,3.29,7060,beans
+2020-12-01,2020,12,1102006,Macarrão,Macarrão,0.62,7060,pasta
+2020-12-01,2020,12,1103003,Batata-inglesa,Batata,7.29,7060,potato
+2020-12-01,2020,12,1103028,Tomate,Tomate,-13.46,7060,tomato
+2020-12-01,2020,12,1110044,Ovo de galinha,Ovos,1.79,7060,egg
+2020-12-01,2020,12,1111004,Leite longa vida,Leite,1.57,7060,milk
+2020-12-01,2020,12,1112015,Pão francês,Pão,0.24,7060,bread
+2020-12-01,2020,12,1113014,Azeite de oliva,Azeite,2.48,7060,oil
+2020-12-01,2020,12,1114022,Café moído,Café,1.95,7060,coffee
+2020-12-01,2020,12,1114084,Cerveja,Cerveja,0.37,7060,beer
+2020-12-01,2020,12,1114087,Vinho,Vinho,1.23,7060,wine
+2020-12-01,2020,12,2101001,Aluguel residencial,Aluguel,0.31,7060,rent
+2020-12-01,2020,12,2101002,Condomínio,Condomínio,-0.11,7060,condo
+2020-12-01,2020,12,2101004,Taxa de água e esgoto,Água/esgoto,0.1,7060,water
+2020-12-01,2020,12,2104008,Detergente,Detergente,2.46,7060,soap
+2020-12-01,2020,12,2201004,Gás de botijão,Gás botijão,1.99,7060,gas_bottle
+2020-12-01,2020,12,3202028,Computador pessoal,Computador,1.22,7060,computer
+2020-12-01,2020,12,5101001,Ônibus urbano,Ônibus,-0.1,7060,bus
+2020-12-01,2020,12,5101010,Passagem aérea,Aérea,28.05,7060,plane
+2020-12-01,2020,12,5104001,Gasolina,Gasolina,1.54,7060,gas
+2020-12-01,2020,12,5104002,Etanol,Etanol,1.32,7060,ethanol
+2020-12-01,2020,12,5104003,Óleo diesel,Diesel,2.08,7060,diesel
+2020-12-01,2020,12,7101010,Empregado doméstico,Doméstico,0.03,7060,domestic
+2020-12-01,2020,12,7202041,Cigarro,Cigarro,0,7060,cigarette
+2021-01-01,2021,1,8,Educação,Educação,0.13,7060,education
+2021-01-01,2021,1,11,Alimentação no domicílio,Alim. domicílio,1.06,7060,pantry
+2021-01-01,2021,1,1107,Carnes,Carnes,-0.08,7060,meat
+2021-01-01,2021,1,1201,Alimentação fora do domicílio,Fora de casa,0.91,7060,restaurant
+2021-01-01,2021,1,2202,Energia elétrica residencial,Energia,-5.6,7060,energy
+2021-01-01,2021,1,6203,Plano de saúde,Plano saúde,0.66,7060,health
+2021-01-01,2021,1,1101002,Arroz,Arroz,0.24,7060,rice
+2021-01-01,2021,1,1101052,Feijão - preto,Feijão,3.25,7060,beans
+2021-01-01,2021,1,1102006,Macarrão,Macarrão,0.93,7060,pasta
+2021-01-01,2021,1,1103003,Batata-inglesa,Batata,10.84,7060,potato
+2021-01-01,2021,1,1103028,Tomate,Tomate,4.89,7060,tomato
+2021-01-01,2021,1,1110044,Ovo de galinha,Ovos,-0.3,7060,egg
+2021-01-01,2021,1,1111004,Leite longa vida,Leite,-1.35,7060,milk
+2021-01-01,2021,1,1112015,Pão francês,Pão,0.92,7060,bread
+2021-01-01,2021,1,1113014,Azeite de oliva,Azeite,1.34,7060,oil
+2021-01-01,2021,1,1114022,Café moído,Café,0.32,7060,coffee
+2021-01-01,2021,1,1114084,Cerveja,Cerveja,1.23,7060,beer
+2021-01-01,2021,1,1114087,Vinho,Vinho,0.14,7060,wine
+2021-01-01,2021,1,2101001,Aluguel residencial,Aluguel,0.55,7060,rent
+2021-01-01,2021,1,2101002,Condomínio,Condomínio,0.79,7060,condo
+2021-01-01,2021,1,2101004,Taxa de água e esgoto,Água/esgoto,0.19,7060,water
+2021-01-01,2021,1,2104008,Detergente,Detergente,-0.46,7060,soap
+2021-01-01,2021,1,2201004,Gás de botijão,Gás botijão,3.19,7060,gas_bottle
+2021-01-01,2021,1,3202028,Computador pessoal,Computador,-2.81,7060,computer
+2021-01-01,2021,1,5101001,Ônibus urbano,Ônibus,0.04,7060,bus
+2021-01-01,2021,1,5101010,Passagem aérea,Aérea,-19.93,7060,plane
+2021-01-01,2021,1,5104001,Gasolina,Gasolina,2.17,7060,gas
+2021-01-01,2021,1,5104002,Etanol,Etanol,1.73,7060,ethanol
+2021-01-01,2021,1,5104003,Óleo diesel,Diesel,2.6,7060,diesel
+2021-01-01,2021,1,7101010,Empregado doméstico,Doméstico,0.07,7060,domestic
+2021-01-01,2021,1,7202041,Cigarro,Cigarro,1.14,7060,cigarette
+2021-02-01,2021,2,8,Educação,Educação,2.48,7060,education
+2021-02-01,2021,2,11,Alimentação no domicílio,Alim. domicílio,0.28,7060,pantry
+2021-02-01,2021,2,1107,Carnes,Carnes,1.72,7060,meat
+2021-02-01,2021,2,1201,Alimentação fora do domicílio,Fora de casa,0.27,7060,restaurant
+2021-02-01,2021,2,2202,Energia elétrica residencial,Energia,-0.71,7060,energy
+2021-02-01,2021,2,6203,Plano de saúde,Plano saúde,0.67,7060,health
+2021-02-01,2021,2,1101002,Arroz,Arroz,-1.52,7060,rice
+2021-02-01,2021,2,1101052,Feijão - preto,Feijão,0.77,7060,beans
+2021-02-01,2021,2,1102006,Macarrão,Macarrão,1.04,7060,pasta
+2021-02-01,2021,2,1103003,Batata-inglesa,Batata,-14.7,7060,potato
+2021-02-01,2021,2,1103028,Tomate,Tomate,-8.55,7060,tomato
+2021-02-01,2021,2,1110044,Ovo de galinha,Ovos,2.89,7060,egg
+2021-02-01,2021,2,1111004,Leite longa vida,Leite,-3.3,7060,milk
+2021-02-01,2021,2,1112015,Pão francês,Pão,0.33,7060,bread
+2021-02-01,2021,2,1113014,Azeite de oliva,Azeite,1.34,7060,oil
+2021-02-01,2021,2,1114022,Café moído,Café,-0.23,7060,coffee
+2021-02-01,2021,2,1114084,Cerveja,Cerveja,0.41,7060,beer
+2021-02-01,2021,2,1114087,Vinho,Vinho,0.99,7060,wine
+2021-02-01,2021,2,2101001,Aluguel residencial,Aluguel,0.66,7060,rent
+2021-02-01,2021,2,2101002,Condomínio,Condomínio,0.22,7060,condo
+2021-02-01,2021,2,2101004,Taxa de água e esgoto,Água/esgoto,1.02,7060,water
+2021-02-01,2021,2,2104008,Detergente,Detergente,-0.11,7060,soap
+2021-02-01,2021,2,2201004,Gás de botijão,Gás botijão,2.98,7060,gas_bottle
+2021-02-01,2021,2,3202028,Computador pessoal,Computador,0.65,7060,computer
+2021-02-01,2021,2,5101001,Ônibus urbano,Ônibus,0.33,7060,bus
+2021-02-01,2021,2,5101010,Passagem aérea,Aérea,-3.04,7060,plane
+2021-02-01,2021,2,5104001,Gasolina,Gasolina,7.11,7060,gas
+2021-02-01,2021,2,5104002,Etanol,Etanol,8.06,7060,ethanol
+2021-02-01,2021,2,5104003,Óleo diesel,Diesel,5.4,7060,diesel
+2021-02-01,2021,2,7101010,Empregado doméstico,Doméstico,0.08,7060,domestic
+2021-02-01,2021,2,7202041,Cigarro,Cigarro,0.64,7060,cigarette
+2021-03-01,2021,3,8,Educação,Educação,-0.52,7060,education
+2021-03-01,2021,3,11,Alimentação no domicílio,Alim. domicílio,-0.17,7060,pantry
+2021-03-01,2021,3,1107,Carnes,Carnes,0.85,7060,meat
+2021-03-01,2021,3,1201,Alimentação fora do domicílio,Fora de casa,0.89,7060,restaurant
+2021-03-01,2021,3,2202,Energia elétrica residencial,Energia,0.76,7060,energy
+2021-03-01,2021,3,6203,Plano de saúde,Plano saúde,0.67,7060,health
+2021-03-01,2021,3,1101002,Arroz,Arroz,-2.13,7060,rice
+2021-03-01,2021,3,1101052,Feijão - preto,Feijão,0.86,7060,beans
+2021-03-01,2021,3,1102006,Macarrão,Macarrão,1.42,7060,pasta
+2021-03-01,2021,3,1103003,Batata-inglesa,Batata,-8.81,7060,potato
+2021-03-01,2021,3,1103028,Tomate,Tomate,-14.12,7060,tomato
+2021-03-01,2021,3,1110044,Ovo de galinha,Ovos,3.55,7060,egg
+2021-03-01,2021,3,1111004,Leite longa vida,Leite,-2.27,7060,milk
+2021-03-01,2021,3,1112015,Pão francês,Pão,1.36,7060,bread
+2021-03-01,2021,3,1113014,Azeite de oliva,Azeite,-1.43,7060,oil
+2021-03-01,2021,3,1114022,Café moído,Café,0.7,7060,coffee
+2021-03-01,2021,3,1114084,Cerveja,Cerveja,-0.27,7060,beer
+2021-03-01,2021,3,1114087,Vinho,Vinho,0.5,7060,wine
+2021-03-01,2021,3,2101001,Aluguel residencial,Aluguel,0.31,7060,rent
+2021-03-01,2021,3,2101002,Condomínio,Condomínio,0.06,7060,condo
+2021-03-01,2021,3,2101004,Taxa de água e esgoto,Água/esgoto,0.13,7060,water
+2021-03-01,2021,3,2104008,Detergente,Detergente,1.53,7060,soap
+2021-03-01,2021,3,2201004,Gás de botijão,Gás botijão,4.98,7060,gas_bottle
+2021-03-01,2021,3,3202028,Computador pessoal,Computador,2.09,7060,computer
+2021-03-01,2021,3,5101001,Ônibus urbano,Ônibus,0.11,7060,bus
+2021-03-01,2021,3,5101010,Passagem aérea,Aérea,-1.96,7060,plane
+2021-03-01,2021,3,5104001,Gasolina,Gasolina,11.26,7060,gas
+2021-03-01,2021,3,5104002,Etanol,Etanol,12.59,7060,ethanol
+2021-03-01,2021,3,5104003,Óleo diesel,Diesel,9.05,7060,diesel
+2021-03-01,2021,3,7101010,Empregado doméstico,Doméstico,0.12,7060,domestic
+2021-03-01,2021,3,7202041,Cigarro,Cigarro,0.8,7060,cigarette
+2021-04-01,2021,4,8,Educação,Educação,0.04,7060,education
+2021-04-01,2021,4,11,Alimentação no domicílio,Alim. domicílio,0.47,7060,pantry
+2021-04-01,2021,4,1107,Carnes,Carnes,1.01,7060,meat
+2021-04-01,2021,4,1201,Alimentação fora do domicílio,Fora de casa,0.23,7060,restaurant
+2021-04-01,2021,4,2202,Energia elétrica residencial,Energia,-0.04,7060,energy
+2021-04-01,2021,4,6203,Plano de saúde,Plano saúde,0.67,7060,health
+2021-04-01,2021,4,1101002,Arroz,Arroz,-0.5,7060,rice
+2021-04-01,2021,4,1101052,Feijão - preto,Feijão,3.85,7060,beans
+2021-04-01,2021,4,1102006,Macarrão,Macarrão,1.64,7060,pasta
+2021-04-01,2021,4,1103003,Batata-inglesa,Batata,-7.96,7060,potato
+2021-04-01,2021,4,1103028,Tomate,Tomate,5.46,7060,tomato
+2021-04-01,2021,4,1110044,Ovo de galinha,Ovos,0.81,7060,egg
+2021-04-01,2021,4,1111004,Leite longa vida,Leite,2.4,7060,milk
+2021-04-01,2021,4,1112015,Pão francês,Pão,0.56,7060,bread
+2021-04-01,2021,4,1113014,Azeite de oliva,Azeite,2.85,7060,oil
+2021-04-01,2021,4,1114022,Café moído,Café,0.74,7060,coffee
+2021-04-01,2021,4,1114084,Cerveja,Cerveja,0.04,7060,beer
+2021-04-01,2021,4,1114087,Vinho,Vinho,0.33,7060,wine
+2021-04-01,2021,4,2101001,Aluguel residencial,Aluguel,0.27,7060,rent
+2021-04-01,2021,4,2101002,Condomínio,Condomínio,0.05,7060,condo
+2021-04-01,2021,4,2101004,Taxa de água e esgoto,Água/esgoto,0,7060,water
+2021-04-01,2021,4,2104008,Detergente,Detergente,0.61,7060,soap
+2021-04-01,2021,4,2201004,Gás de botijão,Gás botijão,1.15,7060,gas_bottle
+2021-04-01,2021,4,3202028,Computador pessoal,Computador,-0.41,7060,computer
+2021-04-01,2021,4,5101001,Ônibus urbano,Ônibus,0.05,7060,bus
+2021-04-01,2021,4,5101010,Passagem aérea,Aérea,6.41,7060,plane
+2021-04-01,2021,4,5104001,Gasolina,Gasolina,-0.44,7060,gas
+2021-04-01,2021,4,5104002,Etanol,Etanol,-4.93,7060,ethanol
+2021-04-01,2021,4,5104003,Óleo diesel,Diesel,-0.11,7060,diesel
+2021-04-01,2021,4,7101010,Empregado doméstico,Doméstico,0.12,7060,domestic
+2021-04-01,2021,4,7202041,Cigarro,Cigarro,0.22,7060,cigarette
+2021-05-01,2021,5,8,Educação,Educação,0.06,7060,education
+2021-05-01,2021,5,11,Alimentação no domicílio,Alim. domicílio,0.23,7060,pantry
+2021-05-01,2021,5,1107,Carnes,Carnes,2.24,7060,meat
+2021-05-01,2021,5,1201,Alimentação fora do domicílio,Fora de casa,0.98,7060,restaurant
+2021-05-01,2021,5,2202,Energia elétrica residencial,Energia,5.37,7060,energy
+2021-05-01,2021,5,6203,Plano de saúde,Plano saúde,0.67,7060,health
+2021-05-01,2021,5,1101002,Arroz,Arroz,-1.14,7060,rice
+2021-05-01,2021,5,1101052,Feijão - preto,Feijão,-0.73,7060,beans
+2021-05-01,2021,5,1102006,Macarrão,Macarrão,0.67,7060,pasta
+2021-05-01,2021,5,1103003,Batata-inglesa,Batata,1.73,7060,potato
+2021-05-01,2021,5,1103028,Tomate,Tomate,-0.37,7060,tomato
+2021-05-01,2021,5,1110044,Ovo de galinha,Ovos,0.92,7060,egg
+2021-05-01,2021,5,1111004,Leite longa vida,Leite,-0.14,7060,milk
+2021-05-01,2021,5,1112015,Pão francês,Pão,-0.39,7060,bread
+2021-05-01,2021,5,1113014,Azeite de oliva,Azeite,-0.44,7060,oil
+2021-05-01,2021,5,1114022,Café moído,Café,1.57,7060,coffee
+2021-05-01,2021,5,1114084,Cerveja,Cerveja,0.13,7060,beer
+2021-05-01,2021,5,1114087,Vinho,Vinho,0.43,7060,wine
+2021-05-01,2021,5,2101001,Aluguel residencial,Aluguel,-0.2,7060,rent
+2021-05-01,2021,5,2101002,Condomínio,Condomínio,-0.24,7060,condo
+2021-05-01,2021,5,2101004,Taxa de água e esgoto,Água/esgoto,1.61,7060,water
+2021-05-01,2021,5,2104008,Detergente,Detergente,0.53,7060,soap
+2021-05-01,2021,5,2201004,Gás de botijão,Gás botijão,1.24,7060,gas_bottle
+2021-05-01,2021,5,3202028,Computador pessoal,Computador,0.51,7060,computer
+2021-05-01,2021,5,5101001,Ônibus urbano,Ônibus,0.3,7060,bus
+2021-05-01,2021,5,5101010,Passagem aérea,Aérea,-28.33,7060,plane
+2021-05-01,2021,5,5104001,Gasolina,Gasolina,2.87,7060,gas
+2021-05-01,2021,5,5104002,Etanol,Etanol,12.92,7060,ethanol
+2021-05-01,2021,5,5104003,Óleo diesel,Diesel,4.61,7060,diesel
+2021-05-01,2021,5,7101010,Empregado doméstico,Doméstico,0.1,7060,domestic
+2021-05-01,2021,5,7202041,Cigarro,Cigarro,-0.06,7060,cigarette
+2021-06-01,2021,6,8,Educação,Educação,0.05,7060,education
+2021-06-01,2021,6,11,Alimentação no domicílio,Alim. domicílio,0.33,7060,pantry
+2021-06-01,2021,6,1107,Carnes,Carnes,1.32,7060,meat
+2021-06-01,2021,6,1201,Alimentação fora do domicílio,Fora de casa,0.66,7060,restaurant
+2021-06-01,2021,6,2202,Energia elétrica residencial,Energia,1.95,7060,energy
+2021-06-01,2021,6,6203,Plano de saúde,Plano saúde,0.67,7060,health
+2021-06-01,2021,6,1101002,Arroz,Arroz,-1.06,7060,rice
+2021-06-01,2021,6,1101052,Feijão - preto,Feijão,-0.03,7060,beans
+2021-06-01,2021,6,1102006,Macarrão,Macarrão,1.17,7060,pasta
+2021-06-01,2021,6,1103003,Batata-inglesa,Batata,-15.38,7060,potato
+2021-06-01,2021,6,1103028,Tomate,Tomate,-9.35,7060,tomato
+2021-06-01,2021,6,1110044,Ovo de galinha,Ovos,-0.97,7060,egg
+2021-06-01,2021,6,1111004,Leite longa vida,Leite,4.03,7060,milk
+2021-06-01,2021,6,1112015,Pão francês,Pão,0.77,7060,bread
+2021-06-01,2021,6,1113014,Azeite de oliva,Azeite,0.99,7060,oil
+2021-06-01,2021,6,1114022,Café moído,Café,3.41,7060,coffee
+2021-06-01,2021,6,1114084,Cerveja,Cerveja,1.03,7060,beer
+2021-06-01,2021,6,1114087,Vinho,Vinho,-0.2,7060,wine
+2021-06-01,2021,6,2101001,Aluguel residencial,Aluguel,0.48,7060,rent
+2021-06-01,2021,6,2101002,Condomínio,Condomínio,0.49,7060,condo
+2021-06-01,2021,6,2101004,Taxa de água e esgoto,Água/esgoto,1.04,7060,water
+2021-06-01,2021,6,2104008,Detergente,Detergente,1.47,7060,soap
+2021-06-01,2021,6,2201004,Gás de botijão,Gás botijão,1.58,7060,gas_bottle
+2021-06-01,2021,6,3202028,Computador pessoal,Computador,0.77,7060,computer
+2021-06-01,2021,6,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2021-06-01,2021,6,5101010,Passagem aérea,Aérea,-5.57,7060,plane
+2021-06-01,2021,6,5104001,Gasolina,Gasolina,0.69,7060,gas
+2021-06-01,2021,6,5104002,Etanol,Etanol,2.14,7060,ethanol
+2021-06-01,2021,6,5104003,Óleo diesel,Diesel,1.1,7060,diesel
+2021-06-01,2021,6,7101010,Empregado doméstico,Doméstico,0.07,7060,domestic
+2021-06-01,2021,6,7202041,Cigarro,Cigarro,-0.23,7060,cigarette
+2021-07-01,2021,7,8,Educação,Educação,0.18,7060,education
+2021-07-01,2021,7,11,Alimentação no domicílio,Alim. domicílio,0.78,7060,pantry
+2021-07-01,2021,7,1107,Carnes,Carnes,0.77,7060,meat
+2021-07-01,2021,7,1201,Alimentação fora do domicílio,Fora de casa,0.14,7060,restaurant
+2021-07-01,2021,7,2202,Energia elétrica residencial,Energia,7.88,7060,energy
+2021-07-01,2021,7,6203,Plano de saúde,Plano saúde,-1.36,7060,health
+2021-07-01,2021,7,1101002,Arroz,Arroz,-2.35,7060,rice
+2021-07-01,2021,7,1101052,Feijão - preto,Feijão,-1.87,7060,beans
+2021-07-01,2021,7,1102006,Macarrão,Macarrão,1.21,7060,pasta
+2021-07-01,2021,7,1103003,Batata-inglesa,Batata,-12.03,7060,potato
+2021-07-01,2021,7,1103028,Tomate,Tomate,18.65,7060,tomato
+2021-07-01,2021,7,1110044,Ovo de galinha,Ovos,1.04,7060,egg
+2021-07-01,2021,7,1111004,Leite longa vida,Leite,3.71,7060,milk
+2021-07-01,2021,7,1112015,Pão francês,Pão,1.28,7060,bread
+2021-07-01,2021,7,1113014,Azeite de oliva,Azeite,0.89,7060,oil
+2021-07-01,2021,7,1114022,Café moído,Café,2.68,7060,coffee
+2021-07-01,2021,7,1114084,Cerveja,Cerveja,0.58,7060,beer
+2021-07-01,2021,7,1114087,Vinho,Vinho,0.14,7060,wine
+2021-07-01,2021,7,2101001,Aluguel residencial,Aluguel,0.93,7060,rent
+2021-07-01,2021,7,2101002,Condomínio,Condomínio,0.66,7060,condo
+2021-07-01,2021,7,2101004,Taxa de água e esgoto,Água/esgoto,0.33,7060,water
+2021-07-01,2021,7,2104008,Detergente,Detergente,0.89,7060,soap
+2021-07-01,2021,7,2201004,Gás de botijão,Gás botijão,4.17,7060,gas_bottle
+2021-07-01,2021,7,3202028,Computador pessoal,Computador,1.26,7060,computer
+2021-07-01,2021,7,5101001,Ônibus urbano,Ônibus,0.38,7060,bus
+2021-07-01,2021,7,5101010,Passagem aérea,Aérea,35.22,7060,plane
+2021-07-01,2021,7,5104001,Gasolina,Gasolina,1.55,7060,gas
+2021-07-01,2021,7,5104002,Etanol,Etanol,-0.75,7060,ethanol
+2021-07-01,2021,7,5104003,Óleo diesel,Diesel,0.96,7060,diesel
+2021-07-01,2021,7,7101010,Empregado doméstico,Doméstico,0.11,7060,domestic
+2021-07-01,2021,7,7202041,Cigarro,Cigarro,0.27,7060,cigarette
+2021-08-01,2021,8,8,Educação,Educação,0.28,7060,education
+2021-08-01,2021,8,11,Alimentação no domicílio,Alim. domicílio,1.63,7060,pantry
+2021-08-01,2021,8,1107,Carnes,Carnes,0.63,7060,meat
+2021-08-01,2021,8,1201,Alimentação fora do domicílio,Fora de casa,0.76,7060,restaurant
+2021-08-01,2021,8,2202,Energia elétrica residencial,Energia,1.1,7060,energy
+2021-08-01,2021,8,6203,Plano de saúde,Plano saúde,-0.1,7060,health
+2021-08-01,2021,8,1101002,Arroz,Arroz,-2.09,7060,rice
+2021-08-01,2021,8,1101052,Feijão - preto,Feijão,-1.66,7060,beans
+2021-08-01,2021,8,1102006,Macarrão,Macarrão,1.62,7060,pasta
+2021-08-01,2021,8,1103003,Batata-inglesa,Batata,19.91,7060,potato
+2021-08-01,2021,8,1103028,Tomate,Tomate,3.85,7060,tomato
+2021-08-01,2021,8,1110044,Ovo de galinha,Ovos,1.59,7060,egg
+2021-08-01,2021,8,1111004,Leite longa vida,Leite,1.67,7060,milk
+2021-08-01,2021,8,1112015,Pão francês,Pão,1.31,7060,bread
+2021-08-01,2021,8,1113014,Azeite de oliva,Azeite,0.41,7060,oil
+2021-08-01,2021,8,1114022,Café moído,Café,7.51,7060,coffee
+2021-08-01,2021,8,1114084,Cerveja,Cerveja,0.29,7060,beer
+2021-08-01,2021,8,1114087,Vinho,Vinho,-0.51,7060,wine
+2021-08-01,2021,8,2101001,Aluguel residencial,Aluguel,0.38,7060,rent
+2021-08-01,2021,8,2101002,Condomínio,Condomínio,0.56,7060,condo
+2021-08-01,2021,8,2101004,Taxa de água e esgoto,Água/esgoto,-1.02,7060,water
+2021-08-01,2021,8,2104008,Detergente,Detergente,-0.35,7060,soap
+2021-08-01,2021,8,2201004,Gás de botijão,Gás botijão,2.4,7060,gas_bottle
+2021-08-01,2021,8,3202028,Computador pessoal,Computador,0.11,7060,computer
+2021-08-01,2021,8,5101001,Ônibus urbano,Ônibus,0.03,7060,bus
+2021-08-01,2021,8,5101010,Passagem aérea,Aérea,-10.69,7060,plane
+2021-08-01,2021,8,5104001,Gasolina,Gasolina,2.8,7060,gas
+2021-08-01,2021,8,5104002,Etanol,Etanol,4.5,7060,ethanol
+2021-08-01,2021,8,5104003,Óleo diesel,Diesel,1.79,7060,diesel
+2021-08-01,2021,8,7101010,Empregado doméstico,Doméstico,0.13,7060,domestic
+2021-08-01,2021,8,7202041,Cigarro,Cigarro,0.28,7060,cigarette
+2021-09-01,2021,9,8,Educação,Educação,-0.01,7060,education
+2021-09-01,2021,9,11,Alimentação no domicílio,Alim. domicílio,1.19,7060,pantry
+2021-09-01,2021,9,1107,Carnes,Carnes,-0.21,7060,meat
+2021-09-01,2021,9,1201,Alimentação fora do domicílio,Fora de casa,0.59,7060,restaurant
+2021-09-01,2021,9,2202,Energia elétrica residencial,Energia,6.47,7060,energy
+2021-09-01,2021,9,6203,Plano de saúde,Plano saúde,-0.05,7060,health
+2021-09-01,2021,9,1101002,Arroz,Arroz,-0.97,7060,rice
+2021-09-01,2021,9,1101052,Feijão - preto,Feijão,-1.85,7060,beans
+2021-09-01,2021,9,1102006,Macarrão,Macarrão,0.47,7060,pasta
+2021-09-01,2021,9,1103003,Batata-inglesa,Batata,6.33,7060,potato
+2021-09-01,2021,9,1103028,Tomate,Tomate,5.69,7060,tomato
+2021-09-01,2021,9,1110044,Ovo de galinha,Ovos,2,7060,egg
+2021-09-01,2021,9,1111004,Leite longa vida,Leite,1.35,7060,milk
+2021-09-01,2021,9,1112015,Pão francês,Pão,-2,7060,bread
+2021-09-01,2021,9,1113014,Azeite de oliva,Azeite,-0.49,7060,oil
+2021-09-01,2021,9,1114022,Café moído,Café,5.5,7060,coffee
+2021-09-01,2021,9,1114084,Cerveja,Cerveja,0.51,7060,beer
+2021-09-01,2021,9,1114087,Vinho,Vinho,0.5,7060,wine
+2021-09-01,2021,9,2101001,Aluguel residencial,Aluguel,0.99,7060,rent
+2021-09-01,2021,9,2101002,Condomínio,Condomínio,-0.52,7060,condo
+2021-09-01,2021,9,2101004,Taxa de água e esgoto,Água/esgoto,0.37,7060,water
+2021-09-01,2021,9,2104008,Detergente,Detergente,2,7060,soap
+2021-09-01,2021,9,2201004,Gás de botijão,Gás botijão,3.91,7060,gas_bottle
+2021-09-01,2021,9,3202028,Computador pessoal,Computador,-1.4,7060,computer
+2021-09-01,2021,9,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2021-09-01,2021,9,5101010,Passagem aérea,Aérea,28.19,7060,plane
+2021-09-01,2021,9,5104001,Gasolina,Gasolina,2.32,7060,gas
+2021-09-01,2021,9,5104002,Etanol,Etanol,3.79,7060,ethanol
+2021-09-01,2021,9,5104003,Óleo diesel,Diesel,0.67,7060,diesel
+2021-09-01,2021,9,7101010,Empregado doméstico,Doméstico,0.13,7060,domestic
+2021-09-01,2021,9,7202041,Cigarro,Cigarro,0.96,7060,cigarette
+2021-10-01,2021,10,8,Educação,Educação,0.06,7060,education
+2021-10-01,2021,10,11,Alimentação no domicílio,Alim. domicílio,1.32,7060,pantry
+2021-10-01,2021,10,1107,Carnes,Carnes,-0.04,7060,meat
+2021-10-01,2021,10,1201,Alimentação fora do domicílio,Fora de casa,0.78,7060,restaurant
+2021-10-01,2021,10,2202,Energia elétrica residencial,Energia,1.16,7060,energy
+2021-10-01,2021,10,6203,Plano de saúde,Plano saúde,-0.05,7060,health
+2021-10-01,2021,10,1101002,Arroz,Arroz,-1.42,7060,rice
+2021-10-01,2021,10,1101052,Feijão - preto,Feijão,-1.34,7060,beans
+2021-10-01,2021,10,1102006,Macarrão,Macarrão,1.51,7060,pasta
+2021-10-01,2021,10,1103003,Batata-inglesa,Batata,16.01,7060,potato
+2021-10-01,2021,10,1103028,Tomate,Tomate,26.01,7060,tomato
+2021-10-01,2021,10,1110044,Ovo de galinha,Ovos,0.62,7060,egg
+2021-10-01,2021,10,1111004,Leite longa vida,Leite,-1.71,7060,milk
+2021-10-01,2021,10,1112015,Pão francês,Pão,0.78,7060,bread
+2021-10-01,2021,10,1113014,Azeite de oliva,Azeite,0.95,7060,oil
+2021-10-01,2021,10,1114022,Café moído,Café,4.57,7060,coffee
+2021-10-01,2021,10,1114084,Cerveja,Cerveja,1.77,7060,beer
+2021-10-01,2021,10,1114087,Vinho,Vinho,-0.5,7060,wine
+2021-10-01,2021,10,2101001,Aluguel residencial,Aluguel,0.9,7060,rent
+2021-10-01,2021,10,2101002,Condomínio,Condomínio,0.11,7060,condo
+2021-10-01,2021,10,2101004,Taxa de água e esgoto,Água/esgoto,0.22,7060,water
+2021-10-01,2021,10,2104008,Detergente,Detergente,0.44,7060,soap
+2021-10-01,2021,10,2201004,Gás de botijão,Gás botijão,3.67,7060,gas_bottle
+2021-10-01,2021,10,3202028,Computador pessoal,Computador,-0.92,7060,computer
+2021-10-01,2021,10,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2021-10-01,2021,10,5101010,Passagem aérea,Aérea,33.86,7060,plane
+2021-10-01,2021,10,5104001,Gasolina,Gasolina,3.1,7060,gas
+2021-10-01,2021,10,5104002,Etanol,Etanol,3.54,7060,ethanol
+2021-10-01,2021,10,5104003,Óleo diesel,Diesel,5.77,7060,diesel
+2021-10-01,2021,10,7101010,Empregado doméstico,Doméstico,0.13,7060,domestic
+2021-10-01,2021,10,7202041,Cigarro,Cigarro,1.28,7060,cigarette
+2021-11-01,2021,11,8,Educação,Educação,0.02,7060,education
+2021-11-01,2021,11,11,Alimentação no domicílio,Alim. domicílio,0.04,7060,pantry
+2021-11-01,2021,11,1107,Carnes,Carnes,-1.38,7060,meat
+2021-11-01,2021,11,1201,Alimentação fora do domicílio,Fora de casa,-0.25,7060,restaurant
+2021-11-01,2021,11,2202,Energia elétrica residencial,Energia,1.24,7060,energy
+2021-11-01,2021,11,6203,Plano de saúde,Plano saúde,-0.06,7060,health
+2021-11-01,2021,11,1101002,Arroz,Arroz,-3.58,7060,rice
+2021-11-01,2021,11,1101052,Feijão - preto,Feijão,-3.7,7060,beans
+2021-11-01,2021,11,1102006,Macarrão,Macarrão,-0.45,7060,pasta
+2021-11-01,2021,11,1103003,Batata-inglesa,Batata,1.63,7060,potato
+2021-11-01,2021,11,1103028,Tomate,Tomate,1.46,7060,tomato
+2021-11-01,2021,11,1110044,Ovo de galinha,Ovos,-1.28,7060,egg
+2021-11-01,2021,11,1111004,Leite longa vida,Leite,-4.83,7060,milk
+2021-11-01,2021,11,1112015,Pão francês,Pão,0.67,7060,bread
+2021-11-01,2021,11,1113014,Azeite de oliva,Azeite,0.48,7060,oil
+2021-11-01,2021,11,1114022,Café moído,Café,6.87,7060,coffee
+2021-11-01,2021,11,1114084,Cerveja,Cerveja,2.55,7060,beer
+2021-11-01,2021,11,1114087,Vinho,Vinho,-0.26,7060,wine
+2021-11-01,2021,11,2101001,Aluguel residencial,Aluguel,0.84,7060,rent
+2021-11-01,2021,11,2101002,Condomínio,Condomínio,0.95,7060,condo
+2021-11-01,2021,11,2101004,Taxa de água e esgoto,Água/esgoto,0.52,7060,water
+2021-11-01,2021,11,2104008,Detergente,Detergente,0.93,7060,soap
+2021-11-01,2021,11,2201004,Gás de botijão,Gás botijão,2.12,7060,gas_bottle
+2021-11-01,2021,11,3202028,Computador pessoal,Computador,-1.65,7060,computer
+2021-11-01,2021,11,5101001,Ônibus urbano,Ônibus,-0.05,7060,bus
+2021-11-01,2021,11,5101010,Passagem aérea,Aérea,-6.12,7060,plane
+2021-11-01,2021,11,5104001,Gasolina,Gasolina,7.38,7060,gas
+2021-11-01,2021,11,5104002,Etanol,Etanol,10.53,7060,ethanol
+2021-11-01,2021,11,5104003,Óleo diesel,Diesel,7.48,7060,diesel
+2021-11-01,2021,11,7101010,Empregado doméstico,Doméstico,0.14,7060,domestic
+2021-11-01,2021,11,7202041,Cigarro,Cigarro,0.32,7060,cigarette
+2021-12-01,2021,12,8,Educação,Educação,0.05,7060,education
+2021-12-01,2021,12,11,Alimentação no domicílio,Alim. domicílio,0.79,7060,pantry
+2021-12-01,2021,12,1107,Carnes,Carnes,1.38,7060,meat
+2021-12-01,2021,12,1201,Alimentação fora do domicílio,Fora de casa,0.98,7060,restaurant
+2021-12-01,2021,12,2202,Energia elétrica residencial,Energia,0.5,7060,energy
+2021-12-01,2021,12,6203,Plano de saúde,Plano saúde,-0.06,7060,health
+2021-12-01,2021,12,1101002,Arroz,Arroz,-1.77,7060,rice
+2021-12-01,2021,12,1101052,Feijão - preto,Feijão,-0.51,7060,beans
+2021-12-01,2021,12,1102006,Macarrão,Macarrão,0.59,7060,pasta
+2021-12-01,2021,12,1103003,Batata-inglesa,Batata,-14.55,7060,potato
+2021-12-01,2021,12,1103028,Tomate,Tomate,-9.21,7060,tomato
+2021-12-01,2021,12,1110044,Ovo de galinha,Ovos,1.74,7060,egg
+2021-12-01,2021,12,1111004,Leite longa vida,Leite,-2.89,7060,milk
+2021-12-01,2021,12,1112015,Pão francês,Pão,0.66,7060,bread
+2021-12-01,2021,12,1113014,Azeite de oliva,Azeite,1.32,7060,oil
+2021-12-01,2021,12,1114022,Café moído,Café,8.24,7060,coffee
+2021-12-01,2021,12,1114084,Cerveja,Cerveja,0.14,7060,beer
+2021-12-01,2021,12,1114087,Vinho,Vinho,0.85,7060,wine
+2021-12-01,2021,12,2101001,Aluguel residencial,Aluguel,0.65,7060,rent
+2021-12-01,2021,12,2101002,Condomínio,Condomínio,1.11,7060,condo
+2021-12-01,2021,12,2101004,Taxa de água e esgoto,Água/esgoto,0.65,7060,water
+2021-12-01,2021,12,2104008,Detergente,Detergente,0.61,7060,soap
+2021-12-01,2021,12,2201004,Gás de botijão,Gás botijão,0.6,7060,gas_bottle
+2021-12-01,2021,12,3202028,Computador pessoal,Computador,0.5,7060,computer
+2021-12-01,2021,12,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2021-12-01,2021,12,5101010,Passagem aérea,Aérea,10.28,7060,plane
+2021-12-01,2021,12,5104001,Gasolina,Gasolina,-0.67,7060,gas
+2021-12-01,2021,12,5104002,Etanol,Etanol,-2.96,7060,ethanol
+2021-12-01,2021,12,5104003,Óleo diesel,Diesel,-0.33,7060,diesel
+2021-12-01,2021,12,7101010,Empregado doméstico,Doméstico,0.14,7060,domestic
+2021-12-01,2021,12,7202041,Cigarro,Cigarro,0.32,7060,cigarette
+2022-01-01,2022,1,8,Educação,Educação,0.25,7060,education
+2022-01-01,2022,1,11,Alimentação no domicílio,Alim. domicílio,1.44,7060,pantry
+2022-01-01,2022,1,1107,Carnes,Carnes,1.32,7060,meat
+2022-01-01,2022,1,1201,Alimentação fora do domicílio,Fora de casa,0.25,7060,restaurant
+2022-01-01,2022,1,2202,Energia elétrica residencial,Energia,-1.07,7060,energy
+2022-01-01,2022,1,6203,Plano de saúde,Plano saúde,-0.69,7060,health
+2022-01-01,2022,1,1101002,Arroz,Arroz,-2.66,7060,rice
+2022-01-01,2022,1,1101052,Feijão - preto,Feijão,-1.73,7060,beans
+2022-01-01,2022,1,1102006,Macarrão,Macarrão,0.44,7060,pasta
+2022-01-01,2022,1,1103003,Batata-inglesa,Batata,9.65,7060,potato
+2022-01-01,2022,1,1103028,Tomate,Tomate,6.21,7060,tomato
+2022-01-01,2022,1,1110044,Ovo de galinha,Ovos,-1.03,7060,egg
+2022-01-01,2022,1,1111004,Leite longa vida,Leite,0.4,7060,milk
+2022-01-01,2022,1,1112015,Pão francês,Pão,0.98,7060,bread
+2022-01-01,2022,1,1113014,Azeite de oliva,Azeite,1.46,7060,oil
+2022-01-01,2022,1,1114022,Café moído,Café,4.75,7060,coffee
+2022-01-01,2022,1,1114084,Cerveja,Cerveja,0.42,7060,beer
+2022-01-01,2022,1,1114087,Vinho,Vinho,0.41,7060,wine
+2022-01-01,2022,1,2101001,Aluguel residencial,Aluguel,1.54,7060,rent
+2022-01-01,2022,1,2101002,Condomínio,Condomínio,0.66,7060,condo
+2022-01-01,2022,1,2101004,Taxa de água e esgoto,Água/esgoto,0.15,7060,water
+2022-01-01,2022,1,2104008,Detergente,Detergente,0.23,7060,soap
+2022-01-01,2022,1,2201004,Gás de botijão,Gás botijão,-0.73,7060,gas_bottle
+2022-01-01,2022,1,3202028,Computador pessoal,Computador,1.59,7060,computer
+2022-01-01,2022,1,5101001,Ônibus urbano,Ônibus,0.22,7060,bus
+2022-01-01,2022,1,5101010,Passagem aérea,Aérea,-18.35,7060,plane
+2022-01-01,2022,1,5104001,Gasolina,Gasolina,-1.14,7060,gas
+2022-01-01,2022,1,5104002,Etanol,Etanol,-2.84,7060,ethanol
+2022-01-01,2022,1,5104003,Óleo diesel,Diesel,2.38,7060,diesel
+2022-01-01,2022,1,7101010,Empregado doméstico,Doméstico,0.13,7060,domestic
+2022-01-01,2022,1,7202041,Cigarro,Cigarro,0.06,7060,cigarette
+2022-02-01,2022,2,8,Educação,Educação,5.61,7060,education
+2022-02-01,2022,2,11,Alimentação no domicílio,Alim. domicílio,1.65,7060,pantry
+2022-02-01,2022,2,1107,Carnes,Carnes,0.46,7060,meat
+2022-02-01,2022,2,1201,Alimentação fora do domicílio,Fora de casa,0.3,7060,restaurant
+2022-02-01,2022,2,2202,Energia elétrica residencial,Energia,0.15,7060,energy
+2022-02-01,2022,2,6203,Plano de saúde,Plano saúde,-0.69,7060,health
+2022-02-01,2022,2,1101002,Arroz,Arroz,0.14,7060,rice
+2022-02-01,2022,2,1101052,Feijão - preto,Feijão,3.05,7060,beans
+2022-02-01,2022,2,1102006,Macarrão,Macarrão,1.14,7060,pasta
+2022-02-01,2022,2,1103003,Batata-inglesa,Batata,23.49,7060,potato
+2022-02-01,2022,2,1103028,Tomate,Tomate,0.01,7060,tomato
+2022-02-01,2022,2,1110044,Ovo de galinha,Ovos,2.79,7060,egg
+2022-02-01,2022,2,1111004,Leite longa vida,Leite,1.04,7060,milk
+2022-02-01,2022,2,1112015,Pão francês,Pão,0.96,7060,bread
+2022-02-01,2022,2,1113014,Azeite de oliva,Azeite,1.58,7060,oil
+2022-02-01,2022,2,1114022,Café moído,Café,2.51,7060,coffee
+2022-02-01,2022,2,1114084,Cerveja,Cerveja,0.93,7060,beer
+2022-02-01,2022,2,1114087,Vinho,Vinho,0.44,7060,wine
+2022-02-01,2022,2,2101001,Aluguel residencial,Aluguel,0.98,7060,rent
+2022-02-01,2022,2,2101002,Condomínio,Condomínio,0.83,7060,condo
+2022-02-01,2022,2,2101004,Taxa de água e esgoto,Água/esgoto,0.65,7060,water
+2022-02-01,2022,2,2104008,Detergente,Detergente,1.14,7060,soap
+2022-02-01,2022,2,2201004,Gás de botijão,Gás botijão,-0.27,7060,gas_bottle
+2022-02-01,2022,2,3202028,Computador pessoal,Computador,0.92,7060,computer
+2022-02-01,2022,2,5101001,Ônibus urbano,Ônibus,0.45,7060,bus
+2022-02-01,2022,2,5101010,Passagem aérea,Aérea,-5,7060,plane
+2022-02-01,2022,2,5104001,Gasolina,Gasolina,-0.47,7060,gas
+2022-02-01,2022,2,5104002,Etanol,Etanol,-5.04,7060,ethanol
+2022-02-01,2022,2,5104003,Óleo diesel,Diesel,1.65,7060,diesel
+2022-02-01,2022,2,7101010,Empregado doméstico,Doméstico,0.14,7060,domestic
+2022-02-01,2022,2,7202041,Cigarro,Cigarro,0,7060,cigarette
+2022-03-01,2022,3,8,Educação,Educação,0.15,7060,education
+2022-03-01,2022,3,11,Alimentação no domicílio,Alim. domicílio,3.09,7060,pantry
+2022-03-01,2022,3,1107,Carnes,Carnes,0.33,7060,meat
+2022-03-01,2022,3,1201,Alimentação fora do domicílio,Fora de casa,0.65,7060,restaurant
+2022-03-01,2022,3,2202,Energia elétrica residencial,Energia,1.08,7060,energy
+2022-03-01,2022,3,6203,Plano de saúde,Plano saúde,-0.69,7060,health
+2022-03-01,2022,3,1101002,Arroz,Arroz,2.69,7060,rice
+2022-03-01,2022,3,1101052,Feijão - preto,Feijão,2.6,7060,beans
+2022-03-01,2022,3,1102006,Macarrão,Macarrão,2.69,7060,pasta
+2022-03-01,2022,3,1103003,Batata-inglesa,Batata,4.89,7060,potato
+2022-03-01,2022,3,1103028,Tomate,Tomate,27.22,7060,tomato
+2022-03-01,2022,3,1110044,Ovo de galinha,Ovos,7.08,7060,egg
+2022-03-01,2022,3,1111004,Leite longa vida,Leite,9.34,7060,milk
+2022-03-01,2022,3,1112015,Pão francês,Pão,2.97,7060,bread
+2022-03-01,2022,3,1113014,Azeite de oliva,Azeite,0.8,7060,oil
+2022-03-01,2022,3,1114022,Café moído,Café,2.87,7060,coffee
+2022-03-01,2022,3,1114084,Cerveja,Cerveja,0.01,7060,beer
+2022-03-01,2022,3,1114087,Vinho,Vinho,0.87,7060,wine
+2022-03-01,2022,3,2101001,Aluguel residencial,Aluguel,0.01,7060,rent
+2022-03-01,2022,3,2101002,Condomínio,Condomínio,0.39,7060,condo
+2022-03-01,2022,3,2101004,Taxa de água e esgoto,Água/esgoto,0.11,7060,water
+2022-03-01,2022,3,2104008,Detergente,Detergente,1.37,7060,soap
+2022-03-01,2022,3,2201004,Gás de botijão,Gás botijão,6.57,7060,gas_bottle
+2022-03-01,2022,3,3202028,Computador pessoal,Computador,-0.32,7060,computer
+2022-03-01,2022,3,5101001,Ônibus urbano,Ônibus,1.27,7060,bus
+2022-03-01,2022,3,5101010,Passagem aérea,Aérea,-7.33,7060,plane
+2022-03-01,2022,3,5104001,Gasolina,Gasolina,6.95,7060,gas
+2022-03-01,2022,3,5104002,Etanol,Etanol,3.02,7060,ethanol
+2022-03-01,2022,3,5104003,Óleo diesel,Diesel,13.65,7060,diesel
+2022-03-01,2022,3,7101010,Empregado doméstico,Doméstico,0.14,7060,domestic
+2022-03-01,2022,3,7202041,Cigarro,Cigarro,0,7060,cigarette
+2022-04-01,2022,4,8,Educação,Educação,0.06,7060,education
+2022-04-01,2022,4,11,Alimentação no domicílio,Alim. domicílio,2.59,7060,pantry
+2022-04-01,2022,4,1107,Carnes,Carnes,1.02,7060,meat
+2022-04-01,2022,4,1201,Alimentação fora do domicílio,Fora de casa,0.62,7060,restaurant
+2022-04-01,2022,4,2202,Energia elétrica residencial,Energia,-6.27,7060,energy
+2022-04-01,2022,4,6203,Plano de saúde,Plano saúde,-0.69,7060,health
+2022-04-01,2022,4,1101002,Arroz,Arroz,2.22,7060,rice
+2022-04-01,2022,4,1101052,Feijão - preto,Feijão,0.76,7060,beans
+2022-04-01,2022,4,1102006,Macarrão,Macarrão,3.47,7060,pasta
+2022-04-01,2022,4,1103003,Batata-inglesa,Batata,18.28,7060,potato
+2022-04-01,2022,4,1103028,Tomate,Tomate,10.18,7060,tomato
+2022-04-01,2022,4,1110044,Ovo de galinha,Ovos,2.19,7060,egg
+2022-04-01,2022,4,1111004,Leite longa vida,Leite,10.31,7060,milk
+2022-04-01,2022,4,1112015,Pão francês,Pão,4.52,7060,bread
+2022-04-01,2022,4,1113014,Azeite de oliva,Azeite,0.16,7060,oil
+2022-04-01,2022,4,1114022,Café moído,Café,2.5,7060,coffee
+2022-04-01,2022,4,1114084,Cerveja,Cerveja,0.36,7060,beer
+2022-04-01,2022,4,1114087,Vinho,Vinho,0.84,7060,wine
+2022-04-01,2022,4,2101001,Aluguel residencial,Aluguel,0.63,7060,rent
+2022-04-01,2022,4,2101002,Condomínio,Condomínio,1.2,7060,condo
+2022-04-01,2022,4,2101004,Taxa de água e esgoto,Água/esgoto,0,7060,water
+2022-04-01,2022,4,2104008,Detergente,Detergente,1.41,7060,soap
+2022-04-01,2022,4,2201004,Gás de botijão,Gás botijão,3.32,7060,gas_bottle
+2022-04-01,2022,4,3202028,Computador pessoal,Computador,1.69,7060,computer
+2022-04-01,2022,4,5101001,Ônibus urbano,Ônibus,0.42,7060,bus
+2022-04-01,2022,4,5101010,Passagem aérea,Aérea,9.48,7060,plane
+2022-04-01,2022,4,5104001,Gasolina,Gasolina,2.48,7060,gas
+2022-04-01,2022,4,5104002,Etanol,Etanol,8.44,7060,ethanol
+2022-04-01,2022,4,5104003,Óleo diesel,Diesel,4.74,7060,diesel
+2022-04-01,2022,4,7101010,Empregado doméstico,Doméstico,0.16,7060,domestic
+2022-04-01,2022,4,7202041,Cigarro,Cigarro,0,7060,cigarette
+2022-05-01,2022,5,8,Educação,Educação,0.04,7060,education
+2022-05-01,2022,5,11,Alimentação no domicílio,Alim. domicílio,0.43,7060,pantry
+2022-05-01,2022,5,1107,Carnes,Carnes,0.24,7060,meat
+2022-05-01,2022,5,1201,Alimentação fora do domicílio,Fora de casa,0.61,7060,restaurant
+2022-05-01,2022,5,2202,Energia elétrica residencial,Energia,-7.95,7060,energy
+2022-05-01,2022,5,6203,Plano de saúde,Plano saúde,-0.69,7060,health
+2022-05-01,2022,5,1101002,Arroz,Arroz,0.27,7060,rice
+2022-05-01,2022,5,1101052,Feijão - preto,Feijão,-0.97,7060,beans
+2022-05-01,2022,5,1102006,Macarrão,Macarrão,3.86,7060,pasta
+2022-05-01,2022,5,1103003,Batata-inglesa,Batata,-3.94,7060,potato
+2022-05-01,2022,5,1103028,Tomate,Tomate,-23.72,7060,tomato
+2022-05-01,2022,5,1110044,Ovo de galinha,Ovos,1.51,7060,egg
+2022-05-01,2022,5,1111004,Leite longa vida,Leite,4.65,7060,milk
+2022-05-01,2022,5,1112015,Pão francês,Pão,1.81,7060,bread
+2022-05-01,2022,5,1113014,Azeite de oliva,Azeite,0.89,7060,oil
+2022-05-01,2022,5,1114022,Café moído,Café,1.25,7060,coffee
+2022-05-01,2022,5,1114084,Cerveja,Cerveja,0.44,7060,beer
+2022-05-01,2022,5,1114087,Vinho,Vinho,-0.02,7060,wine
+2022-05-01,2022,5,2101001,Aluguel residencial,Aluguel,0.44,7060,rent
+2022-05-01,2022,5,2101002,Condomínio,Condomínio,1.17,7060,condo
+2022-05-01,2022,5,2101004,Taxa de água e esgoto,Água/esgoto,2.73,7060,water
+2022-05-01,2022,5,2104008,Detergente,Detergente,2,7060,soap
+2022-05-01,2022,5,2201004,Gás de botijão,Gás botijão,-1.02,7060,gas_bottle
+2022-05-01,2022,5,3202028,Computador pessoal,Computador,0.17,7060,computer
+2022-05-01,2022,5,5101001,Ônibus urbano,Ônibus,0.06,7060,bus
+2022-05-01,2022,5,5101010,Passagem aérea,Aérea,18.33,7060,plane
+2022-05-01,2022,5,5104001,Gasolina,Gasolina,0.92,7060,gas
+2022-05-01,2022,5,5104002,Etanol,Etanol,-0.43,7060,ethanol
+2022-05-01,2022,5,5104003,Óleo diesel,Diesel,3.72,7060,diesel
+2022-05-01,2022,5,7101010,Empregado doméstico,Doméstico,0.45,7060,domestic
+2022-05-01,2022,5,7202041,Cigarro,Cigarro,0,7060,cigarette
+2022-06-01,2022,6,8,Educação,Educação,0.09,7060,education
+2022-06-01,2022,6,11,Alimentação no domicílio,Alim. domicílio,0.63,7060,pantry
+2022-06-01,2022,6,1107,Carnes,Carnes,-0.62,7060,meat
+2022-06-01,2022,6,1201,Alimentação fora do domicílio,Fora de casa,1.26,7060,restaurant
+2022-06-01,2022,6,2202,Energia elétrica residencial,Energia,-1.07,7060,energy
+2022-06-01,2022,6,6203,Plano de saúde,Plano saúde,2.99,7060,health
+2022-06-01,2022,6,1101002,Arroz,Arroz,-0.76,7060,rice
+2022-06-01,2022,6,1101052,Feijão - preto,Feijão,-3.33,7060,beans
+2022-06-01,2022,6,1102006,Macarrão,Macarrão,1.94,7060,pasta
+2022-06-01,2022,6,1103003,Batata-inglesa,Batata,-3.47,7060,potato
+2022-06-01,2022,6,1103028,Tomate,Tomate,-2.7,7060,tomato
+2022-06-01,2022,6,1110044,Ovo de galinha,Ovos,-0.57,7060,egg
+2022-06-01,2022,6,1111004,Leite longa vida,Leite,10.72,7060,milk
+2022-06-01,2022,6,1112015,Pão francês,Pão,1.66,7060,bread
+2022-06-01,2022,6,1113014,Azeite de oliva,Azeite,1.2,7060,oil
+2022-06-01,2022,6,1114022,Café moído,Café,0.21,7060,coffee
+2022-06-01,2022,6,1114084,Cerveja,Cerveja,0.14,7060,beer
+2022-06-01,2022,6,1114087,Vinho,Vinho,0.32,7060,wine
+2022-06-01,2022,6,2101001,Aluguel residencial,Aluguel,0.97,7060,rent
+2022-06-01,2022,6,2101002,Condomínio,Condomínio,0.82,7060,condo
+2022-06-01,2022,6,2101004,Taxa de água e esgoto,Água/esgoto,2.17,7060,water
+2022-06-01,2022,6,2104008,Detergente,Detergente,2.1,7060,soap
+2022-06-01,2022,6,2201004,Gás de botijão,Gás botijão,-0.39,7060,gas_bottle
+2022-06-01,2022,6,3202028,Computador pessoal,Computador,-1.29,7060,computer
+2022-06-01,2022,6,5101001,Ônibus urbano,Ônibus,0.72,7060,bus
+2022-06-01,2022,6,5101010,Passagem aérea,Aérea,11.32,7060,plane
+2022-06-01,2022,6,5104001,Gasolina,Gasolina,-0.72,7060,gas
+2022-06-01,2022,6,5104002,Etanol,Etanol,-6.41,7060,ethanol
+2022-06-01,2022,6,5104003,Óleo diesel,Diesel,3.82,7060,diesel
+2022-06-01,2022,6,7101010,Empregado doméstico,Doméstico,0.73,7060,domestic
+2022-06-01,2022,6,7202041,Cigarro,Cigarro,0,7060,cigarette
+2022-07-01,2022,7,8,Educação,Educação,0.06,7060,education
+2022-07-01,2022,7,11,Alimentação no domicílio,Alim. domicílio,1.47,7060,pantry
+2022-07-01,2022,7,1107,Carnes,Carnes,-0.21,7060,meat
+2022-07-01,2022,7,1201,Alimentação fora do domicílio,Fora de casa,0.82,7060,restaurant
+2022-07-01,2022,7,2202,Energia elétrica residencial,Energia,-5.78,7060,energy
+2022-07-01,2022,7,6203,Plano de saúde,Plano saúde,1.13,7060,health
+2022-07-01,2022,7,1101002,Arroz,Arroz,-0.11,7060,rice
+2022-07-01,2022,7,1101052,Feijão - preto,Feijão,-4.03,7060,beans
+2022-07-01,2022,7,1102006,Macarrão,Macarrão,1.65,7060,pasta
+2022-07-01,2022,7,1103003,Batata-inglesa,Batata,-16.62,7060,potato
+2022-07-01,2022,7,1103028,Tomate,Tomate,-23.68,7060,tomato
+2022-07-01,2022,7,1110044,Ovo de galinha,Ovos,0.42,7060,egg
+2022-07-01,2022,7,1111004,Leite longa vida,Leite,25.46,7060,milk
+2022-07-01,2022,7,1112015,Pão francês,Pão,1.58,7060,bread
+2022-07-01,2022,7,1113014,Azeite de oliva,Azeite,0.78,7060,oil
+2022-07-01,2022,7,1114022,Café moído,Café,0.33,7060,coffee
+2022-07-01,2022,7,1114084,Cerveja,Cerveja,0.75,7060,beer
+2022-07-01,2022,7,1114087,Vinho,Vinho,-0.82,7060,wine
+2022-07-01,2022,7,2101001,Aluguel residencial,Aluguel,0.97,7060,rent
+2022-07-01,2022,7,2101002,Condomínio,Condomínio,0.61,7060,condo
+2022-07-01,2022,7,2101004,Taxa de água e esgoto,Água/esgoto,0.96,7060,water
+2022-07-01,2022,7,2104008,Detergente,Detergente,1.66,7060,soap
+2022-07-01,2022,7,2201004,Gás de botijão,Gás botijão,-0.36,7060,gas_bottle
+2022-07-01,2022,7,3202028,Computador pessoal,Computador,-2.63,7060,computer
+2022-07-01,2022,7,5101001,Ônibus urbano,Ônibus,0.18,7060,bus
+2022-07-01,2022,7,5101010,Passagem aérea,Aérea,8.02,7060,plane
+2022-07-01,2022,7,5104001,Gasolina,Gasolina,-15.48,7060,gas
+2022-07-01,2022,7,5104002,Etanol,Etanol,-11.38,7060,ethanol
+2022-07-01,2022,7,5104003,Óleo diesel,Diesel,4.59,7060,diesel
+2022-07-01,2022,7,7101010,Empregado doméstico,Doméstico,1.25,7060,domestic
+2022-07-01,2022,7,7202041,Cigarro,Cigarro,4.37,7060,cigarette
+2022-08-01,2022,8,8,Educação,Educação,0.61,7060,education
+2022-08-01,2022,8,11,Alimentação no domicílio,Alim. domicílio,0.01,7060,pantry
+2022-08-01,2022,8,1107,Carnes,Carnes,-0.53,7060,meat
+2022-08-01,2022,8,1201,Alimentação fora do domicílio,Fora de casa,0.89,7060,restaurant
+2022-08-01,2022,8,2202,Energia elétrica residencial,Energia,-1.27,7060,energy
+2022-08-01,2022,8,6203,Plano de saúde,Plano saúde,1.13,7060,health
+2022-08-01,2022,8,1101002,Arroz,Arroz,-0.42,7060,rice
+2022-08-01,2022,8,1101052,Feijão - preto,Feijão,-3.07,7060,beans
+2022-08-01,2022,8,1102006,Macarrão,Macarrão,1.68,7060,pasta
+2022-08-01,2022,8,1103003,Batata-inglesa,Batata,-10.07,7060,potato
+2022-08-01,2022,8,1103028,Tomate,Tomate,-11.25,7060,tomato
+2022-08-01,2022,8,1110044,Ovo de galinha,Ovos,0.96,7060,egg
+2022-08-01,2022,8,1111004,Leite longa vida,Leite,-1.78,7060,milk
+2022-08-01,2022,8,1112015,Pão francês,Pão,1.12,7060,bread
+2022-08-01,2022,8,1113014,Azeite de oliva,Azeite,0.33,7060,oil
+2022-08-01,2022,8,1114022,Café moído,Café,-0.5,7060,coffee
+2022-08-01,2022,8,1114084,Cerveja,Cerveja,2.37,7060,beer
+2022-08-01,2022,8,1114087,Vinho,Vinho,1.08,7060,wine
+2022-08-01,2022,8,2101001,Aluguel residencial,Aluguel,0.55,7060,rent
+2022-08-01,2022,8,2101002,Condomínio,Condomínio,0.97,7060,condo
+2022-08-01,2022,8,2101004,Taxa de água e esgoto,Água/esgoto,0.05,7060,water
+2022-08-01,2022,8,2104008,Detergente,Detergente,2.15,7060,soap
+2022-08-01,2022,8,2201004,Gás de botijão,Gás botijão,-0.09,7060,gas_bottle
+2022-08-01,2022,8,3202028,Computador pessoal,Computador,-1.32,7060,computer
+2022-08-01,2022,8,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2022-08-01,2022,8,5101010,Passagem aérea,Aérea,-12.07,7060,plane
+2022-08-01,2022,8,5104001,Gasolina,Gasolina,-11.64,7060,gas
+2022-08-01,2022,8,5104002,Etanol,Etanol,-8.67,7060,ethanol
+2022-08-01,2022,8,5104003,Óleo diesel,Diesel,-3.76,7060,diesel
+2022-08-01,2022,8,7101010,Empregado doméstico,Doméstico,0.8,7060,domestic
+2022-08-01,2022,8,7202041,Cigarro,Cigarro,1.19,7060,cigarette
+2022-09-01,2022,9,8,Educação,Educação,0.12,7060,education
+2022-09-01,2022,9,11,Alimentação no domicílio,Alim. domicílio,-0.86,7060,pantry
+2022-09-01,2022,9,1107,Carnes,Carnes,-0.72,7060,meat
+2022-09-01,2022,9,1201,Alimentação fora do domicílio,Fora de casa,0.47,7060,restaurant
+2022-09-01,2022,9,2202,Energia elétrica residencial,Energia,0.78,7060,energy
+2022-09-01,2022,9,6203,Plano de saúde,Plano saúde,1.13,7060,health
+2022-09-01,2022,9,1101002,Arroz,Arroz,-0.64,7060,rice
+2022-09-01,2022,9,1101052,Feijão - preto,Feijão,-3.41,7060,beans
+2022-09-01,2022,9,1102006,Macarrão,Macarrão,0.09,7060,pasta
+2022-09-01,2022,9,1103003,Batata-inglesa,Batata,2.76,7060,potato
+2022-09-01,2022,9,1103028,Tomate,Tomate,-3.82,7060,tomato
+2022-09-01,2022,9,1110044,Ovo de galinha,Ovos,1.68,7060,egg
+2022-09-01,2022,9,1111004,Leite longa vida,Leite,-13.71,7060,milk
+2022-09-01,2022,9,1112015,Pão francês,Pão,0.14,7060,bread
+2022-09-01,2022,9,1113014,Azeite de oliva,Azeite,-1.51,7060,oil
+2022-09-01,2022,9,1114022,Café moído,Café,-0.76,7060,coffee
+2022-09-01,2022,9,1114084,Cerveja,Cerveja,0.37,7060,beer
+2022-09-01,2022,9,1114087,Vinho,Vinho,0.88,7060,wine
+2022-09-01,2022,9,2101001,Aluguel residencial,Aluguel,0.67,7060,rent
+2022-09-01,2022,9,2101002,Condomínio,Condomínio,-0.1,7060,condo
+2022-09-01,2022,9,2101004,Taxa de água e esgoto,Água/esgoto,0.27,7060,water
+2022-09-01,2022,9,2104008,Detergente,Detergente,1.62,7060,soap
+2022-09-01,2022,9,2201004,Gás de botijão,Gás botijão,0.92,7060,gas_bottle
+2022-09-01,2022,9,3202028,Computador pessoal,Computador,-0.46,7060,computer
+2022-09-01,2022,9,5101001,Ônibus urbano,Ônibus,-0.34,7060,bus
+2022-09-01,2022,9,5101010,Passagem aérea,Aérea,8.22,7060,plane
+2022-09-01,2022,9,5104001,Gasolina,Gasolina,-8.33,7060,gas
+2022-09-01,2022,9,5104002,Etanol,Etanol,-12.43,7060,ethanol
+2022-09-01,2022,9,5104003,Óleo diesel,Diesel,-4.57,7060,diesel
+2022-09-01,2022,9,7101010,Empregado doméstico,Doméstico,0.66,7060,domestic
+2022-09-01,2022,9,7202041,Cigarro,Cigarro,0.16,7060,cigarette
+2022-10-01,2022,10,8,Educação,Educação,0.18,7060,education
+2022-10-01,2022,10,11,Alimentação no domicílio,Alim. domicílio,0.8,7060,pantry
+2022-10-01,2022,10,1107,Carnes,Carnes,-0.14,7060,meat
+2022-10-01,2022,10,1201,Alimentação fora do domicílio,Fora de casa,0.49,7060,restaurant
+2022-10-01,2022,10,2202,Energia elétrica residencial,Energia,0.3,7060,energy
+2022-10-01,2022,10,6203,Plano de saúde,Plano saúde,1.43,7060,health
+2022-10-01,2022,10,1101002,Arroz,Arroz,0.04,7060,rice
+2022-10-01,2022,10,1101052,Feijão - preto,Feijão,-1.76,7060,beans
+2022-10-01,2022,10,1102006,Macarrão,Macarrão,0.89,7060,pasta
+2022-10-01,2022,10,1103003,Batata-inglesa,Batata,23.36,7060,potato
+2022-10-01,2022,10,1103028,Tomate,Tomate,17.63,7060,tomato
+2022-10-01,2022,10,1110044,Ovo de galinha,Ovos,1.54,7060,egg
+2022-10-01,2022,10,1111004,Leite longa vida,Leite,-6.32,7060,milk
+2022-10-01,2022,10,1112015,Pão francês,Pão,0.41,7060,bread
+2022-10-01,2022,10,1113014,Azeite de oliva,Azeite,-0.47,7060,oil
+2022-10-01,2022,10,1114022,Café moído,Café,0.22,7060,coffee
+2022-10-01,2022,10,1114084,Cerveja,Cerveja,1.11,7060,beer
+2022-10-01,2022,10,1114087,Vinho,Vinho,0.61,7060,wine
+2022-10-01,2022,10,2101001,Aluguel residencial,Aluguel,0.4,7060,rent
+2022-10-01,2022,10,2101002,Condomínio,Condomínio,0.16,7060,condo
+2022-10-01,2022,10,2101004,Taxa de água e esgoto,Água/esgoto,0.74,7060,water
+2022-10-01,2022,10,2104008,Detergente,Detergente,1.18,7060,soap
+2022-10-01,2022,10,2201004,Gás de botijão,Gás botijão,-0.67,7060,gas_bottle
+2022-10-01,2022,10,3202028,Computador pessoal,Computador,-1.43,7060,computer
+2022-10-01,2022,10,5101001,Ônibus urbano,Ônibus,-0.23,7060,bus
+2022-10-01,2022,10,5101010,Passagem aérea,Aérea,27.38,7060,plane
+2022-10-01,2022,10,5104001,Gasolina,Gasolina,-1.56,7060,gas
+2022-10-01,2022,10,5104002,Etanol,Etanol,1.34,7060,ethanol
+2022-10-01,2022,10,5104003,Óleo diesel,Diesel,-2.19,7060,diesel
+2022-10-01,2022,10,7101010,Empregado doméstico,Doméstico,0.44,7060,domestic
+2022-10-01,2022,10,7202041,Cigarro,Cigarro,0.02,7060,cigarette
+2022-11-01,2022,11,8,Educação,Educação,0.02,7060,education
+2022-11-01,2022,11,11,Alimentação no domicílio,Alim. domicílio,0.58,7060,pantry
+2022-11-01,2022,11,1107,Carnes,Carnes,0.06,7060,meat
+2022-11-01,2022,11,1201,Alimentação fora do domicílio,Fora de casa,0.39,7060,restaurant
+2022-11-01,2022,11,2202,Energia elétrica residencial,Energia,0.56,7060,energy
+2022-11-01,2022,11,6203,Plano de saúde,Plano saúde,1.2,7060,health
+2022-11-01,2022,11,1101002,Arroz,Arroz,1.46,7060,rice
+2022-11-01,2022,11,1101052,Feijão - preto,Feijão,1.19,7060,beans
+2022-11-01,2022,11,1102006,Macarrão,Macarrão,0.53,7060,pasta
+2022-11-01,2022,11,1103003,Batata-inglesa,Batata,0.83,7060,potato
+2022-11-01,2022,11,1103028,Tomate,Tomate,15.71,7060,tomato
+2022-11-01,2022,11,1110044,Ovo de galinha,Ovos,0.29,7060,egg
+2022-11-01,2022,11,1111004,Leite longa vida,Leite,-7.09,7060,milk
+2022-11-01,2022,11,1112015,Pão francês,Pão,0.24,7060,bread
+2022-11-01,2022,11,1113014,Azeite de oliva,Azeite,0.4,7060,oil
+2022-11-01,2022,11,1114022,Café moído,Café,-0.16,7060,coffee
+2022-11-01,2022,11,1114084,Cerveja,Cerveja,0.75,7060,beer
+2022-11-01,2022,11,1114087,Vinho,Vinho,-0.56,7060,wine
+2022-11-01,2022,11,2101001,Aluguel residencial,Aluguel,0.8,7060,rent
+2022-11-01,2022,11,2101002,Condomínio,Condomínio,0.4,7060,condo
+2022-11-01,2022,11,2101004,Taxa de água e esgoto,Água/esgoto,0.58,7060,water
+2022-11-01,2022,11,2104008,Detergente,Detergente,0.14,7060,soap
+2022-11-01,2022,11,2201004,Gás de botijão,Gás botijão,-0.37,7060,gas_bottle
+2022-11-01,2022,11,3202028,Computador pessoal,Computador,-3.88,7060,computer
+2022-11-01,2022,11,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2022-11-01,2022,11,5101010,Passagem aérea,Aérea,-9.8,7060,plane
+2022-11-01,2022,11,5104001,Gasolina,Gasolina,2.99,7060,gas
+2022-11-01,2022,11,5104002,Etanol,Etanol,7.57,7060,ethanol
+2022-11-01,2022,11,5104003,Óleo diesel,Diesel,0.11,7060,diesel
+2022-11-01,2022,11,7101010,Empregado doméstico,Doméstico,-0.26,7060,domestic
+2022-11-01,2022,11,7202041,Cigarro,Cigarro,0,7060,cigarette
+2022-12-01,2022,12,8,Educação,Educação,0.19,7060,education
+2022-12-01,2022,12,11,Alimentação no domicílio,Alim. domicílio,0.71,7060,pantry
+2022-12-01,2022,12,1107,Carnes,Carnes,0.64,7060,meat
+2022-12-01,2022,12,1201,Alimentação fora do domicílio,Fora de casa,0.51,7060,restaurant
+2022-12-01,2022,12,2202,Energia elétrica residencial,Energia,0.2,7060,energy
+2022-12-01,2022,12,6203,Plano de saúde,Plano saúde,1.2,7060,health
+2022-12-01,2022,12,1101002,Arroz,Arroz,3.77,7060,rice
+2022-12-01,2022,12,1101052,Feijão - preto,Feijão,5,7060,beans
+2022-12-01,2022,12,1102006,Macarrão,Macarrão,0.27,7060,pasta
+2022-12-01,2022,12,1103003,Batata-inglesa,Batata,1.76,7060,potato
+2022-12-01,2022,12,1103028,Tomate,Tomate,14.17,7060,tomato
+2022-12-01,2022,12,1110044,Ovo de galinha,Ovos,0.43,7060,egg
+2022-12-01,2022,12,1111004,Leite longa vida,Leite,-3.83,7060,milk
+2022-12-01,2022,12,1112015,Pão francês,Pão,0.4,7060,bread
+2022-12-01,2022,12,1113014,Azeite de oliva,Azeite,0.45,7060,oil
+2022-12-01,2022,12,1114022,Café moído,Café,-0.31,7060,coffee
+2022-12-01,2022,12,1114084,Cerveja,Cerveja,1.37,7060,beer
+2022-12-01,2022,12,1114087,Vinho,Vinho,0.6,7060,wine
+2022-12-01,2022,12,2101001,Aluguel residencial,Aluguel,0.4,7060,rent
+2022-12-01,2022,12,2101002,Condomínio,Condomínio,-0.5,7060,condo
+2022-12-01,2022,12,2101004,Taxa de água e esgoto,Água/esgoto,0.5,7060,water
+2022-12-01,2022,12,2104008,Detergente,Detergente,1.24,7060,soap
+2022-12-01,2022,12,2201004,Gás de botijão,Gás botijão,-0.56,7060,gas_bottle
+2022-12-01,2022,12,3202028,Computador pessoal,Computador,-1.35,7060,computer
+2022-12-01,2022,12,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2022-12-01,2022,12,5101010,Passagem aérea,Aérea,0.89,7060,plane
+2022-12-01,2022,12,5104001,Gasolina,Gasolina,-1.04,7060,gas
+2022-12-01,2022,12,5104002,Etanol,Etanol,0.48,7060,ethanol
+2022-12-01,2022,12,5104003,Óleo diesel,Diesel,-2.07,7060,diesel
+2022-12-01,2022,12,7101010,Empregado doméstico,Doméstico,-0.07,7060,domestic
+2022-12-01,2022,12,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-01-01,2023,1,8,Educação,Educação,0.36,7060,education
+2023-01-01,2023,1,11,Alimentação no domicílio,Alim. domicílio,0.6,7060,pantry
+2023-01-01,2023,1,1107,Carnes,Carnes,-0.47,7060,meat
+2023-01-01,2023,1,1201,Alimentação fora do domicílio,Fora de casa,0.57,7060,restaurant
+2023-01-01,2023,1,2202,Energia elétrica residencial,Energia,0.19,7060,energy
+2023-01-01,2023,1,6203,Plano de saúde,Plano saúde,1.21,7060,health
+2023-01-01,2023,1,1101002,Arroz,Arroz,3.13,7060,rice
+2023-01-01,2023,1,1101052,Feijão - preto,Feijão,2.4,7060,beans
+2023-01-01,2023,1,1102006,Macarrão,Macarrão,0.28,7060,pasta
+2023-01-01,2023,1,1103003,Batata-inglesa,Batata,14.14,7060,potato
+2023-01-01,2023,1,1103028,Tomate,Tomate,3.89,7060,tomato
+2023-01-01,2023,1,1110044,Ovo de galinha,Ovos,0.24,7060,egg
+2023-01-01,2023,1,1111004,Leite longa vida,Leite,-0.3,7060,milk
+2023-01-01,2023,1,1112015,Pão francês,Pão,0.77,7060,bread
+2023-01-01,2023,1,1113014,Azeite de oliva,Azeite,0.71,7060,oil
+2023-01-01,2023,1,1114022,Café moído,Café,0.17,7060,coffee
+2023-01-01,2023,1,1114084,Cerveja,Cerveja,1.5,7060,beer
+2023-01-01,2023,1,1114087,Vinho,Vinho,0.77,7060,wine
+2023-01-01,2023,1,2101001,Aluguel residencial,Aluguel,0.02,7060,rent
+2023-01-01,2023,1,2101002,Condomínio,Condomínio,0.82,7060,condo
+2023-01-01,2023,1,2101004,Taxa de água e esgoto,Água/esgoto,1.44,7060,water
+2023-01-01,2023,1,2104008,Detergente,Detergente,0.35,7060,soap
+2023-01-01,2023,1,2201004,Gás de botijão,Gás botijão,-1.19,7060,gas_bottle
+2023-01-01,2023,1,3202028,Computador pessoal,Computador,0.11,7060,computer
+2023-01-01,2023,1,5101001,Ônibus urbano,Ônibus,0.91,7060,bus
+2023-01-01,2023,1,5101010,Passagem aérea,Aérea,-0.51,7060,plane
+2023-01-01,2023,1,5104001,Gasolina,Gasolina,0.83,7060,gas
+2023-01-01,2023,1,5104002,Etanol,Etanol,0.72,7060,ethanol
+2023-01-01,2023,1,5104003,Óleo diesel,Diesel,-1.4,7060,diesel
+2023-01-01,2023,1,7101010,Empregado doméstico,Doméstico,0.32,7060,domestic
+2023-01-01,2023,1,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-02-01,2023,2,8,Educação,Educação,6.28,7060,education
+2023-02-01,2023,2,11,Alimentação no domicílio,Alim. domicílio,0.04,7060,pantry
+2023-02-01,2023,2,1107,Carnes,Carnes,-1.22,7060,meat
+2023-02-01,2023,2,1201,Alimentação fora do domicílio,Fora de casa,0.5,7060,restaurant
+2023-02-01,2023,2,2202,Energia elétrica residencial,Energia,1.37,7060,energy
+2023-02-01,2023,2,6203,Plano de saúde,Plano saúde,1.2,7060,health
+2023-02-01,2023,2,1101002,Arroz,Arroz,1.91,7060,rice
+2023-02-01,2023,2,1101052,Feijão - preto,Feijão,3.04,7060,beans
+2023-02-01,2023,2,1102006,Macarrão,Macarrão,0.78,7060,pasta
+2023-02-01,2023,2,1103003,Batata-inglesa,Batata,-11.57,7060,potato
+2023-02-01,2023,2,1103028,Tomate,Tomate,-9.81,7060,tomato
+2023-02-01,2023,2,1110044,Ovo de galinha,Ovos,2.25,7060,egg
+2023-02-01,2023,2,1111004,Leite longa vida,Leite,4.62,7060,milk
+2023-02-01,2023,2,1112015,Pão francês,Pão,0.06,7060,bread
+2023-02-01,2023,2,1113014,Azeite de oliva,Azeite,0.4,7060,oil
+2023-02-01,2023,2,1114022,Café moído,Café,-0.92,7060,coffee
+2023-02-01,2023,2,1114084,Cerveja,Cerveja,0.25,7060,beer
+2023-02-01,2023,2,1114087,Vinho,Vinho,1.63,7060,wine
+2023-02-01,2023,2,2101001,Aluguel residencial,Aluguel,0.88,7060,rent
+2023-02-01,2023,2,2101002,Condomínio,Condomínio,0.6,7060,condo
+2023-02-01,2023,2,2101004,Taxa de água e esgoto,Água/esgoto,0.87,7060,water
+2023-02-01,2023,2,2104008,Detergente,Detergente,0.87,7060,soap
+2023-02-01,2023,2,2201004,Gás de botijão,Gás botijão,-0.08,7060,gas_bottle
+2023-02-01,2023,2,3202028,Computador pessoal,Computador,-1.29,7060,computer
+2023-02-01,2023,2,5101001,Ônibus urbano,Ônibus,0.47,7060,bus
+2023-02-01,2023,2,5101010,Passagem aérea,Aérea,-9.38,7060,plane
+2023-02-01,2023,2,5104001,Gasolina,Gasolina,1.16,7060,gas
+2023-02-01,2023,2,5104002,Etanol,Etanol,-1.03,7060,ethanol
+2023-02-01,2023,2,5104003,Óleo diesel,Diesel,-3.25,7060,diesel
+2023-02-01,2023,2,7101010,Empregado doméstico,Doméstico,0.37,7060,domestic
+2023-02-01,2023,2,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-03-01,2023,3,8,Educação,Educação,0.1,7060,education
+2023-03-01,2023,3,11,Alimentação no domicílio,Alim. domicílio,-0.14,7060,pantry
+2023-03-01,2023,3,1107,Carnes,Carnes,-1.06,7060,meat
+2023-03-01,2023,3,1201,Alimentação fora do domicílio,Fora de casa,0.6,7060,restaurant
+2023-03-01,2023,3,2202,Energia elétrica residencial,Energia,2.23,7060,energy
+2023-03-01,2023,3,6203,Plano de saúde,Plano saúde,1.2,7060,health
+2023-03-01,2023,3,1101002,Arroz,Arroz,0.9,7060,rice
+2023-03-01,2023,3,1101052,Feijão - preto,Feijão,0.73,7060,beans
+2023-03-01,2023,3,1102006,Macarrão,Macarrão,-0.08,7060,pasta
+2023-03-01,2023,3,1103003,Batata-inglesa,Batata,-12.8,7060,potato
+2023-03-01,2023,3,1103028,Tomate,Tomate,-4.02,7060,tomato
+2023-03-01,2023,3,1110044,Ovo de galinha,Ovos,7.64,7060,egg
+2023-03-01,2023,3,1111004,Leite longa vida,Leite,0.09,7060,milk
+2023-03-01,2023,3,1112015,Pão francês,Pão,0.5,7060,bread
+2023-03-01,2023,3,1113014,Azeite de oliva,Azeite,1.43,7060,oil
+2023-03-01,2023,3,1114022,Café moído,Café,-1.41,7060,coffee
+2023-03-01,2023,3,1114084,Cerveja,Cerveja,0.33,7060,beer
+2023-03-01,2023,3,1114087,Vinho,Vinho,0.21,7060,wine
+2023-03-01,2023,3,2101001,Aluguel residencial,Aluguel,0.15,7060,rent
+2023-03-01,2023,3,2101002,Condomínio,Condomínio,-0.03,7060,condo
+2023-03-01,2023,3,2101004,Taxa de água e esgoto,Água/esgoto,0.03,7060,water
+2023-03-01,2023,3,2104008,Detergente,Detergente,0.29,7060,soap
+2023-03-01,2023,3,2201004,Gás de botijão,Gás botijão,-0.48,7060,gas_bottle
+2023-03-01,2023,3,3202028,Computador pessoal,Computador,-1.08,7060,computer
+2023-03-01,2023,3,5101001,Ônibus urbano,Ônibus,0.84,7060,bus
+2023-03-01,2023,3,5101010,Passagem aérea,Aérea,-5.32,7060,plane
+2023-03-01,2023,3,5104001,Gasolina,Gasolina,8.33,7060,gas
+2023-03-01,2023,3,5104002,Etanol,Etanol,3.2,7060,ethanol
+2023-03-01,2023,3,5104003,Óleo diesel,Diesel,-3.71,7060,diesel
+2023-03-01,2023,3,7101010,Empregado doméstico,Doméstico,0.38,7060,domestic
+2023-03-01,2023,3,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-04-01,2023,4,8,Educação,Educação,0.09,7060,education
+2023-04-01,2023,4,11,Alimentação no domicílio,Alim. domicílio,0.73,7060,pantry
+2023-04-01,2023,4,1107,Carnes,Carnes,-0.45,7060,meat
+2023-04-01,2023,4,1201,Alimentação fora do domicílio,Fora de casa,0.66,7060,restaurant
+2023-04-01,2023,4,2202,Energia elétrica residencial,Energia,0.48,7060,energy
+2023-04-01,2023,4,6203,Plano de saúde,Plano saúde,1.2,7060,health
+2023-04-01,2023,4,1101002,Arroz,Arroz,0.36,7060,rice
+2023-04-01,2023,4,1101052,Feijão - preto,Feijão,1.32,7060,beans
+2023-04-01,2023,4,1102006,Macarrão,Macarrão,-0.1,7060,pasta
+2023-04-01,2023,4,1103003,Batata-inglesa,Batata,3.96,7060,potato
+2023-04-01,2023,4,1103028,Tomate,Tomate,10.64,7060,tomato
+2023-04-01,2023,4,1110044,Ovo de galinha,Ovos,2.46,7060,egg
+2023-04-01,2023,4,1111004,Leite longa vida,Leite,4.96,7060,milk
+2023-04-01,2023,4,1112015,Pão francês,Pão,0.47,7060,bread
+2023-04-01,2023,4,1113014,Azeite de oliva,Azeite,1.12,7060,oil
+2023-04-01,2023,4,1114022,Café moído,Café,-0.61,7060,coffee
+2023-04-01,2023,4,1114084,Cerveja,Cerveja,1.12,7060,beer
+2023-04-01,2023,4,1114087,Vinho,Vinho,0.66,7060,wine
+2023-04-01,2023,4,2101001,Aluguel residencial,Aluguel,0.5,7060,rent
+2023-04-01,2023,4,2101002,Condomínio,Condomínio,0.87,7060,condo
+2023-04-01,2023,4,2101004,Taxa de água e esgoto,Água/esgoto,0.33,7060,water
+2023-04-01,2023,4,2104008,Detergente,Detergente,0.44,7060,soap
+2023-04-01,2023,4,2201004,Gás de botijão,Gás botijão,0.11,7060,gas_bottle
+2023-04-01,2023,4,3202028,Computador pessoal,Computador,0.84,7060,computer
+2023-04-01,2023,4,5101001,Ônibus urbano,Ônibus,1.11,7060,bus
+2023-04-01,2023,4,5101010,Passagem aérea,Aérea,11.97,7060,plane
+2023-04-01,2023,4,5104001,Gasolina,Gasolina,-0.52,7060,gas
+2023-04-01,2023,4,5104002,Etanol,Etanol,0.92,7060,ethanol
+2023-04-01,2023,4,5104003,Óleo diesel,Diesel,-2.25,7060,diesel
+2023-04-01,2023,4,7101010,Empregado doméstico,Doméstico,0.35,7060,domestic
+2023-04-01,2023,4,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-05-01,2023,5,8,Educação,Educação,0.05,7060,education
+2023-05-01,2023,5,11,Alimentação no domicílio,Alim. domicílio,0,7060,pantry
+2023-05-01,2023,5,1107,Carnes,Carnes,-0.74,7060,meat
+2023-05-01,2023,5,1201,Alimentação fora do domicílio,Fora de casa,0.58,7060,restaurant
+2023-05-01,2023,5,2202,Energia elétrica residencial,Energia,0.91,7060,energy
+2023-05-01,2023,5,6203,Plano de saúde,Plano saúde,1.2,7060,health
+2023-05-01,2023,5,1101002,Arroz,Arroz,0.42,7060,rice
+2023-05-01,2023,5,1101052,Feijão - preto,Feijão,-1.07,7060,beans
+2023-05-01,2023,5,1102006,Macarrão,Macarrão,-0.15,7060,pasta
+2023-05-01,2023,5,1103003,Batata-inglesa,Batata,-1.9,7060,potato
+2023-05-01,2023,5,1103028,Tomate,Tomate,6.65,7060,tomato
+2023-05-01,2023,5,1110044,Ovo de galinha,Ovos,1.83,7060,egg
+2023-05-01,2023,5,1111004,Leite longa vida,Leite,2.37,7060,milk
+2023-05-01,2023,5,1112015,Pão francês,Pão,1.4,7060,bread
+2023-05-01,2023,5,1113014,Azeite de oliva,Azeite,1.8,7060,oil
+2023-05-01,2023,5,1114022,Café moído,Café,-0.7,7060,coffee
+2023-05-01,2023,5,1114084,Cerveja,Cerveja,-0.28,7060,beer
+2023-05-01,2023,5,1114087,Vinho,Vinho,0.61,7060,wine
+2023-05-01,2023,5,2101001,Aluguel residencial,Aluguel,0.28,7060,rent
+2023-05-01,2023,5,2101002,Condomínio,Condomínio,-0.14,7060,condo
+2023-05-01,2023,5,2101004,Taxa de água e esgoto,Água/esgoto,2.67,7060,water
+2023-05-01,2023,5,2104008,Detergente,Detergente,0.12,7060,soap
+2023-05-01,2023,5,2201004,Gás de botijão,Gás botijão,0.44,7060,gas_bottle
+2023-05-01,2023,5,3202028,Computador pessoal,Computador,-0.98,7060,computer
+2023-05-01,2023,5,5101001,Ônibus urbano,Ônibus,2.83,7060,bus
+2023-05-01,2023,5,5101010,Passagem aérea,Aérea,-17.73,7060,plane
+2023-05-01,2023,5,5104001,Gasolina,Gasolina,-1.93,7060,gas
+2023-05-01,2023,5,5104002,Etanol,Etanol,0.38,7060,ethanol
+2023-05-01,2023,5,5104003,Óleo diesel,Diesel,-5.96,7060,diesel
+2023-05-01,2023,5,7101010,Empregado doméstico,Doméstico,0.24,7060,domestic
+2023-05-01,2023,5,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-06-01,2023,6,8,Educação,Educação,0.06,7060,education
+2023-06-01,2023,6,11,Alimentação no domicílio,Alim. domicílio,-1.07,7060,pantry
+2023-06-01,2023,6,1107,Carnes,Carnes,-2.1,7060,meat
+2023-06-01,2023,6,1201,Alimentação fora do domicílio,Fora de casa,0.46,7060,restaurant
+2023-06-01,2023,6,2202,Energia elétrica residencial,Energia,1.43,7060,energy
+2023-06-01,2023,6,6203,Plano de saúde,Plano saúde,0.38,7060,health
+2023-06-01,2023,6,1101002,Arroz,Arroz,-0.4,7060,rice
+2023-06-01,2023,6,1101052,Feijão - preto,Feijão,-4.06,7060,beans
+2023-06-01,2023,6,1102006,Macarrão,Macarrão,0.1,7060,pasta
+2023-06-01,2023,6,1103003,Batata-inglesa,Batata,6.43,7060,potato
+2023-06-01,2023,6,1103028,Tomate,Tomate,-1.92,7060,tomato
+2023-06-01,2023,6,1110044,Ovo de galinha,Ovos,1.28,7060,egg
+2023-06-01,2023,6,1111004,Leite longa vida,Leite,-2.68,7060,milk
+2023-06-01,2023,6,1112015,Pão francês,Pão,-0.21,7060,bread
+2023-06-01,2023,6,1113014,Azeite de oliva,Azeite,0.87,7060,oil
+2023-06-01,2023,6,1114022,Café moído,Café,0.01,7060,coffee
+2023-06-01,2023,6,1114084,Cerveja,Cerveja,-0.27,7060,beer
+2023-06-01,2023,6,1114087,Vinho,Vinho,0.18,7060,wine
+2023-06-01,2023,6,2101001,Aluguel residencial,Aluguel,0.78,7060,rent
+2023-06-01,2023,6,2101002,Condomínio,Condomínio,1.67,7060,condo
+2023-06-01,2023,6,2101004,Taxa de água e esgoto,Água/esgoto,1.69,7060,water
+2023-06-01,2023,6,2104008,Detergente,Detergente,0.01,7060,soap
+2023-06-01,2023,6,2201004,Gás de botijão,Gás botijão,-3.82,7060,gas_bottle
+2023-06-01,2023,6,3202028,Computador pessoal,Computador,-1.24,7060,computer
+2023-06-01,2023,6,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2023-06-01,2023,6,5101010,Passagem aérea,Aérea,10.96,7060,plane
+2023-06-01,2023,6,5104001,Gasolina,Gasolina,-1.14,7060,gas
+2023-06-01,2023,6,5104002,Etanol,Etanol,-5.11,7060,ethanol
+2023-06-01,2023,6,5104003,Óleo diesel,Diesel,-6.68,7060,diesel
+2023-06-01,2023,6,7101010,Empregado doméstico,Doméstico,0.18,7060,domestic
+2023-06-01,2023,6,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-07-01,2023,7,8,Educação,Educação,0.13,7060,education
+2023-07-01,2023,7,11,Alimentação no domicílio,Alim. domicílio,-0.72,7060,pantry
+2023-07-01,2023,7,1107,Carnes,Carnes,-2.14,7060,meat
+2023-07-01,2023,7,1201,Alimentação fora do domicílio,Fora de casa,0.21,7060,restaurant
+2023-07-01,2023,7,2202,Energia elétrica residencial,Energia,-3.89,7060,energy
+2023-07-01,2023,7,6203,Plano de saúde,Plano saúde,0.78,7060,health
+2023-07-01,2023,7,1101002,Arroz,Arroz,-0.74,7060,rice
+2023-07-01,2023,7,1101052,Feijão - preto,Feijão,-1.48,7060,beans
+2023-07-01,2023,7,1102006,Macarrão,Macarrão,-0.41,7060,pasta
+2023-07-01,2023,7,1103003,Batata-inglesa,Batata,-3.03,7060,potato
+2023-07-01,2023,7,1103028,Tomate,Tomate,-0.31,7060,tomato
+2023-07-01,2023,7,1110044,Ovo de galinha,Ovos,0.01,7060,egg
+2023-07-01,2023,7,1111004,Leite longa vida,Leite,-1.86,7060,milk
+2023-07-01,2023,7,1112015,Pão francês,Pão,0.33,7060,bread
+2023-07-01,2023,7,1113014,Azeite de oliva,Azeite,3.61,7060,oil
+2023-07-01,2023,7,1114022,Café moído,Café,-1.58,7060,coffee
+2023-07-01,2023,7,1114084,Cerveja,Cerveja,0.74,7060,beer
+2023-07-01,2023,7,1114087,Vinho,Vinho,1.6,7060,wine
+2023-07-01,2023,7,2101001,Aluguel residencial,Aluguel,-0.04,7060,rent
+2023-07-01,2023,7,2101002,Condomínio,Condomínio,0.44,7060,condo
+2023-07-01,2023,7,2101004,Taxa de água e esgoto,Água/esgoto,0.18,7060,water
+2023-07-01,2023,7,2104008,Detergente,Detergente,0.19,7060,soap
+2023-07-01,2023,7,2201004,Gás de botijão,Gás botijão,-1.03,7060,gas_bottle
+2023-07-01,2023,7,3202028,Computador pessoal,Computador,0.14,7060,computer
+2023-07-01,2023,7,5101001,Ônibus urbano,Ônibus,-2.4,7060,bus
+2023-07-01,2023,7,5101010,Passagem aérea,Aérea,4.97,7060,plane
+2023-07-01,2023,7,5104001,Gasolina,Gasolina,4.75,7060,gas
+2023-07-01,2023,7,5104002,Etanol,Etanol,1.57,7060,ethanol
+2023-07-01,2023,7,5104003,Óleo diesel,Diesel,-1.37,7060,diesel
+2023-07-01,2023,7,7101010,Empregado doméstico,Doméstico,0.29,7060,domestic
+2023-07-01,2023,7,7202041,Cigarro,Cigarro,0,7060,cigarette
+2023-08-01,2023,8,8,Educação,Educação,0.69,7060,education
+2023-08-01,2023,8,11,Alimentação no domicílio,Alim. domicílio,-1.26,7060,pantry
+2023-08-01,2023,8,1107,Carnes,Carnes,-1.9,7060,meat
+2023-08-01,2023,8,1201,Alimentação fora do domicílio,Fora de casa,0.22,7060,restaurant
+2023-08-01,2023,8,2202,Energia elétrica residencial,Energia,4.59,7060,energy
+2023-08-01,2023,8,6203,Plano de saúde,Plano saúde,0.78,7060,health
+2023-08-01,2023,8,1101002,Arroz,Arroz,1.14,7060,rice
+2023-08-01,2023,8,1101052,Feijão - preto,Feijão,-0.46,7060,beans
+2023-08-01,2023,8,1102006,Macarrão,Macarrão,-1.28,7060,pasta
+2023-08-01,2023,8,1103003,Batata-inglesa,Batata,-12.92,7060,potato
+2023-08-01,2023,8,1103028,Tomate,Tomate,-7.91,7060,tomato
+2023-08-01,2023,8,1110044,Ovo de galinha,Ovos,-3.15,7060,egg
+2023-08-01,2023,8,1111004,Leite longa vida,Leite,-3.35,7060,milk
+2023-08-01,2023,8,1112015,Pão francês,Pão,-0.43,7060,bread
+2023-08-01,2023,8,1113014,Azeite de oliva,Azeite,2.97,7060,oil
+2023-08-01,2023,8,1114022,Café moído,Café,-1.5,7060,coffee
+2023-08-01,2023,8,1114084,Cerveja,Cerveja,0.23,7060,beer
+2023-08-01,2023,8,1114087,Vinho,Vinho,-1.12,7060,wine
+2023-08-01,2023,8,2101001,Aluguel residencial,Aluguel,-0.36,7060,rent
+2023-08-01,2023,8,2101002,Condomínio,Condomínio,0.34,7060,condo
+2023-08-01,2023,8,2101004,Taxa de água e esgoto,Água/esgoto,0.19,7060,water
+2023-08-01,2023,8,2104008,Detergente,Detergente,0.12,7060,soap
+2023-08-01,2023,8,2201004,Gás de botijão,Gás botijão,-0.8,7060,gas_bottle
+2023-08-01,2023,8,3202028,Computador pessoal,Computador,-1.75,7060,computer
+2023-08-01,2023,8,5101001,Ônibus urbano,Ônibus,-1.06,7060,bus
+2023-08-01,2023,8,5101010,Passagem aérea,Aérea,-11.69,7060,plane
+2023-08-01,2023,8,5104001,Gasolina,Gasolina,1.24,7060,gas
+2023-08-01,2023,8,5104002,Etanol,Etanol,-4.26,7060,ethanol
+2023-08-01,2023,8,5104003,Óleo diesel,Diesel,8.54,7060,diesel
+2023-08-01,2023,8,7101010,Empregado doméstico,Doméstico,0.42,7060,domestic
+2023-08-01,2023,8,7202041,Cigarro,Cigarro,-0.19,7060,cigarette
+2023-09-01,2023,9,8,Educação,Educação,0.05,7060,education
+2023-09-01,2023,9,11,Alimentação no domicílio,Alim. domicílio,-1.02,7060,pantry
+2023-09-01,2023,9,1107,Carnes,Carnes,-2.1,7060,meat
+2023-09-01,2023,9,1201,Alimentação fora do domicílio,Fora de casa,0.12,7060,restaurant
+2023-09-01,2023,9,2202,Energia elétrica residencial,Energia,0.99,7060,energy
+2023-09-01,2023,9,6203,Plano de saúde,Plano saúde,0.71,7060,health
+2023-09-01,2023,9,1101002,Arroz,Arroz,3.2,7060,rice
+2023-09-01,2023,9,1101052,Feijão - preto,Feijão,1.1,7060,beans
+2023-09-01,2023,9,1102006,Macarrão,Macarrão,-0.39,7060,pasta
+2023-09-01,2023,9,1103003,Batata-inglesa,Batata,-10.41,7060,potato
+2023-09-01,2023,9,1103028,Tomate,Tomate,2.89,7060,tomato
+2023-09-01,2023,9,1110044,Ovo de galinha,Ovos,-4.96,7060,egg
+2023-09-01,2023,9,1111004,Leite longa vida,Leite,-4.06,7060,milk
+2023-09-01,2023,9,1112015,Pão francês,Pão,0.57,7060,bread
+2023-09-01,2023,9,1113014,Azeite de oliva,Azeite,4.99,7060,oil
+2023-09-01,2023,9,1114022,Café moído,Café,-1.08,7060,coffee
+2023-09-01,2023,9,1114084,Cerveja,Cerveja,-0.85,7060,beer
+2023-09-01,2023,9,1114087,Vinho,Vinho,-0.67,7060,wine
+2023-09-01,2023,9,2101001,Aluguel residencial,Aluguel,0.2,7060,rent
+2023-09-01,2023,9,2101002,Condomínio,Condomínio,0.99,7060,condo
+2023-09-01,2023,9,2101004,Taxa de água e esgoto,Água/esgoto,0.02,7060,water
+2023-09-01,2023,9,2104008,Detergente,Detergente,-1.47,7060,soap
+2023-09-01,2023,9,2201004,Gás de botijão,Gás botijão,0.3,7060,gas_bottle
+2023-09-01,2023,9,3202028,Computador pessoal,Computador,0,7060,computer
+2023-09-01,2023,9,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2023-09-01,2023,9,5101010,Passagem aérea,Aérea,13.47,7060,plane
+2023-09-01,2023,9,5104001,Gasolina,Gasolina,2.8,7060,gas
+2023-09-01,2023,9,5104002,Etanol,Etanol,-0.62,7060,ethanol
+2023-09-01,2023,9,5104003,Óleo diesel,Diesel,10.11,7060,diesel
+2023-09-01,2023,9,7101010,Empregado doméstico,Doméstico,0.33,7060,domestic
+2023-09-01,2023,9,7202041,Cigarro,Cigarro,-0.28,7060,cigarette
+2023-10-01,2023,10,8,Educação,Educação,0.05,7060,education
+2023-10-01,2023,10,11,Alimentação no domicílio,Alim. domicílio,0.27,7060,pantry
+2023-10-01,2023,10,1107,Carnes,Carnes,0.53,7060,meat
+2023-10-01,2023,10,1201,Alimentação fora do domicílio,Fora de casa,0.42,7060,restaurant
+2023-10-01,2023,10,2202,Energia elétrica residencial,Energia,-0.58,7060,energy
+2023-10-01,2023,10,6203,Plano de saúde,Plano saúde,0.76,7060,health
+2023-10-01,2023,10,1101002,Arroz,Arroz,2.99,7060,rice
+2023-10-01,2023,10,1101052,Feijão - preto,Feijão,-1.54,7060,beans
+2023-10-01,2023,10,1102006,Macarrão,Macarrão,-1.12,7060,pasta
+2023-10-01,2023,10,1103003,Batata-inglesa,Batata,11.23,7060,potato
+2023-10-01,2023,10,1103028,Tomate,Tomate,0.97,7060,tomato
+2023-10-01,2023,10,1110044,Ovo de galinha,Ovos,-2.85,7060,egg
+2023-10-01,2023,10,1111004,Leite longa vida,Leite,-5.48,7060,milk
+2023-10-01,2023,10,1112015,Pão francês,Pão,0.19,7060,bread
+2023-10-01,2023,10,1113014,Azeite de oliva,Azeite,5.32,7060,oil
+2023-10-01,2023,10,1114022,Café moído,Café,-1.23,7060,coffee
+2023-10-01,2023,10,1114084,Cerveja,Cerveja,1.8,7060,beer
+2023-10-01,2023,10,1114087,Vinho,Vinho,0.37,7060,wine
+2023-10-01,2023,10,2101001,Aluguel residencial,Aluguel,0.28,7060,rent
+2023-10-01,2023,10,2101002,Condomínio,Condomínio,0.37,7060,condo
+2023-10-01,2023,10,2101004,Taxa de água e esgoto,Água/esgoto,0.37,7060,water
+2023-10-01,2023,10,2104008,Detergente,Detergente,-0.42,7060,soap
+2023-10-01,2023,10,2201004,Gás de botijão,Gás botijão,0.27,7060,gas_bottle
+2023-10-01,2023,10,3202028,Computador pessoal,Computador,0.66,7060,computer
+2023-10-01,2023,10,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2023-10-01,2023,10,5101010,Passagem aérea,Aérea,23.7,7060,plane
+2023-10-01,2023,10,5104001,Gasolina,Gasolina,-1.53,7060,gas
+2023-10-01,2023,10,5104002,Etanol,Etanol,-0.96,7060,ethanol
+2023-10-01,2023,10,5104003,Óleo diesel,Diesel,0.33,7060,diesel
+2023-10-01,2023,10,7101010,Empregado doméstico,Doméstico,0.33,7060,domestic
+2023-10-01,2023,10,7202041,Cigarro,Cigarro,0.33,7060,cigarette
+2023-11-01,2023,11,8,Educação,Educação,0.02,7060,education
+2023-11-01,2023,11,11,Alimentação no domicílio,Alim. domicílio,0.75,7060,pantry
+2023-11-01,2023,11,1107,Carnes,Carnes,1.37,7060,meat
+2023-11-01,2023,11,1201,Alimentação fora do domicílio,Fora de casa,0.32,7060,restaurant
+2023-11-01,2023,11,2202,Energia elétrica residencial,Energia,1.07,7060,energy
+2023-11-01,2023,11,6203,Plano de saúde,Plano saúde,0.76,7060,health
+2023-11-01,2023,11,1101002,Arroz,Arroz,3.63,7060,rice
+2023-11-01,2023,11,1101052,Feijão - preto,Feijão,4.18,7060,beans
+2023-11-01,2023,11,1102006,Macarrão,Macarrão,-0.24,7060,pasta
+2023-11-01,2023,11,1103003,Batata-inglesa,Batata,8.83,7060,potato
+2023-11-01,2023,11,1103028,Tomate,Tomate,-6.69,7060,tomato
+2023-11-01,2023,11,1110044,Ovo de galinha,Ovos,-0.92,7060,egg
+2023-11-01,2023,11,1111004,Leite longa vida,Leite,-0.58,7060,milk
+2023-11-01,2023,11,1112015,Pão francês,Pão,0.01,7060,bread
+2023-11-01,2023,11,1113014,Azeite de oliva,Azeite,6.05,7060,oil
+2023-11-01,2023,11,1114022,Café moído,Café,-0.37,7060,coffee
+2023-11-01,2023,11,1114084,Cerveja,Cerveja,0.49,7060,beer
+2023-11-01,2023,11,1114087,Vinho,Vinho,-0.97,7060,wine
+2023-11-01,2023,11,2101001,Aluguel residencial,Aluguel,0.3,7060,rent
+2023-11-01,2023,11,2101002,Condomínio,Condomínio,0.36,7060,condo
+2023-11-01,2023,11,2101004,Taxa de água e esgoto,Água/esgoto,1.02,7060,water
+2023-11-01,2023,11,2104008,Detergente,Detergente,-1.4,7060,soap
+2023-11-01,2023,11,2201004,Gás de botijão,Gás botijão,-0.41,7060,gas_bottle
+2023-11-01,2023,11,3202028,Computador pessoal,Computador,-2.22,7060,computer
+2023-11-01,2023,11,5101001,Ônibus urbano,Ônibus,-1.15,7060,bus
+2023-11-01,2023,11,5101010,Passagem aérea,Aérea,19.12,7060,plane
+2023-11-01,2023,11,5104001,Gasolina,Gasolina,-1.69,7060,gas
+2023-11-01,2023,11,5104002,Etanol,Etanol,-1.86,7060,ethanol
+2023-11-01,2023,11,5104003,Óleo diesel,Diesel,0.87,7060,diesel
+2023-11-01,2023,11,7101010,Empregado doméstico,Doméstico,0.23,7060,domestic
+2023-11-01,2023,11,7202041,Cigarro,Cigarro,0.3,7060,cigarette
+2023-12-01,2023,12,8,Educação,Educação,0.24,7060,education
+2023-12-01,2023,12,11,Alimentação no domicílio,Alim. domicílio,1.34,7060,pantry
+2023-12-01,2023,12,1107,Carnes,Carnes,0.55,7060,meat
+2023-12-01,2023,12,1201,Alimentação fora do domicílio,Fora de casa,0.53,7060,restaurant
+2023-12-01,2023,12,2202,Energia elétrica residencial,Energia,0.54,7060,energy
+2023-12-01,2023,12,6203,Plano de saúde,Plano saúde,0.76,7060,health
+2023-12-01,2023,12,1101002,Arroz,Arroz,5.81,7060,rice
+2023-12-01,2023,12,1101052,Feijão - preto,Feijão,8.9,7060,beans
+2023-12-01,2023,12,1102006,Macarrão,Macarrão,0.26,7060,pasta
+2023-12-01,2023,12,1103003,Batata-inglesa,Batata,19.09,7060,potato
+2023-12-01,2023,12,1103028,Tomate,Tomate,4.83,7060,tomato
+2023-12-01,2023,12,1110044,Ovo de galinha,Ovos,-0.48,7060,egg
+2023-12-01,2023,12,1111004,Leite longa vida,Leite,-1.26,7060,milk
+2023-12-01,2023,12,1112015,Pão francês,Pão,-0.09,7060,bread
+2023-12-01,2023,12,1113014,Azeite de oliva,Azeite,2.92,7060,oil
+2023-12-01,2023,12,1114022,Café moído,Café,-0.23,7060,coffee
+2023-12-01,2023,12,1114084,Cerveja,Cerveja,0.14,7060,beer
+2023-12-01,2023,12,1114087,Vinho,Vinho,0.13,7060,wine
+2023-12-01,2023,12,2101001,Aluguel residencial,Aluguel,0.17,7060,rent
+2023-12-01,2023,12,2101002,Condomínio,Condomínio,0.26,7060,condo
+2023-12-01,2023,12,2101004,Taxa de água e esgoto,Água/esgoto,0.85,7060,water
+2023-12-01,2023,12,2104008,Detergente,Detergente,0.33,7060,soap
+2023-12-01,2023,12,2201004,Gás de botijão,Gás botijão,-0.36,7060,gas_bottle
+2023-12-01,2023,12,3202028,Computador pessoal,Computador,0.11,7060,computer
+2023-12-01,2023,12,5101001,Ônibus urbano,Ônibus,-0.61,7060,bus
+2023-12-01,2023,12,5101010,Passagem aérea,Aérea,8.87,7060,plane
+2023-12-01,2023,12,5104001,Gasolina,Gasolina,-0.34,7060,gas
+2023-12-01,2023,12,5104002,Etanol,Etanol,-1.24,7060,ethanol
+2023-12-01,2023,12,5104003,Óleo diesel,Diesel,-1.96,7060,diesel
+2023-12-01,2023,12,7101010,Empregado doméstico,Doméstico,0.3,7060,domestic
+2023-12-01,2023,12,7202041,Cigarro,Cigarro,0.23,7060,cigarette
+2024-01-01,2024,1,8,Educação,Educação,0.33,7060,education
+2024-01-01,2024,1,11,Alimentação no domicílio,Alim. domicílio,1.81,7060,pantry
+2024-01-01,2024,1,1107,Carnes,Carnes,0.08,7060,meat
+2024-01-01,2024,1,1201,Alimentação fora do domicílio,Fora de casa,0.25,7060,restaurant
+2024-01-01,2024,1,2202,Energia elétrica residencial,Energia,-0.64,7060,energy
+2024-01-01,2024,1,6203,Plano de saúde,Plano saúde,0.76,7060,health
+2024-01-01,2024,1,1101002,Arroz,Arroz,6.39,7060,rice
+2024-01-01,2024,1,1101052,Feijão - preto,Feijão,6.91,7060,beans
+2024-01-01,2024,1,1102006,Macarrão,Macarrão,0.12,7060,pasta
+2024-01-01,2024,1,1103003,Batata-inglesa,Batata,29.45,7060,potato
+2024-01-01,2024,1,1103028,Tomate,Tomate,2.96,7060,tomato
+2024-01-01,2024,1,1110044,Ovo de galinha,Ovos,-1.81,7060,egg
+2024-01-01,2024,1,1111004,Leite longa vida,Leite,0.71,7060,milk
+2024-01-01,2024,1,1112015,Pão francês,Pão,-0.34,7060,bread
+2024-01-01,2024,1,1113014,Azeite de oliva,Azeite,4.04,7060,oil
+2024-01-01,2024,1,1114022,Café moído,Café,0.8,7060,coffee
+2024-01-01,2024,1,1114084,Cerveja,Cerveja,0.27,7060,beer
+2024-01-01,2024,1,1114087,Vinho,Vinho,0.14,7060,wine
+2024-01-01,2024,1,2101001,Aluguel residencial,Aluguel,0.53,7060,rent
+2024-01-01,2024,1,2101002,Condomínio,Condomínio,0.89,7060,condo
+2024-01-01,2024,1,2101004,Taxa de água e esgoto,Água/esgoto,0.83,7060,water
+2024-01-01,2024,1,2104008,Detergente,Detergente,0.48,7060,soap
+2024-01-01,2024,1,2201004,Gás de botijão,Gás botijão,0.42,7060,gas_bottle
+2024-01-01,2024,1,3202028,Computador pessoal,Computador,0.48,7060,computer
+2024-01-01,2024,1,5101001,Ônibus urbano,Ônibus,-0.92,7060,bus
+2024-01-01,2024,1,5101010,Passagem aérea,Aérea,-15.22,7060,plane
+2024-01-01,2024,1,5104001,Gasolina,Gasolina,-0.31,7060,gas
+2024-01-01,2024,1,5104002,Etanol,Etanol,-1.55,7060,ethanol
+2024-01-01,2024,1,5104003,Óleo diesel,Diesel,-1,7060,diesel
+2024-01-01,2024,1,7101010,Empregado doméstico,Doméstico,0.24,7060,domestic
+2024-01-01,2024,1,7202041,Cigarro,Cigarro,1.53,7060,cigarette
+2024-02-01,2024,2,8,Educação,Educação,4.98,7060,education
+2024-02-01,2024,2,11,Alimentação no domicílio,Alim. domicílio,1.12,7060,pantry
+2024-02-01,2024,2,1107,Carnes,Carnes,-0.58,7060,meat
+2024-02-01,2024,2,1201,Alimentação fora do domicílio,Fora de casa,0.49,7060,restaurant
+2024-02-01,2024,2,2202,Energia elétrica residencial,Energia,0.14,7060,energy
+2024-02-01,2024,2,6203,Plano de saúde,Plano saúde,0.76,7060,health
+2024-02-01,2024,2,1101002,Arroz,Arroz,3.69,7060,rice
+2024-02-01,2024,2,1101052,Feijão - preto,Feijão,4.71,7060,beans
+2024-02-01,2024,2,1102006,Macarrão,Macarrão,-1.1,7060,pasta
+2024-02-01,2024,2,1103003,Batata-inglesa,Batata,6.79,7060,potato
+2024-02-01,2024,2,1103028,Tomate,Tomate,0.09,7060,tomato
+2024-02-01,2024,2,1110044,Ovo de galinha,Ovos,2.43,7060,egg
+2024-02-01,2024,2,1111004,Leite longa vida,Leite,3.49,7060,milk
+2024-02-01,2024,2,1112015,Pão francês,Pão,0.56,7060,bread
+2024-02-01,2024,2,1113014,Azeite de oliva,Azeite,2.23,7060,oil
+2024-02-01,2024,2,1114022,Café moído,Café,0.21,7060,coffee
+2024-02-01,2024,2,1114084,Cerveja,Cerveja,-0.02,7060,beer
+2024-02-01,2024,2,1114087,Vinho,Vinho,0.97,7060,wine
+2024-02-01,2024,2,2101001,Aluguel residencial,Aluguel,0.46,7060,rent
+2024-02-01,2024,2,2101002,Condomínio,Condomínio,0.52,7060,condo
+2024-02-01,2024,2,2101004,Taxa de água e esgoto,Água/esgoto,0.11,7060,water
+2024-02-01,2024,2,2104008,Detergente,Detergente,-0.74,7060,soap
+2024-02-01,2024,2,2201004,Gás de botijão,Gás botijão,0.36,7060,gas_bottle
+2024-02-01,2024,2,3202028,Computador pessoal,Computador,0.08,7060,computer
+2024-02-01,2024,2,5101001,Ônibus urbano,Ônibus,1.91,7060,bus
+2024-02-01,2024,2,5101010,Passagem aérea,Aérea,-10.71,7060,plane
+2024-02-01,2024,2,5104001,Gasolina,Gasolina,2.93,7060,gas
+2024-02-01,2024,2,5104002,Etanol,Etanol,4.52,7060,ethanol
+2024-02-01,2024,2,5104003,Óleo diesel,Diesel,0.14,7060,diesel
+2024-02-01,2024,2,7101010,Empregado doméstico,Doméstico,0.32,7060,domestic
+2024-02-01,2024,2,7202041,Cigarro,Cigarro,0.47,7060,cigarette
+2024-03-01,2024,3,8,Educação,Educação,0.14,7060,education
+2024-03-01,2024,3,11,Alimentação no domicílio,Alim. domicílio,0.59,7060,pantry
+2024-03-01,2024,3,1107,Carnes,Carnes,-0.94,7060,meat
+2024-03-01,2024,3,1201,Alimentação fora do domicílio,Fora de casa,0.35,7060,restaurant
+2024-03-01,2024,3,2202,Energia elétrica residencial,Energia,0.12,7060,energy
+2024-03-01,2024,3,6203,Plano de saúde,Plano saúde,0.77,7060,health
+2024-03-01,2024,3,1101002,Arroz,Arroz,-0.9,7060,rice
+2024-03-01,2024,3,1101052,Feijão - preto,Feijão,2.46,7060,beans
+2024-03-01,2024,3,1102006,Macarrão,Macarrão,-0.4,7060,pasta
+2024-03-01,2024,3,1103003,Batata-inglesa,Batata,-14.83,7060,potato
+2024-03-01,2024,3,1103028,Tomate,Tomate,9.85,7060,tomato
+2024-03-01,2024,3,1110044,Ovo de galinha,Ovos,4.59,7060,egg
+2024-03-01,2024,3,1111004,Leite longa vida,Leite,2.63,7060,milk
+2024-03-01,2024,3,1112015,Pão francês,Pão,0.63,7060,bread
+2024-03-01,2024,3,1113014,Azeite de oliva,Azeite,3.68,7060,oil
+2024-03-01,2024,3,1114022,Café moído,Café,1.08,7060,coffee
+2024-03-01,2024,3,1114084,Cerveja,Cerveja,0.8,7060,beer
+2024-03-01,2024,3,1114087,Vinho,Vinho,0.61,7060,wine
+2024-03-01,2024,3,2101001,Aluguel residencial,Aluguel,0.15,7060,rent
+2024-03-01,2024,3,2101002,Condomínio,Condomínio,0.74,7060,condo
+2024-03-01,2024,3,2101004,Taxa de água e esgoto,Água/esgoto,0.04,7060,water
+2024-03-01,2024,3,2104008,Detergente,Detergente,-0.18,7060,soap
+2024-03-01,2024,3,2201004,Gás de botijão,Gás botijão,0.36,7060,gas_bottle
+2024-03-01,2024,3,3202028,Computador pessoal,Computador,-0.68,7060,computer
+2024-03-01,2024,3,5101001,Ônibus urbano,Ônibus,-0.06,7060,bus
+2024-03-01,2024,3,5101010,Passagem aérea,Aérea,-9.14,7060,plane
+2024-03-01,2024,3,5104001,Gasolina,Gasolina,0.21,7060,gas
+2024-03-01,2024,3,5104002,Etanol,Etanol,0.55,7060,ethanol
+2024-03-01,2024,3,5104003,Óleo diesel,Diesel,-0.73,7060,diesel
+2024-03-01,2024,3,7101010,Empregado doméstico,Doméstico,0.36,7060,domestic
+2024-03-01,2024,3,7202041,Cigarro,Cigarro,0.17,7060,cigarette
+2024-04-01,2024,4,8,Educação,Educação,0.05,7060,education
+2024-04-01,2024,4,11,Alimentação no domicílio,Alim. domicílio,0.81,7060,pantry
+2024-04-01,2024,4,1107,Carnes,Carnes,-0.97,7060,meat
+2024-04-01,2024,4,1201,Alimentação fora do domicílio,Fora de casa,0.39,7060,restaurant
+2024-04-01,2024,4,2202,Energia elétrica residencial,Energia,-0.46,7060,energy
+2024-04-01,2024,4,6203,Plano de saúde,Plano saúde,0.76,7060,health
+2024-04-01,2024,4,1101002,Arroz,Arroz,-1.93,7060,rice
+2024-04-01,2024,4,1101052,Feijão - preto,Feijão,-5.99,7060,beans
+2024-04-01,2024,4,1102006,Macarrão,Macarrão,0.81,7060,pasta
+2024-04-01,2024,4,1103003,Batata-inglesa,Batata,-4.18,7060,potato
+2024-04-01,2024,4,1103028,Tomate,Tomate,14.09,7060,tomato
+2024-04-01,2024,4,1110044,Ovo de galinha,Ovos,1.06,7060,egg
+2024-04-01,2024,4,1111004,Leite longa vida,Leite,1.47,7060,milk
+2024-04-01,2024,4,1112015,Pão francês,Pão,0.38,7060,bread
+2024-04-01,2024,4,1113014,Azeite de oliva,Azeite,2.22,7060,oil
+2024-04-01,2024,4,1114022,Café moído,Café,3.08,7060,coffee
+2024-04-01,2024,4,1114084,Cerveja,Cerveja,0.71,7060,beer
+2024-04-01,2024,4,1114087,Vinho,Vinho,-0.09,7060,wine
+2024-04-01,2024,4,2101001,Aluguel residencial,Aluguel,0.11,7060,rent
+2024-04-01,2024,4,2101002,Condomínio,Condomínio,0.56,7060,condo
+2024-04-01,2024,4,2101004,Taxa de água e esgoto,Água/esgoto,0.09,7060,water
+2024-04-01,2024,4,2104008,Detergente,Detergente,-0.47,7060,soap
+2024-04-01,2024,4,2201004,Gás de botijão,Gás botijão,0.04,7060,gas_bottle
+2024-04-01,2024,4,3202028,Computador pessoal,Computador,-2.42,7060,computer
+2024-04-01,2024,4,5101001,Ônibus urbano,Ônibus,0.01,7060,bus
+2024-04-01,2024,4,5101010,Passagem aérea,Aérea,-12.09,7060,plane
+2024-04-01,2024,4,5104001,Gasolina,Gasolina,1.5,7060,gas
+2024-04-01,2024,4,5104002,Etanol,Etanol,4.56,7060,ethanol
+2024-04-01,2024,4,5104003,Óleo diesel,Diesel,0.32,7060,diesel
+2024-04-01,2024,4,7101010,Empregado doméstico,Doméstico,0.35,7060,domestic
+2024-04-01,2024,4,7202041,Cigarro,Cigarro,0.23,7060,cigarette
+2024-05-01,2024,5,8,Educação,Educação,0.09,7060,education
+2024-05-01,2024,5,11,Alimentação no domicílio,Alim. domicílio,0.66,7060,pantry
+2024-05-01,2024,5,1107,Carnes,Carnes,-0.04,7060,meat
+2024-05-01,2024,5,1201,Alimentação fora do domicílio,Fora de casa,0.5,7060,restaurant
+2024-05-01,2024,5,2202,Energia elétrica residencial,Energia,0.94,7060,energy
+2024-05-01,2024,5,6203,Plano de saúde,Plano saúde,0.77,7060,health
+2024-05-01,2024,5,1101002,Arroz,Arroz,1.47,7060,rice
+2024-05-01,2024,5,1101052,Feijão - preto,Feijão,-7.92,7060,beans
+2024-05-01,2024,5,1102006,Macarrão,Macarrão,-0.2,7060,pasta
+2024-05-01,2024,5,1103003,Batata-inglesa,Batata,20.61,7060,potato
+2024-05-01,2024,5,1103028,Tomate,Tomate,-2.44,7060,tomato
+2024-05-01,2024,5,1110044,Ovo de galinha,Ovos,-1.23,7060,egg
+2024-05-01,2024,5,1111004,Leite longa vida,Leite,5.36,7060,milk
+2024-05-01,2024,5,1112015,Pão francês,Pão,0.2,7060,bread
+2024-05-01,2024,5,1113014,Azeite de oliva,Azeite,2.05,7060,oil
+2024-05-01,2024,5,1114022,Café moído,Café,3.42,7060,coffee
+2024-05-01,2024,5,1114084,Cerveja,Cerveja,0.86,7060,beer
+2024-05-01,2024,5,1114087,Vinho,Vinho,0.82,7060,wine
+2024-05-01,2024,5,2101001,Aluguel residencial,Aluguel,0.13,7060,rent
+2024-05-01,2024,5,2101002,Condomínio,Condomínio,0.67,7060,condo
+2024-05-01,2024,5,2101004,Taxa de água e esgoto,Água/esgoto,1.62,7060,water
+2024-05-01,2024,5,2104008,Detergente,Detergente,0.29,7060,soap
+2024-05-01,2024,5,2201004,Gás de botijão,Gás botijão,1.04,7060,gas_bottle
+2024-05-01,2024,5,3202028,Computador pessoal,Computador,0.88,7060,computer
+2024-05-01,2024,5,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2024-05-01,2024,5,5101010,Passagem aérea,Aérea,5.91,7060,plane
+2024-05-01,2024,5,5104001,Gasolina,Gasolina,0.45,7060,gas
+2024-05-01,2024,5,5104002,Etanol,Etanol,0.53,7060,ethanol
+2024-05-01,2024,5,5104003,Óleo diesel,Diesel,0.51,7060,diesel
+2024-05-01,2024,5,7101010,Empregado doméstico,Doméstico,0.25,7060,domestic
+2024-05-01,2024,5,7202041,Cigarro,Cigarro,1.65,7060,cigarette
+2024-06-01,2024,6,8,Educação,Educação,0.06,7060,education
+2024-06-01,2024,6,11,Alimentação no domicílio,Alim. domicílio,0.47,7060,pantry
+2024-06-01,2024,6,1107,Carnes,Carnes,-0.47,7060,meat
+2024-06-01,2024,6,1201,Alimentação fora do domicílio,Fora de casa,0.37,7060,restaurant
+2024-06-01,2024,6,2202,Energia elétrica residencial,Energia,0.3,7060,energy
+2024-06-01,2024,6,6203,Plano de saúde,Plano saúde,0.37,7060,health
+2024-06-01,2024,6,1101002,Arroz,Arroz,2.25,7060,rice
+2024-06-01,2024,6,1101052,Feijão - preto,Feijão,-4.81,7060,beans
+2024-06-01,2024,6,1102006,Macarrão,Macarrão,-0.42,7060,pasta
+2024-06-01,2024,6,1103003,Batata-inglesa,Batata,14.49,7060,potato
+2024-06-01,2024,6,1103028,Tomate,Tomate,2.05,7060,tomato
+2024-06-01,2024,6,1110044,Ovo de galinha,Ovos,-0.74,7060,egg
+2024-06-01,2024,6,1111004,Leite longa vida,Leite,7.43,7060,milk
+2024-06-01,2024,6,1112015,Pão francês,Pão,-0.22,7060,bread
+2024-06-01,2024,6,1113014,Azeite de oliva,Azeite,1.77,7060,oil
+2024-06-01,2024,6,1114022,Café moído,Café,3.03,7060,coffee
+2024-06-01,2024,6,1114084,Cerveja,Cerveja,0.66,7060,beer
+2024-06-01,2024,6,1114087,Vinho,Vinho,0.21,7060,wine
+2024-06-01,2024,6,2101001,Aluguel residencial,Aluguel,0.2,7060,rent
+2024-06-01,2024,6,2101002,Condomínio,Condomínio,0.19,7060,condo
+2024-06-01,2024,6,2101004,Taxa de água e esgoto,Água/esgoto,1.13,7060,water
+2024-06-01,2024,6,2104008,Detergente,Detergente,0.14,7060,soap
+2024-06-01,2024,6,2201004,Gás de botijão,Gás botijão,-0.9,7060,gas_bottle
+2024-06-01,2024,6,3202028,Computador pessoal,Computador,1.71,7060,computer
+2024-06-01,2024,6,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2024-06-01,2024,6,5101010,Passagem aérea,Aérea,-9.88,7060,plane
+2024-06-01,2024,6,5104001,Gasolina,Gasolina,0.64,7060,gas
+2024-06-01,2024,6,5104002,Etanol,Etanol,0.34,7060,ethanol
+2024-06-01,2024,6,5104003,Óleo diesel,Diesel,-0.64,7060,diesel
+2024-06-01,2024,6,7101010,Empregado doméstico,Doméstico,0.19,7060,domestic
+2024-06-01,2024,6,7202041,Cigarro,Cigarro,0.23,7060,cigarette
+2024-07-01,2024,7,8,Educação,Educação,0.08,7060,education
+2024-07-01,2024,7,11,Alimentação no domicílio,Alim. domicílio,-1.51,7060,pantry
+2024-07-01,2024,7,1107,Carnes,Carnes,-0.07,7060,meat
+2024-07-01,2024,7,1201,Alimentação fora do domicílio,Fora de casa,0.39,7060,restaurant
+2024-07-01,2024,7,2202,Energia elétrica residencial,Energia,1.93,7060,energy
+2024-07-01,2024,7,6203,Plano de saúde,Plano saúde,0.59,7060,health
+2024-07-01,2024,7,1101002,Arroz,Arroz,-0.51,7060,rice
+2024-07-01,2024,7,1101052,Feijão - preto,Feijão,-2.63,7060,beans
+2024-07-01,2024,7,1102006,Macarrão,Macarrão,-0.35,7060,pasta
+2024-07-01,2024,7,1103003,Batata-inglesa,Batata,-7.48,7060,potato
+2024-07-01,2024,7,1103028,Tomate,Tomate,-31.24,7060,tomato
+2024-07-01,2024,7,1110044,Ovo de galinha,Ovos,-2.67,7060,egg
+2024-07-01,2024,7,1111004,Leite longa vida,Leite,-0.92,7060,milk
+2024-07-01,2024,7,1112015,Pão francês,Pão,0.67,7060,bread
+2024-07-01,2024,7,1113014,Azeite de oliva,Azeite,0.72,7060,oil
+2024-07-01,2024,7,1114022,Café moído,Café,3.27,7060,coffee
+2024-07-01,2024,7,1114084,Cerveja,Cerveja,-0.13,7060,beer
+2024-07-01,2024,7,1114087,Vinho,Vinho,-0.19,7060,wine
+2024-07-01,2024,7,2101001,Aluguel residencial,Aluguel,0.16,7060,rent
+2024-07-01,2024,7,2101002,Condomínio,Condomínio,0.98,7060,condo
+2024-07-01,2024,7,2101004,Taxa de água e esgoto,Água/esgoto,-0.02,7060,water
+2024-07-01,2024,7,2104008,Detergente,Detergente,-0.45,7060,soap
+2024-07-01,2024,7,2201004,Gás de botijão,Gás botijão,1.23,7060,gas_bottle
+2024-07-01,2024,7,3202028,Computador pessoal,Computador,0.77,7060,computer
+2024-07-01,2024,7,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2024-07-01,2024,7,5101010,Passagem aérea,Aérea,19.39,7060,plane
+2024-07-01,2024,7,5104001,Gasolina,Gasolina,3.15,7060,gas
+2024-07-01,2024,7,5104002,Etanol,Etanol,5.9,7060,ethanol
+2024-07-01,2024,7,5104003,Óleo diesel,Diesel,1.03,7060,diesel
+2024-07-01,2024,7,7101010,Empregado doméstico,Doméstico,0.2,7060,domestic
+2024-07-01,2024,7,7202041,Cigarro,Cigarro,0.12,7060,cigarette
+2024-08-01,2024,8,8,Educação,Educação,0.73,7060,education
+2024-08-01,2024,8,11,Alimentação no domicílio,Alim. domicílio,-0.73,7060,pantry
+2024-08-01,2024,8,1107,Carnes,Carnes,0.52,7060,meat
+2024-08-01,2024,8,1201,Alimentação fora do domicílio,Fora de casa,0.33,7060,restaurant
+2024-08-01,2024,8,2202,Energia elétrica residencial,Energia,-2.77,7060,energy
+2024-08-01,2024,8,6203,Plano de saúde,Plano saúde,0.58,7060,health
+2024-08-01,2024,8,1101002,Arroz,Arroz,-0.95,7060,rice
+2024-08-01,2024,8,1101052,Feijão - preto,Feijão,-0.65,7060,beans
+2024-08-01,2024,8,1102006,Macarrão,Macarrão,0.02,7060,pasta
+2024-08-01,2024,8,1103003,Batata-inglesa,Batata,-19.04,7060,potato
+2024-08-01,2024,8,1103028,Tomate,Tomate,-16.89,7060,tomato
+2024-08-01,2024,8,1110044,Ovo de galinha,Ovos,-3.46,7060,egg
+2024-08-01,2024,8,1111004,Leite longa vida,Leite,-1.21,7060,milk
+2024-08-01,2024,8,1112015,Pão francês,Pão,-0.28,7060,bread
+2024-08-01,2024,8,1113014,Azeite de oliva,Azeite,1.34,7060,oil
+2024-08-01,2024,8,1114022,Café moído,Café,3.7,7060,coffee
+2024-08-01,2024,8,1114084,Cerveja,Cerveja,-0.28,7060,beer
+2024-08-01,2024,8,1114087,Vinho,Vinho,1.23,7060,wine
+2024-08-01,2024,8,2101001,Aluguel residencial,Aluguel,0.29,7060,rent
+2024-08-01,2024,8,2101002,Condomínio,Condomínio,0.44,7060,condo
+2024-08-01,2024,8,2101004,Taxa de água e esgoto,Água/esgoto,0.44,7060,water
+2024-08-01,2024,8,2104008,Detergente,Detergente,-0.33,7060,soap
+2024-08-01,2024,8,2201004,Gás de botijão,Gás botijão,0.71,7060,gas_bottle
+2024-08-01,2024,8,3202028,Computador pessoal,Computador,1.94,7060,computer
+2024-08-01,2024,8,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2024-08-01,2024,8,5101010,Passagem aérea,Aérea,-4.93,7060,plane
+2024-08-01,2024,8,5104001,Gasolina,Gasolina,0.67,7060,gas
+2024-08-01,2024,8,5104002,Etanol,Etanol,-0.18,7060,ethanol
+2024-08-01,2024,8,5104003,Óleo diesel,Diesel,0.37,7060,diesel
+2024-08-01,2024,8,7101010,Empregado doméstico,Doméstico,0.22,7060,domestic
+2024-08-01,2024,8,7202041,Cigarro,Cigarro,0.27,7060,cigarette
+2024-09-01,2024,9,8,Educação,Educação,0.05,7060,education
+2024-09-01,2024,9,11,Alimentação no domicílio,Alim. domicílio,0.56,7060,pantry
+2024-09-01,2024,9,1107,Carnes,Carnes,2.97,7060,meat
+2024-09-01,2024,9,1201,Alimentação fora do domicílio,Fora de casa,0.34,7060,restaurant
+2024-09-01,2024,9,2202,Energia elétrica residencial,Energia,5.36,7060,energy
+2024-09-01,2024,9,6203,Plano de saúde,Plano saúde,0.58,7060,health
+2024-09-01,2024,9,1101002,Arroz,Arroz,0.12,7060,rice
+2024-09-01,2024,9,1101052,Feijão - preto,Feijão,3.52,7060,beans
+2024-09-01,2024,9,1102006,Macarrão,Macarrão,1.18,7060,pasta
+2024-09-01,2024,9,1103003,Batata-inglesa,Batata,-6.56,7060,potato
+2024-09-01,2024,9,1103028,Tomate,Tomate,-6.58,7060,tomato
+2024-09-01,2024,9,1110044,Ovo de galinha,Ovos,-1.73,7060,egg
+2024-09-01,2024,9,1111004,Leite longa vida,Leite,1.17,7060,milk
+2024-09-01,2024,9,1112015,Pão francês,Pão,0.98,7060,bread
+2024-09-01,2024,9,1113014,Azeite de oliva,Azeite,0.95,7060,oil
+2024-09-01,2024,9,1114022,Café moído,Café,4.02,7060,coffee
+2024-09-01,2024,9,1114084,Cerveja,Cerveja,0.37,7060,beer
+2024-09-01,2024,9,1114087,Vinho,Vinho,0.05,7060,wine
+2024-09-01,2024,9,2101001,Aluguel residencial,Aluguel,0.32,7060,rent
+2024-09-01,2024,9,2101002,Condomínio,Condomínio,0.3,7060,condo
+2024-09-01,2024,9,2101004,Taxa de água e esgoto,Água/esgoto,0.08,7060,water
+2024-09-01,2024,9,2104008,Detergente,Detergente,-0.14,7060,soap
+2024-09-01,2024,9,2201004,Gás de botijão,Gás botijão,2.4,7060,gas_bottle
+2024-09-01,2024,9,3202028,Computador pessoal,Computador,1.09,7060,computer
+2024-09-01,2024,9,5101001,Ônibus urbano,Ônibus,0,7060,bus
+2024-09-01,2024,9,5101010,Passagem aérea,Aérea,4.64,7060,plane
+2024-09-01,2024,9,5104001,Gasolina,Gasolina,-0.12,7060,gas
+2024-09-01,2024,9,5104002,Etanol,Etanol,0.75,7060,ethanol
+2024-09-01,2024,9,5104003,Óleo diesel,Diesel,-0.11,7060,diesel
+2024-09-01,2024,9,7101010,Empregado doméstico,Doméstico,0.28,7060,domestic
+2024-09-01,2024,9,7202041,Cigarro,Cigarro,0.01,7060,cigarette
+2024-10-01,2024,10,8,Educação,Educação,0.04,7060,education
+2024-10-01,2024,10,11,Alimentação no domicílio,Alim. domicílio,1.22,7060,pantry
+2024-10-01,2024,10,1107,Carnes,Carnes,5.81,7060,meat
+2024-10-01,2024,10,1201,Alimentação fora do domicílio,Fora de casa,0.65,7060,restaurant
+2024-10-01,2024,10,2202,Energia elétrica residencial,Energia,4.74,7060,energy
+2024-10-01,2024,10,6203,Plano de saúde,Plano saúde,0.53,7060,health
+2024-10-01,2024,10,1101002,Arroz,Arroz,-0.03,7060,rice
+2024-10-01,2024,10,1101052,Feijão - preto,Feijão,4.45,7060,beans
+2024-10-01,2024,10,1102006,Macarrão,Macarrão,0.34,7060,pasta
+2024-10-01,2024,10,1103003,Batata-inglesa,Batata,-3.45,7060,potato
+2024-10-01,2024,10,1103028,Tomate,Tomate,9.82,7060,tomato
+2024-10-01,2024,10,1110044,Ovo de galinha,Ovos,-1.17,7060,egg
+2024-10-01,2024,10,1111004,Leite longa vida,Leite,1.97,7060,milk
+2024-10-01,2024,10,1112015,Pão francês,Pão,0.06,7060,bread
+2024-10-01,2024,10,1113014,Azeite de oliva,Azeite,0.48,7060,oil
+2024-10-01,2024,10,1114022,Café moído,Café,4.01,7060,coffee
+2024-10-01,2024,10,1114084,Cerveja,Cerveja,0.98,7060,beer
+2024-10-01,2024,10,1114087,Vinho,Vinho,-0.88,7060,wine
+2024-10-01,2024,10,2101001,Aluguel residencial,Aluguel,0.32,7060,rent
+2024-10-01,2024,10,2101002,Condomínio,Condomínio,0.25,7060,condo
+2024-10-01,2024,10,2101004,Taxa de água e esgoto,Água/esgoto,0,7060,water
+2024-10-01,2024,10,2104008,Detergente,Detergente,0.33,7060,soap
+2024-10-01,2024,10,2201004,Gás de botijão,Gás botijão,0.73,7060,gas_bottle
+2024-10-01,2024,10,3202028,Computador pessoal,Computador,-1.15,7060,computer
+2024-10-01,2024,10,5101001,Ônibus urbano,Ônibus,-3.51,7060,bus
+2024-10-01,2024,10,5101010,Passagem aérea,Aérea,-11.5,7060,plane
+2024-10-01,2024,10,5104001,Gasolina,Gasolina,-0.13,7060,gas
+2024-10-01,2024,10,5104002,Etanol,Etanol,-0.56,7060,ethanol
+2024-10-01,2024,10,5104003,Óleo diesel,Diesel,-0.2,7060,diesel
+2024-10-01,2024,10,7101010,Empregado doméstico,Doméstico,0.22,7060,domestic
+2024-10-01,2024,10,7202041,Cigarro,Cigarro,0.06,7060,cigarette
+2024-11-01,2024,11,8,Educação,Educação,-0.04,7060,education
+2024-11-01,2024,11,11,Alimentação no domicílio,Alim. domicílio,1.81,7060,pantry
+2024-11-01,2024,11,1107,Carnes,Carnes,8.02,7060,meat
+2024-11-01,2024,11,1201,Alimentação fora do domicílio,Fora de casa,0.88,7060,restaurant
+2024-11-01,2024,11,2202,Energia elétrica residencial,Energia,-6.27,7060,energy
+2024-11-01,2024,11,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2024-11-01,2024,11,1101002,Arroz,Arroz,-0.18,7060,rice
+2024-11-01,2024,11,1101052,Feijão - preto,Feijão,-0.83,7060,beans
+2024-11-01,2024,11,1102006,Macarrão,Macarrão,-0.48,7060,pasta
+2024-11-01,2024,11,1103003,Batata-inglesa,Batata,2.18,7060,potato
+2024-11-01,2024,11,1103028,Tomate,Tomate,-0.35,7060,tomato
+2024-11-01,2024,11,1110044,Ovo de galinha,Ovos,-1.23,7060,egg
+2024-11-01,2024,11,1111004,Leite longa vida,Leite,-1.72,7060,milk
+2024-11-01,2024,11,1112015,Pão francês,Pão,0.43,7060,bread
+2024-11-01,2024,11,1113014,Azeite de oliva,Azeite,0.32,7060,oil
+2024-11-01,2024,11,1114022,Café moído,Café,2.33,7060,coffee
+2024-11-01,2024,11,1114084,Cerveja,Cerveja,0.85,7060,beer
+2024-11-01,2024,11,1114087,Vinho,Vinho,0.75,7060,wine
+2024-11-01,2024,11,2101001,Aluguel residencial,Aluguel,0.34,7060,rent
+2024-11-01,2024,11,2101002,Condomínio,Condomínio,0.29,7060,condo
+2024-11-01,2024,11,2101004,Taxa de água e esgoto,Água/esgoto,0.04,7060,water
+2024-11-01,2024,11,2104008,Detergente,Detergente,0.66,7060,soap
+2024-11-01,2024,11,2201004,Gás de botijão,Gás botijão,0.17,7060,gas_bottle
+2024-11-01,2024,11,3202028,Computador pessoal,Computador,-0.62,7060,computer
+2024-11-01,2024,11,5101001,Ônibus urbano,Ônibus,3.64,7060,bus
+2024-11-01,2024,11,5101010,Passagem aérea,Aérea,22.65,7060,plane
+2024-11-01,2024,11,5104001,Gasolina,Gasolina,-0.16,7060,gas
+2024-11-01,2024,11,5104002,Etanol,Etanol,-0.19,7060,ethanol
+2024-11-01,2024,11,5104003,Óleo diesel,Diesel,0.03,7060,diesel
+2024-11-01,2024,11,7101010,Empregado doméstico,Doméstico,0.3,7060,domestic
+2024-11-01,2024,11,7202041,Cigarro,Cigarro,14.91,7060,cigarette
+2024-12-01,2024,12,8,Educação,Educação,0.11,7060,education
+2024-12-01,2024,12,11,Alimentação no domicílio,Alim. domicílio,1.17,7060,pantry
+2024-12-01,2024,12,1107,Carnes,Carnes,5.26,7060,meat
+2024-12-01,2024,12,1201,Alimentação fora do domicílio,Fora de casa,1.19,7060,restaurant
+2024-12-01,2024,12,2202,Energia elétrica residencial,Energia,-3.19,7060,energy
+2024-12-01,2024,12,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2024-12-01,2024,12,1101002,Arroz,Arroz,-1.17,7060,rice
+2024-12-01,2024,12,1101052,Feijão - preto,Feijão,0.45,7060,beans
+2024-12-01,2024,12,1102006,Macarrão,Macarrão,0.35,7060,pasta
+2024-12-01,2024,12,1103003,Batata-inglesa,Batata,-18.69,7060,potato
+2024-12-01,2024,12,1103028,Tomate,Tomate,-1.32,7060,tomato
+2024-12-01,2024,12,1110044,Ovo de galinha,Ovos,1.63,7060,egg
+2024-12-01,2024,12,1111004,Leite longa vida,Leite,-2.53,7060,milk
+2024-12-01,2024,12,1112015,Pão francês,Pão,0.18,7060,bread
+2024-12-01,2024,12,1113014,Azeite de oliva,Azeite,-0.06,7060,oil
+2024-12-01,2024,12,1114022,Café moído,Café,4.99,7060,coffee
+2024-12-01,2024,12,1114084,Cerveja,Cerveja,-0.64,7060,beer
+2024-12-01,2024,12,1114087,Vinho,Vinho,-0.03,7060,wine
+2024-12-01,2024,12,2101001,Aluguel residencial,Aluguel,0.38,7060,rent
+2024-12-01,2024,12,2101002,Condomínio,Condomínio,0.24,7060,condo
+2024-12-01,2024,12,2101004,Taxa de água e esgoto,Água/esgoto,0.7,7060,water
+2024-12-01,2024,12,2104008,Detergente,Detergente,0.14,7060,soap
+2024-12-01,2024,12,2201004,Gás de botijão,Gás botijão,0.29,7060,gas_bottle
+2024-12-01,2024,12,3202028,Computador pessoal,Computador,-0.11,7060,computer
+2024-12-01,2024,12,5101001,Ônibus urbano,Ônibus,-0.65,7060,bus
+2024-12-01,2024,12,5101010,Passagem aérea,Aérea,4.54,7060,plane
+2024-12-01,2024,12,5104001,Gasolina,Gasolina,0.54,7060,gas
+2024-12-01,2024,12,5104002,Etanol,Etanol,1.92,7060,ethanol
+2024-12-01,2024,12,5104003,Óleo diesel,Diesel,0.97,7060,diesel
+2024-12-01,2024,12,7101010,Empregado doméstico,Doméstico,0.38,7060,domestic
+2024-12-01,2024,12,7202041,Cigarro,Cigarro,2.89,7060,cigarette
+2025-01-01,2025,1,8,Educação,Educação,0.26,7060,education
+2025-01-01,2025,1,11,Alimentação no domicílio,Alim. domicílio,1.07,7060,pantry
+2025-01-01,2025,1,1107,Carnes,Carnes,0.36,7060,meat
+2025-01-01,2025,1,1201,Alimentação fora do domicílio,Fora de casa,0.67,7060,restaurant
+2025-01-01,2025,1,2202,Energia elétrica residencial,Energia,-14.21,7060,energy
+2025-01-01,2025,1,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2025-01-01,2025,1,1101002,Arroz,Arroz,-0.54,7060,rice
+2025-01-01,2025,1,1101052,Feijão - preto,Feijão,-5.5,7060,beans
+2025-01-01,2025,1,1102006,Macarrão,Macarrão,0.48,7060,pasta
+2025-01-01,2025,1,1103003,Batata-inglesa,Batata,-9.12,7060,potato
+2025-01-01,2025,1,1103028,Tomate,Tomate,20.27,7060,tomato
+2025-01-01,2025,1,1110044,Ovo de galinha,Ovos,0.89,7060,egg
+2025-01-01,2025,1,1111004,Leite longa vida,Leite,-1.53,7060,milk
+2025-01-01,2025,1,1112015,Pão francês,Pão,0.74,7060,bread
+2025-01-01,2025,1,1113014,Azeite de oliva,Azeite,0.36,7060,oil
+2025-01-01,2025,1,1114022,Café moído,Café,8.56,7060,coffee
+2025-01-01,2025,1,1114084,Cerveja,Cerveja,0.49,7060,beer
+2025-01-01,2025,1,1114087,Vinho,Vinho,1.04,7060,wine
+2025-01-01,2025,1,2101001,Aluguel residencial,Aluguel,0.92,7060,rent
+2025-01-01,2025,1,2101002,Condomínio,Condomínio,0.85,7060,condo
+2025-01-01,2025,1,2101004,Taxa de água e esgoto,Água/esgoto,0.97,7060,water
+2025-01-01,2025,1,2104008,Detergente,Detergente,0.31,7060,soap
+2025-01-01,2025,1,2201004,Gás de botijão,Gás botijão,0.43,7060,gas_bottle
+2025-01-01,2025,1,3202028,Computador pessoal,Computador,0.41,7060,computer
+2025-01-01,2025,1,5101001,Ônibus urbano,Ônibus,3.84,7060,bus
+2025-01-01,2025,1,5101010,Passagem aérea,Aérea,10.42,7060,plane
+2025-01-01,2025,1,5104001,Gasolina,Gasolina,0.61,7060,gas
+2025-01-01,2025,1,5104002,Etanol,Etanol,1.82,7060,ethanol
+2025-01-01,2025,1,5104003,Óleo diesel,Diesel,0.97,7060,diesel
+2025-01-01,2025,1,7101010,Empregado doméstico,Doméstico,0.47,7060,domestic
+2025-01-01,2025,1,7202041,Cigarro,Cigarro,0,7060,cigarette
+2025-02-01,2025,2,8,Educação,Educação,4.7,7060,education
+2025-02-01,2025,2,11,Alimentação no domicílio,Alim. domicílio,0.79,7060,pantry
+2025-02-01,2025,2,1107,Carnes,Carnes,0.08,7060,meat
+2025-02-01,2025,2,1201,Alimentação fora do domicílio,Fora de casa,0.47,7060,restaurant
+2025-02-01,2025,2,2202,Energia elétrica residencial,Energia,16.8,7060,energy
+2025-02-01,2025,2,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2025-02-01,2025,2,1101002,Arroz,Arroz,-1.61,7060,rice
+2025-02-01,2025,2,1101052,Feijão - preto,Feijão,-5.36,7060,beans
+2025-02-01,2025,2,1102006,Macarrão,Macarrão,-0.16,7060,pasta
+2025-02-01,2025,2,1103003,Batata-inglesa,Batata,-4.1,7060,potato
+2025-02-01,2025,2,1103028,Tomate,Tomate,3.74,7060,tomato
+2025-02-01,2025,2,1110044,Ovo de galinha,Ovos,15.39,7060,egg
+2025-02-01,2025,2,1111004,Leite longa vida,Leite,-1.04,7060,milk
+2025-02-01,2025,2,1112015,Pão francês,Pão,0.82,7060,bread
+2025-02-01,2025,2,1113014,Azeite de oliva,Azeite,-0.45,7060,oil
+2025-02-01,2025,2,1114022,Café moído,Café,10.77,7060,coffee
+2025-02-01,2025,2,1114084,Cerveja,Cerveja,-0.29,7060,beer
+2025-02-01,2025,2,1114087,Vinho,Vinho,1.18,7060,wine
+2025-02-01,2025,2,2101001,Aluguel residencial,Aluguel,1.36,7060,rent
+2025-02-01,2025,2,2101002,Condomínio,Condomínio,1.33,7060,condo
+2025-02-01,2025,2,2101004,Taxa de água e esgoto,Água/esgoto,0.14,7060,water
+2025-02-01,2025,2,2104008,Detergente,Detergente,0.9,7060,soap
+2025-02-01,2025,2,2201004,Gás de botijão,Gás botijão,0.32,7060,gas_bottle
+2025-02-01,2025,2,3202028,Computador pessoal,Computador,2.77,7060,computer
+2025-02-01,2025,2,5101001,Ônibus urbano,Ônibus,3,7060,bus
+2025-02-01,2025,2,5101010,Passagem aérea,Aérea,-20.46,7060,plane
+2025-02-01,2025,2,5104001,Gasolina,Gasolina,2.78,7060,gas
+2025-02-01,2025,2,5104002,Etanol,Etanol,3.62,7060,ethanol
+2025-02-01,2025,2,5104003,Óleo diesel,Diesel,4.35,7060,diesel
+2025-02-01,2025,2,7101010,Empregado doméstico,Doméstico,0.41,7060,domestic
+2025-02-01,2025,2,7202041,Cigarro,Cigarro,-0.02,7060,cigarette
+2025-03-01,2025,3,8,Educação,Educação,0.1,7060,education
+2025-03-01,2025,3,11,Alimentação no domicílio,Alim. domicílio,1.31,7060,pantry
+2025-03-01,2025,3,1107,Carnes,Carnes,-1.6,7060,meat
+2025-03-01,2025,3,1201,Alimentação fora do domicílio,Fora de casa,0.77,7060,restaurant
+2025-03-01,2025,3,2202,Energia elétrica residencial,Energia,0.12,7060,energy
+2025-03-01,2025,3,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2025-03-01,2025,3,1101002,Arroz,Arroz,-1.81,7060,rice
+2025-03-01,2025,3,1101052,Feijão - preto,Feijão,-3.87,7060,beans
+2025-03-01,2025,3,1102006,Macarrão,Macarrão,-0.17,7060,pasta
+2025-03-01,2025,3,1103003,Batata-inglesa,Batata,-2.21,7060,potato
+2025-03-01,2025,3,1103028,Tomate,Tomate,22.55,7060,tomato
+2025-03-01,2025,3,1110044,Ovo de galinha,Ovos,13.13,7060,egg
+2025-03-01,2025,3,1111004,Leite longa vida,Leite,3.34,7060,milk
+2025-03-01,2025,3,1112015,Pão francês,Pão,1.18,7060,bread
+2025-03-01,2025,3,1113014,Azeite de oliva,Azeite,-0.09,7060,oil
+2025-03-01,2025,3,1114022,Café moído,Café,8.14,7060,coffee
+2025-03-01,2025,3,1114084,Cerveja,Cerveja,0.37,7060,beer
+2025-03-01,2025,3,1114087,Vinho,Vinho,0.83,7060,wine
+2025-03-01,2025,3,2101001,Aluguel residencial,Aluguel,0.23,7060,rent
+2025-03-01,2025,3,2101002,Condomínio,Condomínio,0.31,7060,condo
+2025-03-01,2025,3,2101004,Taxa de água e esgoto,Água/esgoto,0,7060,water
+2025-03-01,2025,3,2104008,Detergente,Detergente,0.79,7060,soap
+2025-03-01,2025,3,2201004,Gás de botijão,Gás botijão,0.21,7060,gas_bottle
+2025-03-01,2025,3,3202028,Computador pessoal,Computador,-0.14,7060,computer
+2025-03-01,2025,3,5101001,Ônibus urbano,Ônibus,-1.09,7060,bus
+2025-03-01,2025,3,5101010,Passagem aérea,Aérea,6.91,7060,plane
+2025-03-01,2025,3,5104001,Gasolina,Gasolina,0.51,7060,gas
+2025-03-01,2025,3,5104002,Etanol,Etanol,0.16,7060,ethanol
+2025-03-01,2025,3,5104003,Óleo diesel,Diesel,0.33,7060,diesel
+2025-03-01,2025,3,7101010,Empregado doméstico,Doméstico,0.57,7060,domestic
+2025-03-01,2025,3,7202041,Cigarro,Cigarro,0.98,7060,cigarette
+2025-04-01,2025,4,8,Educação,Educação,0.05,7060,education
+2025-04-01,2025,4,11,Alimentação no domicílio,Alim. domicílio,0.83,7060,pantry
+2025-04-01,2025,4,1107,Carnes,Carnes,-0.08,7060,meat
+2025-04-01,2025,4,1201,Alimentação fora do domicílio,Fora de casa,0.8,7060,restaurant
+2025-04-01,2025,4,2202,Energia elétrica residencial,Energia,-0.08,7060,energy
+2025-04-01,2025,4,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2025-04-01,2025,4,1101002,Arroz,Arroz,-4.19,7060,rice
+2025-04-01,2025,4,1101052,Feijão - preto,Feijão,-5.45,7060,beans
+2025-04-01,2025,4,1102006,Macarrão,Macarrão,0.92,7060,pasta
+2025-04-01,2025,4,1103003,Batata-inglesa,Batata,18.29,7060,potato
+2025-04-01,2025,4,1103028,Tomate,Tomate,14.32,7060,tomato
+2025-04-01,2025,4,1110044,Ovo de galinha,Ovos,-1.29,7060,egg
+2025-04-01,2025,4,1111004,Leite longa vida,Leite,1.71,7060,milk
+2025-04-01,2025,4,1112015,Pão francês,Pão,0.71,7060,bread
+2025-04-01,2025,4,1113014,Azeite de oliva,Azeite,-1.51,7060,oil
+2025-04-01,2025,4,1114022,Café moído,Café,4.48,7060,coffee
+2025-04-01,2025,4,1114084,Cerveja,Cerveja,0.48,7060,beer
+2025-04-01,2025,4,1114087,Vinho,Vinho,0.12,7060,wine
+2025-04-01,2025,4,2101001,Aluguel residencial,Aluguel,0.23,7060,rent
+2025-04-01,2025,4,2101002,Condomínio,Condomínio,0.21,7060,condo
+2025-04-01,2025,4,2101004,Taxa de água e esgoto,Água/esgoto,0.25,7060,water
+2025-04-01,2025,4,2104008,Detergente,Detergente,-0.07,7060,soap
+2025-04-01,2025,4,2201004,Gás de botijão,Gás botijão,-0.09,7060,gas_bottle
+2025-04-01,2025,4,3202028,Computador pessoal,Computador,1.18,7060,computer
+2025-04-01,2025,4,5101001,Ônibus urbano,Ônibus,-0.09,7060,bus
+2025-04-01,2025,4,5101010,Passagem aérea,Aérea,-14.15,7060,plane
+2025-04-01,2025,4,5104001,Gasolina,Gasolina,-0.35,7060,gas
+2025-04-01,2025,4,5104002,Etanol,Etanol,-0.82,7060,ethanol
+2025-04-01,2025,4,5104003,Óleo diesel,Diesel,-1.27,7060,diesel
+2025-04-01,2025,4,7101010,Empregado doméstico,Doméstico,0.29,7060,domestic
+2025-04-01,2025,4,7202041,Cigarro,Cigarro,2.71,7060,cigarette
+2025-05-01,2025,5,8,Educação,Educação,0.05,7060,education
+2025-05-01,2025,5,11,Alimentação no domicílio,Alim. domicílio,0.02,7060,pantry
+2025-05-01,2025,5,1107,Carnes,Carnes,0.97,7060,meat
+2025-05-01,2025,5,1201,Alimentação fora do domicílio,Fora de casa,0.58,7060,restaurant
+2025-05-01,2025,5,2202,Energia elétrica residencial,Energia,3.62,7060,energy
+2025-05-01,2025,5,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2025-05-01,2025,5,1101002,Arroz,Arroz,-4,7060,rice
+2025-05-01,2025,5,1101052,Feijão - preto,Feijão,-4.5,7060,beans
+2025-05-01,2025,5,1102006,Macarrão,Macarrão,0.12,7060,pasta
+2025-05-01,2025,5,1103003,Batata-inglesa,Batata,10.34,7060,potato
+2025-05-01,2025,5,1103028,Tomate,Tomate,-13.52,7060,tomato
+2025-05-01,2025,5,1110044,Ovo de galinha,Ovos,-3.98,7060,egg
+2025-05-01,2025,5,1111004,Leite longa vida,Leite,-0.89,7060,milk
+2025-05-01,2025,5,1112015,Pão francês,Pão,0.56,7060,bread
+2025-05-01,2025,5,1113014,Azeite de oliva,Azeite,-2.78,7060,oil
+2025-05-01,2025,5,1114022,Café moído,Café,4.59,7060,coffee
+2025-05-01,2025,5,1114084,Cerveja,Cerveja,0.11,7060,beer
+2025-05-01,2025,5,1114087,Vinho,Vinho,0.26,7060,wine
+2025-05-01,2025,5,2101001,Aluguel residencial,Aluguel,0.22,7060,rent
+2025-05-01,2025,5,2101002,Condomínio,Condomínio,0.2,7060,condo
+2025-05-01,2025,5,2101004,Taxa de água e esgoto,Água/esgoto,0.77,7060,water
+2025-05-01,2025,5,2104008,Detergente,Detergente,0.94,7060,soap
+2025-05-01,2025,5,2201004,Gás de botijão,Gás botijão,0.51,7060,gas_bottle
+2025-05-01,2025,5,3202028,Computador pessoal,Computador,-0.18,7060,computer
+2025-05-01,2025,5,5101001,Ônibus urbano,Ônibus,0.54,7060,bus
+2025-05-01,2025,5,5101010,Passagem aérea,Aérea,-11.31,7060,plane
+2025-05-01,2025,5,5104001,Gasolina,Gasolina,-0.66,7060,gas
+2025-05-01,2025,5,5104002,Etanol,Etanol,-0.91,7060,ethanol
+2025-05-01,2025,5,5104003,Óleo diesel,Diesel,-1.3,7060,diesel
+2025-05-01,2025,5,7101010,Empregado doméstico,Doméstico,0.35,7060,domestic
+2025-05-01,2025,5,7202041,Cigarro,Cigarro,0,7060,cigarette
+2025-06-01,2025,6,8,Educação,Educação,0,7060,education
+2025-06-01,2025,6,11,Alimentação no domicílio,Alim. domicílio,-0.43,7060,pantry
+2025-06-01,2025,6,1107,Carnes,Carnes,-0.35,7060,meat
+2025-06-01,2025,6,1201,Alimentação fora do domicílio,Fora de casa,0.46,7060,restaurant
+2025-06-01,2025,6,2202,Energia elétrica residencial,Energia,2.96,7060,energy
+2025-06-01,2025,6,6203,Plano de saúde,Plano saúde,0.57,7060,health
+2025-06-01,2025,6,1101002,Arroz,Arroz,-3.23,7060,rice
+2025-06-01,2025,6,1101052,Feijão - preto,Feijão,-2.79,7060,beans
+2025-06-01,2025,6,1102006,Macarrão,Macarrão,0.69,7060,pasta
+2025-06-01,2025,6,1103003,Batata-inglesa,Batata,-1.9,7060,potato
+2025-06-01,2025,6,1103028,Tomate,Tomate,3.25,7060,tomato
+2025-06-01,2025,6,1110044,Ovo de galinha,Ovos,-6.58,7060,egg
+2025-06-01,2025,6,1111004,Leite longa vida,Leite,-0.25,7060,milk
+2025-06-01,2025,6,1112015,Pão francês,Pão,0.23,7060,bread
+2025-06-01,2025,6,1113014,Azeite de oliva,Azeite,-2.37,7060,oil
+2025-06-01,2025,6,1114022,Café moído,Café,0.56,7060,coffee
+2025-06-01,2025,6,1114084,Cerveja,Cerveja,0.36,7060,beer
+2025-06-01,2025,6,1114087,Vinho,Vinho,-1.6,7060,wine
+2025-06-01,2025,6,2101001,Aluguel residencial,Aluguel,0.13,7060,rent
+2025-06-01,2025,6,2101002,Condomínio,Condomínio,0.24,7060,condo
+2025-06-01,2025,6,2101004,Taxa de água e esgoto,Água/esgoto,0.59,7060,water
+2025-06-01,2025,6,2104008,Detergente,Detergente,0.37,7060,soap
+2025-06-01,2025,6,2201004,Gás de botijão,Gás botijão,0.21,7060,gas_bottle
+2025-06-01,2025,6,3202028,Computador pessoal,Computador,0.97,7060,computer
+2025-06-01,2025,6,5101001,Ônibus urbano,Ônibus,-0.03,7060,bus
+2025-06-01,2025,6,5101010,Passagem aérea,Aérea,0.8,7060,plane
+2025-06-01,2025,6,5104001,Gasolina,Gasolina,-0.34,7060,gas
+2025-06-01,2025,6,5104002,Etanol,Etanol,-0.61,7060,ethanol
+2025-06-01,2025,6,5104003,Óleo diesel,Diesel,-1.36,7060,diesel
+2025-06-01,2025,6,7101010,Empregado doméstico,Doméstico,0.4,7060,domestic
+2025-06-01,2025,6,7202041,Cigarro,Cigarro,0.46,7060,cigarette
+2025-07-01,2025,7,8,Educação,Educação,0.02,7060,education
+2025-07-01,2025,7,11,Alimentação no domicílio,Alim. domicílio,-0.69,7060,pantry
+2025-07-01,2025,7,1107,Carnes,Carnes,-0.3,7060,meat
+2025-07-01,2025,7,1201,Alimentação fora do domicílio,Fora de casa,0.87,7060,restaurant
+2025-07-01,2025,7,2202,Energia elétrica residencial,Energia,3.04,7060,energy
+2025-07-01,2025,7,6203,Plano de saúde,Plano saúde,0.35,7060,health
+2025-07-01,2025,7,1101002,Arroz,Arroz,-2.89,7060,rice
+2025-07-01,2025,7,1101052,Feijão - preto,Feijão,-2.99,7060,beans
+2025-07-01,2025,7,1102006,Macarrão,Macarrão,-0.59,7060,pasta
+2025-07-01,2025,7,1103003,Batata-inglesa,Batata,-20.27,7060,potato
+2025-07-01,2025,7,1103028,Tomate,Tomate,-0.74,7060,tomato
+2025-07-01,2025,7,1110044,Ovo de galinha,Ovos,-2.43,7060,egg
+2025-07-01,2025,7,1111004,Leite longa vida,Leite,0.11,7060,milk
+2025-07-01,2025,7,1112015,Pão francês,Pão,0.22,7060,bread
+2025-07-01,2025,7,1113014,Azeite de oliva,Azeite,-4.12,7060,oil
+2025-07-01,2025,7,1114022,Café moído,Café,-1.01,7060,coffee
+2025-07-01,2025,7,1114084,Cerveja,Cerveja,0.45,7060,beer
+2025-07-01,2025,7,1114087,Vinho,Vinho,-0.09,7060,wine
+2025-07-01,2025,7,2101001,Aluguel residencial,Aluguel,0.39,7060,rent
+2025-07-01,2025,7,2101002,Condomínio,Condomínio,0.15,7060,condo
+2025-07-01,2025,7,2101004,Taxa de água e esgoto,Água/esgoto,0.13,7060,water
+2025-07-01,2025,7,2104008,Detergente,Detergente,0.5,7060,soap
+2025-07-01,2025,7,2201004,Gás de botijão,Gás botijão,-0.37,7060,gas_bottle
+2025-07-01,2025,7,3202028,Computador pessoal,Computador,-1.65,7060,computer
+2025-07-01,2025,7,5101001,Ônibus urbano,Ônibus,0.46,7060,bus
+2025-07-01,2025,7,5101010,Passagem aérea,Aérea,19.92,7060,plane
+2025-07-01,2025,7,5104001,Gasolina,Gasolina,-0.51,7060,gas
+2025-07-01,2025,7,5104002,Etanol,Etanol,-1.68,7060,ethanol
+2025-07-01,2025,7,5104003,Óleo diesel,Diesel,-0.59,7060,diesel
+2025-07-01,2025,7,7101010,Empregado doméstico,Doméstico,0.39,7060,domestic
+2025-07-01,2025,7,7202041,Cigarro,Cigarro,1.95,7060,cigarette
+2025-08-01,2025,8,8,Educação,Educação,0.75,7060,education
+2025-08-01,2025,8,11,Alimentação no domicílio,Alim. domicílio,-0.83,7060,pantry
+2025-08-01,2025,8,1107,Carnes,Carnes,-0.43,7060,meat
+2025-08-01,2025,8,1201,Alimentação fora do domicílio,Fora de casa,0.5,7060,restaurant
+2025-08-01,2025,8,2202,Energia elétrica residencial,Energia,-4.21,7060,energy
+2025-08-01,2025,8,6203,Plano de saúde,Plano saúde,0.5,7060,health
+2025-08-01,2025,8,1101002,Arroz,Arroz,-2.61,7060,rice
+2025-08-01,2025,8,1101052,Feijão - preto,Feijão,-3.11,7060,beans
+2025-08-01,2025,8,1102006,Macarrão,Macarrão,-0.78,7060,pasta
+2025-08-01,2025,8,1103003,Batata-inglesa,Batata,-8.59,7060,potato
+2025-08-01,2025,8,1103028,Tomate,Tomate,-13.39,7060,tomato
+2025-08-01,2025,8,1110044,Ovo de galinha,Ovos,-1.66,7060,egg
+2025-08-01,2025,8,1111004,Leite longa vida,Leite,-1.04,7060,milk
+2025-08-01,2025,8,1112015,Pão francês,Pão,0.41,7060,bread
+2025-08-01,2025,8,1113014,Azeite de oliva,Azeite,-2.26,7060,oil
+2025-08-01,2025,8,1114022,Café moído,Café,-2.17,7060,coffee
+2025-08-01,2025,8,1114084,Cerveja,Cerveja,1,7060,beer
+2025-08-01,2025,8,1114087,Vinho,Vinho,-0.93,7060,wine
+2025-08-01,2025,8,2101001,Aluguel residencial,Aluguel,0.25,7060,rent
+2025-08-01,2025,8,2101002,Condomínio,Condomínio,0.3,7060,condo
+2025-08-01,2025,8,2101004,Taxa de água e esgoto,Água/esgoto,0.24,7060,water
+2025-08-01,2025,8,2104008,Detergente,Detergente,0.04,7060,soap
+2025-08-01,2025,8,2201004,Gás de botijão,Gás botijão,0.42,7060,gas_bottle
+2025-08-01,2025,8,3202028,Computador pessoal,Computador,0.49,7060,computer
+2025-08-01,2025,8,5101001,Ônibus urbano,Ônibus,-0.14,7060,bus
+2025-08-01,2025,8,5101010,Passagem aérea,Aérea,-2.44,7060,plane
+2025-08-01,2025,8,5104001,Gasolina,Gasolina,-0.94,7060,gas
+2025-08-01,2025,8,5104002,Etanol,Etanol,-0.82,7060,ethanol
+2025-08-01,2025,8,5104003,Óleo diesel,Diesel,0.16,7060,diesel
+2025-08-01,2025,8,7101010,Empregado doméstico,Doméstico,0.43,7060,domestic
+2025-08-01,2025,8,7202041,Cigarro,Cigarro,-0.16,7060,cigarette
+2025-09-01,2025,9,8,Educação,Educação,0.07,7060,education
+2025-09-01,2025,9,11,Alimentação no domicílio,Alim. domicílio,-0.41,7060,pantry
+2025-09-01,2025,9,1107,Carnes,Carnes,-0.12,7060,meat
+2025-09-01,2025,9,1201,Alimentação fora do domicílio,Fora de casa,0.11,7060,restaurant
+2025-09-01,2025,9,2202,Energia elétrica residencial,Energia,10.31,7060,energy
+2025-09-01,2025,9,6203,Plano de saúde,Plano saúde,0.5,7060,health
+2025-09-01,2025,9,1101002,Arroz,Arroz,-2.14,7060,rice
+2025-09-01,2025,9,1101052,Feijão - preto,Feijão,-3.07,7060,beans
+2025-09-01,2025,9,1102006,Macarrão,Macarrão,-0.76,7060,pasta
+2025-09-01,2025,9,1103003,Batata-inglesa,Batata,-8.55,7060,potato
+2025-09-01,2025,9,1103028,Tomate,Tomate,-11.52,7060,tomato
+2025-09-01,2025,9,1110044,Ovo de galinha,Ovos,-2.84,7060,egg
+2025-09-01,2025,9,1111004,Leite longa vida,Leite,-0.45,7060,milk
+2025-09-01,2025,9,1112015,Pão francês,Pão,0.21,7060,bread
+2025-09-01,2025,9,1113014,Azeite de oliva,Azeite,-3.11,7060,oil
+2025-09-01,2025,9,1114022,Café moído,Café,-0.06,7060,coffee
+2025-09-01,2025,9,1114084,Cerveja,Cerveja,0.64,7060,beer
+2025-09-01,2025,9,1114087,Vinho,Vinho,-0.26,7060,wine
+2025-09-01,2025,9,2101001,Aluguel residencial,Aluguel,0.52,7060,rent
+2025-09-01,2025,9,2101002,Condomínio,Condomínio,0.19,7060,condo
+2025-09-01,2025,9,2101004,Taxa de água e esgoto,Água/esgoto,0.07,7060,water
+2025-09-01,2025,9,2104008,Detergente,Detergente,1.18,7060,soap
+2025-09-01,2025,9,2201004,Gás de botijão,Gás botijão,0.63,7060,gas_bottle
+2025-09-01,2025,9,3202028,Computador pessoal,Computador,-0.81,7060,computer
+2025-09-01,2025,9,5101001,Ônibus urbano,Ônibus,-0.52,7060,bus
+2025-09-01,2025,9,5101010,Passagem aérea,Aérea,-2.83,7060,plane
+2025-09-01,2025,9,5104001,Gasolina,Gasolina,0.75,7060,gas
+2025-09-01,2025,9,5104002,Etanol,Etanol,2.25,7060,ethanol
+2025-09-01,2025,9,5104003,Óleo diesel,Diesel,0.38,7060,diesel
+2025-09-01,2025,9,7101010,Empregado doméstico,Doméstico,0.42,7060,domestic
+2025-09-01,2025,9,7202041,Cigarro,Cigarro,-0.83,7060,cigarette
+2025-10-01,2025,10,8,Educação,Educação,0.06,7060,education
+2025-10-01,2025,10,11,Alimentação no domicílio,Alim. domicílio,-0.16,7060,pantry
+2025-10-01,2025,10,1107,Carnes,Carnes,0.21,7060,meat
+2025-10-01,2025,10,1201,Alimentação fora do domicílio,Fora de casa,0.46,7060,restaurant
+2025-10-01,2025,10,2202,Energia elétrica residencial,Energia,-2.39,7060,energy
+2025-10-01,2025,10,6203,Plano de saúde,Plano saúde,0.5,7060,health
+2025-10-01,2025,10,1101002,Arroz,Arroz,-2.49,7060,rice
+2025-10-01,2025,10,1101052,Feijão - preto,Feijão,-1.33,7060,beans
+2025-10-01,2025,10,1102006,Macarrão,Macarrão,-0.61,7060,pasta
+2025-10-01,2025,10,1103003,Batata-inglesa,Batata,8.56,7060,potato
+2025-10-01,2025,10,1103028,Tomate,Tomate,2.15,7060,tomato
+2025-10-01,2025,10,1110044,Ovo de galinha,Ovos,-2.66,7060,egg
+2025-10-01,2025,10,1111004,Leite longa vida,Leite,-1.88,7060,milk
+2025-10-01,2025,10,1112015,Pão francês,Pão,0,7060,bread
+2025-10-01,2025,10,1113014,Azeite de oliva,Azeite,-2.64,7060,oil
+2025-10-01,2025,10,1114022,Café moído,Café,-0.31,7060,coffee
+2025-10-01,2025,10,1114084,Cerveja,Cerveja,0.75,7060,beer
+2025-10-01,2025,10,1114087,Vinho,Vinho,1.23,7060,wine
+2025-10-01,2025,10,2101001,Aluguel residencial,Aluguel,0.93,7060,rent
+2025-10-01,2025,10,2101002,Condomínio,Condomínio,0.34,7060,condo
+2025-10-01,2025,10,2101004,Taxa de água e esgoto,Água/esgoto,0,7060,water
+2025-10-01,2025,10,2104008,Detergente,Detergente,-0.7,7060,soap
+2025-10-01,2025,10,2201004,Gás de botijão,Gás botijão,0.94,7060,gas_bottle
+2025-10-01,2025,10,3202028,Computador pessoal,Computador,-0.67,7060,computer
+2025-10-01,2025,10,5101001,Ônibus urbano,Ônibus,0.38,7060,bus
+2025-10-01,2025,10,5101010,Passagem aérea,Aérea,4.48,7060,plane
+2025-10-01,2025,10,5104001,Gasolina,Gasolina,0.29,7060,gas
+2025-10-01,2025,10,5104002,Etanol,Etanol,0.85,7060,ethanol
+2025-10-01,2025,10,5104003,Óleo diesel,Diesel,-0.46,7060,diesel
+2025-10-01,2025,10,7101010,Empregado doméstico,Doméstico,0.52,7060,domestic
+2025-10-01,2025,10,7202041,Cigarro,Cigarro,-0.07,7060,cigarette
+2025-11-01,2025,11,8,Educação,Educação,0.01,7060,education
+2025-11-01,2025,11,11,Alimentação no domicílio,Alim. domicílio,-0.2,7060,pantry
+2025-11-01,2025,11,1107,Carnes,Carnes,1.05,7060,meat
+2025-11-01,2025,11,1201,Alimentação fora do domicílio,Fora de casa,0.46,7060,restaurant
+2025-11-01,2025,11,2202,Energia elétrica residencial,Energia,1.27,7060,energy
+2025-11-01,2025,11,6203,Plano de saúde,Plano saúde,0.5,7060,health
+2025-11-01,2025,11,1101002,Arroz,Arroz,-2.86,7060,rice
+2025-11-01,2025,11,1101052,Feijão - preto,Feijão,-1.57,7060,beans
+2025-11-01,2025,11,1102006,Macarrão,Macarrão,0.44,7060,pasta
+2025-11-01,2025,11,1103003,Batata-inglesa,Batata,1.59,7060,potato
+2025-11-01,2025,11,1103028,Tomate,Tomate,-10.38,7060,tomato
+2025-11-01,2025,11,1110044,Ovo de galinha,Ovos,-0.69,7060,egg
+2025-11-01,2025,11,1111004,Leite longa vida,Leite,-4.98,7060,milk
+2025-11-01,2025,11,1112015,Pão francês,Pão,0.31,7060,bread
+2025-11-01,2025,11,1113014,Azeite de oliva,Azeite,-3.48,7060,oil
+2025-11-01,2025,11,1114022,Café moído,Café,-1.36,7060,coffee
+2025-11-01,2025,11,1114084,Cerveja,Cerveja,0.73,7060,beer
+2025-11-01,2025,11,1114087,Vinho,Vinho,-0.99,7060,wine
+2025-11-01,2025,11,2101001,Aluguel residencial,Aluguel,0.37,7060,rent
+2025-11-01,2025,11,2101002,Condomínio,Condomínio,0.4,7060,condo
+2025-11-01,2025,11,2101004,Taxa de água e esgoto,Água/esgoto,0.29,7060,water
+2025-11-01,2025,11,2104008,Detergente,Detergente,0.39,7060,soap
+2025-11-01,2025,11,2201004,Gás de botijão,Gás botijão,-0.38,7060,gas_bottle
+2025-11-01,2025,11,3202028,Computador pessoal,Computador,-2.46,7060,computer
+2025-11-01,2025,11,5101001,Ônibus urbano,Ônibus,-0.76,7060,bus
+2025-11-01,2025,11,5101010,Passagem aérea,Aérea,11.9,7060,plane
+2025-11-01,2025,11,5104001,Gasolina,Gasolina,-0.42,7060,gas
+2025-11-01,2025,11,5104002,Etanol,Etanol,0.39,7060,ethanol
+2025-11-01,2025,11,5104003,Óleo diesel,Diesel,-0.06,7060,diesel
+2025-11-01,2025,11,7101010,Empregado doméstico,Doméstico,0.49,7060,domestic
+2025-11-01,2025,11,7202041,Cigarro,Cigarro,0,7060,cigarette
+2025-12-01,2025,12,8,Educação,Educação,0.08,7060,education
+2025-12-01,2025,12,11,Alimentação no domicílio,Alim. domicílio,0.14,7060,pantry
+2025-12-01,2025,12,1107,Carnes,Carnes,1.48,7060,meat
+2025-12-01,2025,12,1201,Alimentação fora do domicílio,Fora de casa,0.6,7060,restaurant
+2025-12-01,2025,12,2202,Energia elétrica residencial,Energia,-2.41,7060,energy
+2025-12-01,2025,12,6203,Plano de saúde,Plano saúde,0.49,7060,health
+2025-12-01,2025,12,1101002,Arroz,Arroz,-2.04,7060,rice
+2025-12-01,2025,12,1101052,Feijão - preto,Feijão,1.27,7060,beans
+2025-12-01,2025,12,1102006,Macarrão,Macarrão,0.29,7060,pasta
+2025-12-01,2025,12,1103003,Batata-inglesa,Batata,7.65,7060,potato
+2025-12-01,2025,12,1103028,Tomate,Tomate,-3.95,7060,tomato
+2025-12-01,2025,12,1110044,Ovo de galinha,Ovos,-1.06,7060,egg
+2025-12-01,2025,12,1111004,Leite longa vida,Leite,-6.42,7060,milk
+2025-12-01,2025,12,1112015,Pão francês,Pão,0.32,7060,bread
+2025-12-01,2025,12,1113014,Azeite de oliva,Azeite,-0.82,7060,oil
+2025-12-01,2025,12,1114022,Café moído,Café,-0.26,7060,coffee
+2025-12-01,2025,12,1114084,Cerveja,Cerveja,0.73,7060,beer
+2025-12-01,2025,12,1114087,Vinho,Vinho,0.05,7060,wine
+2025-12-01,2025,12,2101001,Aluguel residencial,Aluguel,0.34,7060,rent
+2025-12-01,2025,12,2101002,Condomínio,Condomínio,0.51,7060,condo
+2025-12-01,2025,12,2101004,Taxa de água e esgoto,Água/esgoto,0.96,7060,water
+2025-12-01,2025,12,2104008,Detergente,Detergente,0.96,7060,soap
+2025-12-01,2025,12,2201004,Gás de botijão,Gás botijão,-0.32,7060,gas_bottle
+2025-12-01,2025,12,3202028,Computador pessoal,Computador,-0.07,7060,computer
+2025-12-01,2025,12,5101001,Ônibus urbano,Ônibus,-2.63,7060,bus
+2025-12-01,2025,12,5101010,Passagem aérea,Aérea,12.61,7060,plane
+2025-12-01,2025,12,5104001,Gasolina,Gasolina,0.18,7060,gas
+2025-12-01,2025,12,5104002,Etanol,Etanol,2.83,7060,ethanol
+2025-12-01,2025,12,5104003,Óleo diesel,Diesel,-0.27,7060,diesel
+2025-12-01,2025,12,7101010,Empregado doméstico,Doméstico,0.48,7060,domestic
+2025-12-01,2025,12,7202041,Cigarro,Cigarro,0,7060,cigarette
+2026-01-01,2026,1,8,Educação,Educação,0.02,7060,education
+2026-01-01,2026,1,11,Alimentação no domicílio,Alim. domicílio,0.1,7060,pantry
+2026-01-01,2026,1,1107,Carnes,Carnes,0.84,7060,meat
+2026-01-01,2026,1,1201,Alimentação fora do domicílio,Fora de casa,0.55,7060,restaurant
+2026-01-01,2026,1,2202,Energia elétrica residencial,Energia,-2.73,7060,energy
+2026-01-01,2026,1,6203,Plano de saúde,Plano saúde,0.49,7060,health
+2026-01-01,2026,1,1101002,Arroz,Arroz,-1.55,7060,rice
+2026-01-01,2026,1,1101052,Feijão - preto,Feijão,-0.68,7060,beans
+2026-01-01,2026,1,1102006,Macarrão,Macarrão,-0.34,7060,pasta
+2026-01-01,2026,1,1103003,Batata-inglesa,Batata,0.66,7060,potato
+2026-01-01,2026,1,1103028,Tomate,Tomate,20.52,7060,tomato
+2026-01-01,2026,1,1110044,Ovo de galinha,Ovos,-4.48,7060,egg
+2026-01-01,2026,1,1111004,Leite longa vida,Leite,-5.59,7060,milk
+2026-01-01,2026,1,1112015,Pão francês,Pão,-0.01,7060,bread
+2026-01-01,2026,1,1113014,Azeite de oliva,Azeite,-1.84,7060,oil
+2026-01-01,2026,1,1114022,Café moído,Café,-1.18,7060,coffee
+2026-01-01,2026,1,1114084,Cerveja,Cerveja,-0.06,7060,beer
+2026-01-01,2026,1,1114087,Vinho,Vinho,0.08,7060,wine
+2026-01-01,2026,1,2101001,Aluguel residencial,Aluguel,0.76,7060,rent
+2026-01-01,2026,1,2101002,Condomínio,Condomínio,0.51,7060,condo
+2026-01-01,2026,1,2101004,Taxa de água e esgoto,Água/esgoto,2.56,7060,water
+2026-01-01,2026,1,2104008,Detergente,Detergente,-0.36,7060,soap
+2026-01-01,2026,1,2201004,Gás de botijão,Gás botijão,-0.06,7060,gas_bottle
+2026-01-01,2026,1,3202028,Computador pessoal,Computador,1.71,7060,computer
+2026-01-01,2026,1,5101001,Ônibus urbano,Ônibus,5.14,7060,bus
+2026-01-01,2026,1,5101010,Passagem aérea,Aérea,-8.9,7060,plane
+2026-01-01,2026,1,5104001,Gasolina,Gasolina,2.06,7060,gas
+2026-01-01,2026,1,5104002,Etanol,Etanol,3.44,7060,ethanol
+2026-01-01,2026,1,5104003,Óleo diesel,Diesel,0.52,7060,diesel
+2026-01-01,2026,1,7101010,Empregado doméstico,Doméstico,0.48,7060,domestic
+2026-01-01,2026,1,7202041,Cigarro,Cigarro,0.12,7060,cigarette
+2026-02-01,2026,2,8,Educação,Educação,5.21,7060,education
+2026-02-01,2026,2,11,Alimentação no domicílio,Alim. domicílio,0.23,7060,pantry
+2026-02-01,2026,2,1107,Carnes,Carnes,0.58,7060,meat
+2026-02-01,2026,2,1201,Alimentação fora do domicílio,Fora de casa,0.34,7060,restaurant
+2026-02-01,2026,2,2202,Energia elétrica residencial,Energia,0.33,7060,energy
+2026-02-01,2026,2,6203,Plano de saúde,Plano saúde,0.49,7060,health
+2026-02-01,2026,2,1101002,Arroz,Arroz,-2.36,7060,rice
+2026-02-01,2026,2,1101052,Feijão - preto,Feijão,2.84,7060,beans
+2026-02-01,2026,2,1102006,Macarrão,Macarrão,-0.42,7060,pasta
+2026-02-01,2026,2,1103003,Batata-inglesa,Batata,1,7060,potato
+2026-02-01,2026,2,1103028,Tomate,Tomate,0.3,7060,tomato
+2026-02-01,2026,2,1110044,Ovo de galinha,Ovos,4.55,7060,egg
+2026-02-01,2026,2,1111004,Leite longa vida,Leite,1.24,7060,milk
+2026-02-01,2026,2,1112015,Pão francês,Pão,0.72,7060,bread
+2026-02-01,2026,2,1113014,Azeite de oliva,Azeite,-2.15,7060,oil
+2026-02-01,2026,2,1114022,Café moído,Café,-1.2,7060,coffee
+2026-02-01,2026,2,1114084,Cerveja,Cerveja,0.36,7060,beer
+2026-02-01,2026,2,1114087,Vinho,Vinho,-0.04,7060,wine
+2026-02-01,2026,2,2101001,Aluguel residencial,Aluguel,0.3,7060,rent
+2026-02-01,2026,2,2101002,Condomínio,Condomínio,0.29,7060,condo
+2026-02-01,2026,2,2101004,Taxa de água e esgoto,Água/esgoto,0.84,7060,water
+2026-02-01,2026,2,2104008,Detergente,Detergente,-0.74,7060,soap
+2026-02-01,2026,2,2201004,Gás de botijão,Gás botijão,0.04,7060,gas_bottle
+2026-02-01,2026,2,3202028,Computador pessoal,Computador,1.07,7060,computer
+2026-02-01,2026,2,5101001,Ônibus urbano,Ônibus,1.14,7060,bus
+2026-02-01,2026,2,5101010,Passagem aérea,Aérea,11.4,7060,plane
+2026-02-01,2026,2,5104001,Gasolina,Gasolina,-0.61,7060,gas
+2026-02-01,2026,2,5104002,Etanol,Etanol,0.55,7060,ethanol
+2026-02-01,2026,2,5104003,Óleo diesel,Diesel,0.23,7060,diesel
+2026-02-01,2026,2,7101010,Empregado doméstico,Doméstico,0.52,7060,domestic
+2026-02-01,2026,2,7202041,Cigarro,Cigarro,0.9,7060,cigarette
+2026-03-01,2026,3,8,Educação,Educação,0.02,7060,education
+2026-03-01,2026,3,11,Alimentação no domicílio,Alim. domicílio,1.94,7060,pantry
+2026-03-01,2026,3,1107,Carnes,Carnes,1.73,7060,meat
+2026-03-01,2026,3,1201,Alimentação fora do domicílio,Fora de casa,0.61,7060,restaurant
+2026-03-01,2026,3,2202,Energia elétrica residencial,Energia,0.13,7060,energy
+2026-03-01,2026,3,6203,Plano de saúde,Plano saúde,0.49,7060,health
+2026-03-01,2026,3,1101002,Arroz,Arroz,-0.3,7060,rice
+2026-03-01,2026,3,1101052,Feijão - preto,Feijão,7.12,7060,beans
+2026-03-01,2026,3,1102006,Macarrão,Macarrão,0.91,7060,pasta
+2026-03-01,2026,3,1103003,Batata-inglesa,Batata,12.17,7060,potato
+2026-03-01,2026,3,1103028,Tomate,Tomate,20.31,7060,tomato
+2026-03-01,2026,3,1110044,Ovo de galinha,Ovos,6.65,7060,egg
+2026-03-01,2026,3,1111004,Leite longa vida,Leite,11.74,7060,milk
+2026-03-01,2026,3,1112015,Pão francês,Pão,0.18,7060,bread
+2026-03-01,2026,3,1113014,Azeite de oliva,Azeite,-1.43,7060,oil
+2026-03-01,2026,3,1114022,Café moído,Café,-1.28,7060,coffee
+2026-03-01,2026,3,1114084,Cerveja,Cerveja,0.36,7060,beer
+2026-03-01,2026,3,1114087,Vinho,Vinho,1.75,7060,wine
+2026-03-01,2026,3,2101001,Aluguel residencial,Aluguel,0.2,7060,rent
+2026-03-01,2026,3,2101002,Condomínio,Condomínio,0.13,7060,condo
+2026-03-01,2026,3,2101004,Taxa de água e esgoto,Água/esgoto,0.24,7060,water
+2026-03-01,2026,3,2104008,Detergente,Detergente,0.9,7060,soap
+2026-03-01,2026,3,2201004,Gás de botijão,Gás botijão,-0.21,7060,gas_bottle
+2026-03-01,2026,3,3202028,Computador pessoal,Computador,2.82,7060,computer
+2026-03-01,2026,3,5101001,Ônibus urbano,Ônibus,1.17,7060,bus
+2026-03-01,2026,3,5101010,Passagem aérea,Aérea,6.08,7060,plane
+2026-03-01,2026,3,5104001,Gasolina,Gasolina,4.59,7060,gas
+2026-03-01,2026,3,5104002,Etanol,Etanol,0.93,7060,ethanol
+2026-03-01,2026,3,5104003,Óleo diesel,Diesel,13.9,7060,diesel
+2026-03-01,2026,3,7101010,Empregado doméstico,Doméstico,0.59,7060,domestic
+2026-03-01,2026,3,7202041,Cigarro,Cigarro,0.73,7060,cigarette
+2026-04-01,2026,4,8,Educação,Educação,0.06,7060,education
+2026-04-01,2026,4,11,Alimentação no domicílio,Alim. domicílio,1.64,7060,pantry
+2026-04-01,2026,4,1107,Carnes,Carnes,1.59,7060,meat
+2026-04-01,2026,4,1201,Alimentação fora do domicílio,Fora de casa,0.59,7060,restaurant
+2026-04-01,2026,4,2202,Energia elétrica residencial,Energia,0.72,7060,energy
+2026-04-01,2026,4,6203,Plano de saúde,Plano saúde,0.49,7060,health
+2026-04-01,2026,4,1101002,Arroz,Arroz,2.53,7060,rice
+2026-04-01,2026,4,1101052,Feijão - preto,Feijão,1.8,7060,beans
+2026-04-01,2026,4,1102006,Macarrão,Macarrão,-0.21,7060,pasta
+2026-04-01,2026,4,1103003,Batata-inglesa,Batata,6.57,7060,potato
+2026-04-01,2026,4,1103028,Tomate,Tomate,6.13,7060,tomato
+2026-04-01,2026,4,1110044,Ovo de galinha,Ovos,1.73,7060,egg
+2026-04-01,2026,4,1111004,Leite longa vida,Leite,13.66,7060,milk
+2026-04-01,2026,4,1112015,Pão francês,Pão,0.62,7060,bread
+2026-04-01,2026,4,1113014,Azeite de oliva,Azeite,-1.36,7060,oil
+2026-04-01,2026,4,1114022,Café moído,Café,-2.3,7060,coffee
+2026-04-01,2026,4,1114084,Cerveja,Cerveja,-0.43,7060,beer
+2026-04-01,2026,4,1114087,Vinho,Vinho,-0.62,7060,wine
+2026-04-01,2026,4,2101001,Aluguel residencial,Aluguel,0.15,7060,rent
+2026-04-01,2026,4,2101002,Condomínio,Condomínio,0.11,7060,condo
+2026-04-01,2026,4,2101004,Taxa de água e esgoto,Água/esgoto,0.22,7060,water
+2026-04-01,2026,4,2104008,Detergente,Detergente,0.05,7060,soap
+2026-04-01,2026,4,2201004,Gás de botijão,Gás botijão,3.74,7060,gas_bottle
+2026-04-01,2026,4,3202028,Computador pessoal,Computador,2.94,7060,computer
+2026-04-01,2026,4,5101001,Ônibus urbano,Ônibus,-1.13,7060,bus
+2026-04-01,2026,4,5101010,Passagem aérea,Aérea,-14.45,7060,plane
+2026-04-01,2026,4,5104001,Gasolina,Gasolina,1.86,7060,gas
+2026-04-01,2026,4,5104002,Etanol,Etanol,0.62,7060,ethanol
+2026-04-01,2026,4,5104003,Óleo diesel,Diesel,4.46,7060,diesel
+2026-04-01,2026,4,7101010,Empregado doméstico,Doméstico,0.59,7060,domestic
+2026-04-01,2026,4,7202041,Cigarro,Cigarro,0,7060,cigarette
+2026-05-01,2026,5,8,Educação,Educação,0,7060,education
+2026-05-01,2026,5,11,Alimentação no domicílio,Alim. domicílio,1.65,7060,pantry
+2026-05-01,2026,5,1107,Carnes,Carnes,1.39,7060,meat
+2026-05-01,2026,5,1201,Alimentação fora do domicílio,Fora de casa,0.49,7060,restaurant
+2026-05-01,2026,5,2202,Energia elétrica residencial,Energia,3.67,7060,energy
+2026-05-01,2026,5,6203,Plano de saúde,Plano saúde,0.5,7060,health
+2026-05-01,2026,5,1101002,Arroz,Arroz,1.74,7060,rice
+2026-05-01,2026,5,1101052,Feijão - preto,Feijão,2.07,7060,beans
+2026-05-01,2026,5,1102006,Macarrão,Macarrão,-0.53,7060,pasta
+2026-05-01,2026,5,1103003,Batata-inglesa,Batata,44.69,7060,potato
+2026-05-01,2026,5,1103028,Tomate,Tomate,20.62,7060,tomato
+2026-05-01,2026,5,1110044,Ovo de galinha,Ovos,-1.08,7060,egg
+2026-05-01,2026,5,1111004,Leite longa vida,Leite,0.77,7060,milk
+2026-05-01,2026,5,1112015,Pão francês,Pão,0.75,7060,bread
+2026-05-01,2026,5,1113014,Azeite de oliva,Azeite,0.75,7060,oil
+2026-05-01,2026,5,1114022,Café moído,Café,-2.38,7060,coffee
+2026-05-01,2026,5,1114084,Cerveja,Cerveja,0.96,7060,beer
+2026-05-01,2026,5,1114087,Vinho,Vinho,-0.51,7060,wine
+2026-05-01,2026,5,2101001,Aluguel residencial,Aluguel,0.23,7060,rent
+2026-05-01,2026,5,2101002,Condomínio,Condomínio,0.44,7060,condo
+2026-05-01,2026,5,2101004,Taxa de água e esgoto,Água/esgoto,0.12,7060,water
+2026-05-01,2026,5,2104008,Detergente,Detergente,0.89,7060,soap
+2026-05-01,2026,5,2201004,Gás de botijão,Gás botijão,0.55,7060,gas_bottle
+2026-05-01,2026,5,3202028,Computador pessoal,Computador,1.42,7060,computer
+2026-05-01,2026,5,5101001,Ônibus urbano,Ônibus,0.43,7060,bus
+2026-05-01,2026,5,5101010,Passagem aérea,Aérea,3.2,7060,plane
+2026-05-01,2026,5,5104001,Gasolina,Gasolina,-1.46,7060,gas
+2026-05-01,2026,5,5104002,Etanol,Etanol,-6.2,7060,ethanol
+2026-05-01,2026,5,5104003,Óleo diesel,Diesel,-2.34,7060,diesel
+2026-05-01,2026,5,7101010,Empregado doméstico,Doméstico,0.51,7060,domestic
+2026-05-01,2026,5,7202041,Cigarro,Cigarro,0,7060,cigarette

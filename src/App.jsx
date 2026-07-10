@@ -4,33 +4,36 @@ import InfoPanel from './components/InfoPanel.jsx';
 import TimelineControl from './components/TimelineControl.jsx';
 import Tooltip from './components/Tooltip.jsx';
 import { parseUnifiedCsv } from './data/parseUnified.js';
+import { parseProductsUnifiedCsv } from './data/parseProductsUnified.js';
 import { IPCA_GROUPS } from './data/groups.js';
+import { ISLANDS } from './data/islands.js';
 import {
   calculateAccumulatedIndex,
   calculateTwelveMonthInflation,
   formatDateKey,
 } from './data/inflationMath.js';
 
-/** Dataset unificado (2938 + 1419 + 7060) gerado por `npm run build:data` */
-// BASE_URL do Vite termina com "/" (ex.: "/" local, "/inflacity/" no GitHub Pages)
-const CSV_URL = `${import.meta.env.BASE_URL}data/ipca_grupos_unificado.csv`;
+const BASE = import.meta.env.BASE_URL;
+const GROUPS_CSV = `${BASE}data/ipca_grupos_unificado.csv`;
+const PRODUCTS_CSV = `${BASE}data/ipca_selecionados_unificado.csv`;
 
 /**
  * Cidade da Inflação — app principal.
- * Carrega o CSV unificado, calcula índices e orquestra a cena 3D + UI.
+ * Duas ilhas: grupos IPCA + produtos selecionados.
  */
 export default function App() {
-  const [status, setStatus] = useState('loading'); // loading | ready | error
+  const [status, setStatus] = useState('loading');
   const [error, setError] = useState(null);
-  const [parsed, setParsed] = useState(null);
+  const [groupsParsed, setGroupsParsed] = useState(null);
+  const [productsParsed, setProductsParsed] = useState(null);
 
   const [endDate, setEndDate] = useState(null);
-  const [mode, setMode] = useState('accumulated'); // accumulated | twelveMonths
+  const [mode, setMode] = useState('accumulated');
   const [selectedId, setSelectedId] = useState(null);
   const [hoveredId, setHoveredId] = useState(null);
   const [cameraResetKey, setCameraResetKey] = useState(0);
-
-  // Tooltip position (mouse)
+  const [activeIsland, setActiveIsland] = useState('groups');
+  const [teleportToken, setTeleportToken] = useState(null);
   const [mouse, setMouse] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -39,38 +42,47 @@ export default function App() {
     async function load() {
       try {
         setStatus('loading');
-        const res = await fetch(CSV_URL);
-        if (res.status === 404) {
+
+        const [gRes, pRes] = await Promise.all([
+          fetch(GROUPS_CSV),
+          fetch(PRODUCTS_CSV),
+        ]);
+
+        if (gRes.status === 404 || !gRes.ok) {
           throw new Error(
-            'Dataset unificado não encontrado. Rode npm run build:data para gerar o dataset unificado.'
+            'Dataset de grupos não encontrado. Rode npm run build:data para gerar o dataset unificado.'
           );
         }
-        if (!res.ok) {
-          throw new Error(
-            `Não foi possível carregar ${CSV_URL} (HTTP ${res.status}). Rode npm run build:data.`
-          );
-        }
-        const text = await res.text();
-        if (!text.trim() || text.trim().startsWith('<!')) {
+
+        const gText = await gRes.text();
+        if (!gText.trim() || gText.trim().startsWith('<!')) {
           throw new Error(
             'Rode npm run build:data para gerar o dataset unificado.'
           );
         }
-        const result = parseUnifiedCsv(text);
-        if (cancelled) return;
+        const groups = parseUnifiedCsv(gText);
 
-        if (!result.periods.length) {
-          throw new Error(
-            'Dataset unificado sem períodos. Verifique os CSVs e rode npm run build:data novamente.'
-          );
+        let products = null;
+        if (pRes.ok) {
+          const pText = await pRes.text();
+          if (pText.trim() && !pText.trim().startsWith('<!')) {
+            products = parseProductsUnifiedCsv(pText);
+          }
         }
 
-        setParsed(result);
-        const last = result.periods[result.periods.length - 1] || null;
-        setEndDate(last);
+        if (cancelled) return;
+
+        if (!groups.periods.length) {
+          throw new Error('Dataset de grupos sem períodos.');
+        }
+
+        setGroupsParsed(groups);
+        setProductsParsed(products);
+        setEndDate(groups.periods[groups.periods.length - 1]);
         setStatus('ready');
 
-        console.info('[App] Dataset unificado carregado:', result.meta);
+        console.info('[App] Grupos:', groups.meta);
+        console.info('[App] Selecionados:', products?.meta || 'ausente');
       } catch (err) {
         console.error(err);
         if (!cancelled) {
@@ -86,42 +98,98 @@ export default function App() {
     };
   }, []);
 
-  // Stats por grupo na data/modo atuais
-  const buildingStats = useMemo(() => {
-    if (!parsed) return {};
-    const out = {};
-    for (const meta of IPCA_GROUPS) {
-      const data = parsed.groups[meta.id];
-      const series = data?.series || [];
-      const stats =
-        mode === 'twelveMonths'
-          ? calculateTwelveMonthInflation(series, endDate)
-          : calculateAccumulatedIndex(series, endDate);
+  // Períodos e base da ilha ativa
+  const activePeriods = useMemo(() => {
+    if (activeIsland === 'selected' && productsParsed?.periods?.length) {
+      return productsParsed.periods;
+    }
+    return groupsParsed?.periods || [];
+  }, [activeIsland, groupsParsed, productsParsed]);
 
-      let latestWeight = null;
-      for (let j = series.length - 1; j >= 0; j--) {
-        if (endDate && series[j].dateKey > endDate) continue;
-        if (series[j].weight != null) {
-          latestWeight = series[j].weight;
-          break;
-        }
+  const baseDate = activePeriods[0] || null;
+
+  // Ao trocar de ilha, ajusta endDate para o intervalo disponível
+  useEffect(() => {
+    if (!activePeriods.length) return;
+    setEndDate((prev) => {
+      if (!prev) return activePeriods[activePeriods.length - 1];
+      if (prev < activePeriods[0]) return activePeriods[0];
+      if (prev > activePeriods[activePeriods.length - 1]) {
+        return activePeriods[activePeriods.length - 1];
       }
+      // Garante que a data existe no array (pode haver buracos)
+      if (!activePeriods.includes(prev)) {
+        // pega a mais próxima ≤ prev
+        let best = activePeriods[0];
+        for (const p of activePeriods) {
+          if (p <= prev) best = p;
+          else break;
+        }
+        return best;
+      }
+      return prev;
+    });
+    setSelectedId(null);
+  }, [activeIsland, activePeriods]);
 
-      out[meta.id] = {
-        group: { ...meta, ...(data || {}) },
-        stats: { ...stats, latestWeight },
-      };
+  const buildingStats = useMemo(() => {
+    const out = {};
+    if (groupsParsed) {
+      for (const meta of IPCA_GROUPS) {
+        const data = groupsParsed.groups[meta.id];
+        const series = data?.series || [];
+        const stats =
+          mode === 'twelveMonths'
+            ? calculateTwelveMonthInflation(series, endDate)
+            : calculateAccumulatedIndex(series, endDate);
+        out[meta.id] = {
+          group: { ...meta, ...(data || {}) },
+          stats,
+        };
+      }
+    }
+    if (productsParsed?.products) {
+      for (const code of Object.keys(productsParsed.products)) {
+        const meta = productsParsed.products[code];
+        const series = meta.series || [];
+        const seriesStart = series[0]?.dateKey;
+        const effectiveEnd =
+          endDate && seriesStart && endDate < seriesStart ? seriesStart : endDate;
+        const hasData = series.some((p) => !effectiveEnd || p.dateKey <= effectiveEnd);
+        const stats = !hasData
+          ? {
+              index: 1,
+              inflationPct: 0,
+              floors: 10,
+              monthsUsed: 0,
+              startDate: seriesStart,
+              endDate: null,
+              lastMonthly: null,
+              noDataYet: true,
+            }
+          : mode === 'twelveMonths'
+            ? calculateTwelveMonthInflation(series, effectiveEnd)
+            : calculateAccumulatedIndex(series, effectiveEnd);
+        const id = `sel:${code}`;
+        out[id] = {
+          group: { ...meta, id, code, fullName: meta.fullName },
+          stats,
+        };
+      }
     }
     return out;
-  }, [parsed, endDate, mode]);
+  }, [groupsParsed, productsParsed, endDate, mode]);
 
-  const selectedBuilding = selectedId ? buildingStats[selectedId] : null;
-  const hoveredBuilding = hoveredId ? buildingStats[hoveredId] : null;
-
-  const baseDate = parsed?.periods?.[0] || null;
+  const selectedBuilding = selectedId != null ? buildingStats[selectedId] : null;
+  const hoveredBuilding = hoveredId != null ? buildingStats[hoveredId] : null;
 
   const handleMouseMove = useCallback((e) => {
     setMouse({ x: e.clientX, y: e.clientY });
+  }, []);
+
+  const goToIsland = useCallback((islandId) => {
+    setActiveIsland(islandId);
+    setTeleportToken({ islandId, t: Date.now() });
   }, []);
 
   if (status === 'loading') {
@@ -137,40 +205,33 @@ export default function App() {
   }
 
   if (status === 'error') {
-    const needsBuildData =
-      error &&
-      (error.includes('build:data') ||
-        error.includes('unificado') ||
-        error.includes('404'));
-
     return (
       <div className="app-shell app-shell--center">
         <div className="error-box">
           <h1>Erro ao carregar dados</h1>
           <p>{error}</p>
           <p className="error-box__hint">
-            {needsBuildData ? (
-              <>
-                Rode <code>npm run build:data</code> para gerar o dataset
-                unificado a partir de <code>tabela2938.csv</code>,{' '}
-                <code>tabela1419.csv</code> e <code>tabela7060.csv</code> em{' '}
-                <code>public/data/</code>.
-              </>
-            ) : (
-              <>
-                Verifique <code>public/data/ipca_grupos_unificado.csv</code> ou
-                regenere com <code>npm run build:data</code>.
-              </>
-            )}
+            Rode <code>npm run build:data</code> com os CSVs em{' '}
+            <code>public/data/</code> e <code>public/data/selecionados/</code>.
           </p>
         </div>
       </div>
     );
   }
 
-  const groupsFound = Object.values(parsed.groups).filter(
+  const groupsFound = Object.values(groupsParsed.groups).filter(
     (g) => g.series?.length
   ).length;
+  const productsFound = productsParsed
+    ? Object.keys(productsParsed.products).length
+    : 0;
+
+  const islandMeta = ISLANDS[activeIsland] || ISLANDS.groups;
+  const limitedHistory =
+    activeIsland === 'selected' &&
+    productsParsed?.meta?.minDate &&
+    groupsParsed?.meta?.minDate &&
+    productsParsed.meta.minDate > groupsParsed.meta.minDate;
 
   return (
     <div className="app-shell" onMouseMove={handleMouseMove}>
@@ -184,26 +245,30 @@ export default function App() {
           <div>
             <h1>Cidade da Inflação</h1>
             <p className="app-header__subtitle">
-              Cada prédio mostra quanto os preços de um grupo do IPCA cresceram
-              desde a data-base.
+              Cada prédio mostra quanto os preços cresceram desde a data-base.
+              Explore as ilhas com WASD.
             </p>
           </div>
         </div>
         <div className="app-header__meta">
           <span className="pill">
-            {groupsFound}/9 grupos · {parsed.periods.length} meses
+            {groupsFound} grupos
+            {productsFound ? ` · ${productsFound} selecionados` : ''}
           </span>
           <span className="pill pill--muted">
             {formatDateKey(baseDate)} → {formatDateKey(endDate)}
           </span>
-          <span className="pill pill--muted">Fonte: IBGE / SIDRA 2938+1419+7060</span>
+          <span className="pill" style={{ borderColor: islandMeta.accent }}>
+            {islandMeta.name}
+          </span>
         </div>
       </header>
 
       <main className="app-main">
         <div className="app-stage">
           <CityScene
-            groupsData={parsed.groups}
+            groupsData={groupsParsed.groups}
+            productsData={productsParsed}
             endDate={endDate}
             mode={mode}
             selectedId={selectedId}
@@ -211,16 +276,47 @@ export default function App() {
             onHover={setHoveredId}
             onSelect={setSelectedId}
             cameraResetKey={cameraResetKey}
+            onActiveIslandChange={setActiveIsland}
+            teleportToken={teleportToken}
           />
 
+          <div className="island-nav">
+            <button
+              type="button"
+              className={activeIsland === 'groups' ? 'active' : ''}
+              onClick={() => goToIsland('groups')}
+            >
+              Ilha dos Grupos
+            </button>
+            <button
+              type="button"
+              className={activeIsland === 'selected' ? 'active' : ''}
+              onClick={() => goToIsland('selected')}
+              disabled={!productsParsed}
+            >
+              Ilha dos Selecionados
+            </button>
+          </div>
+
+          <div className="controls-hint">
+            <kbd>WASD</kbd> mover · <kbd>Space</kbd> subir · <kbd>Ctrl</kbd> descer ·{' '}
+            <kbd>Shift</kbd> correr · mouse orbitar
+          </div>
+
           <TimelineControl
-            periods={parsed.periods}
+            periods={activePeriods}
             endDate={endDate}
             onEndDateChange={setEndDate}
             mode={mode}
             onModeChange={setMode}
             onResetCamera={() => setCameraResetKey((k) => k + 1)}
             baseDate={baseDate}
+            islandLabel={islandMeta.name}
+            limitedHistoryNote={
+              limitedHistory
+                ? `Esta ilha só tem série a partir de ${formatDateKey(productsParsed.meta.minDate)}. Quando você adicionar CSVs mais antigos em public/data/selecionados/, o histórico se estende sozinho.`
+                : null
+            }
           />
         </div>
 
@@ -236,7 +332,7 @@ export default function App() {
         mode={mode}
         x={mouse.x + 16}
         y={mouse.y + 16}
-        visible={Boolean(hoveredId) && hoveredId !== selectedId}
+        visible={hoveredId != null && hoveredId !== selectedId}
       />
     </div>
   );

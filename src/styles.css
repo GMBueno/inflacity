@@ -318,6 +318,75 @@ input {
   flex-shrink: 0;
 }
 
+/* ---------- Island nav + controls hint ---------- */
+
+.island-nav {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 6;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.island-nav button {
+  border: 1px solid var(--border);
+  background: var(--bg-elevated);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.island-nav button:hover:not(:disabled) {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.island-nav button.active {
+  color: var(--text);
+  border-color: rgba(56, 189, 248, 0.5);
+  background: rgba(56, 189, 248, 0.15);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+.island-nav button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.controls-hint {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 6;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  max-width: min(340px, 46vw);
+  line-height: 1.45;
+}
+
+.controls-hint kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text);
+}
+
 /* ---------- Timeline controls ---------- */
 
 .timeline {
@@ -416,6 +485,21 @@ input {
 
 .timeline__base {
   color: var(--text-dim);
+}
+
+.timeline__island-tag {
+  color: var(--text-dim);
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.timeline__note {
+  margin: 8px 0 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: #fcd34d;
+  max-width: 52ch;
 }
 
 .timeline__modes {

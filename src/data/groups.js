@@ -8,72 +8,81 @@ export const IPCA_GROUPS = [
     fullName: 'Alimentação e bebidas',
     shortName: 'Alimentação',
     match: ['alimentação', 'alimentacao'],
-    color: '#f59e0b', // âmbar
+    color: '#f59e0b',
     emissive: '#b45309',
+    theme: 'pantry',
   },
   {
     id: 2,
     fullName: 'Habitação',
     shortName: 'Habitação',
     match: ['habitação', 'habitacao'],
-    color: '#38bdf8', // sky
+    color: '#38bdf8',
     emissive: '#0369a1',
+    theme: 'house',
   },
   {
     id: 3,
     fullName: 'Artigos de residência',
     shortName: 'Residência',
     match: ['artigos de residência', 'artigos de residencia', 'residência', 'residencia'],
-    color: '#a78bfa', // violeta
+    color: '#a78bfa',
     emissive: '#6d28d9',
+    theme: 'condo',
   },
   {
     id: 4,
     fullName: 'Vestuário',
     shortName: 'Vestuário',
     match: ['vestuário', 'vestuario'],
-    color: '#f472b6', // rosa
+    color: '#f472b6',
     emissive: '#be185d',
+    theme: 'default',
   },
   {
     id: 5,
     fullName: 'Transportes',
     shortName: 'Transportes',
     match: ['transportes', 'transporte'],
-    color: '#34d399', // esmeralda
+    color: '#34d399',
     emissive: '#047857',
+    theme: 'bus',
   },
   {
     id: 6,
     fullName: 'Saúde e cuidados pessoais',
     shortName: 'Saúde',
     match: ['saúde', 'saude'],
-    color: '#fb7185', // rose
+    color: '#fb7185',
     emissive: '#be123c',
+    theme: 'health',
   },
   {
     id: 7,
     fullName: 'Despesas pessoais',
     shortName: 'Pessoais',
     match: ['despesas pessoais'],
-    color: '#fbbf24', // amarelo
+    color: '#fbbf24',
     emissive: '#b45309',
+    theme: 'default',
   },
   {
     id: 8,
     fullName: 'Educação',
     shortName: 'Educação',
     match: ['educação', 'educacao'],
-    color: '#60a5fa', // azul
+    color: '#60a5fa',
     emissive: '#1d4ed8',
+    theme: 'education',
   },
   {
     id: 9,
     fullName: 'Comunicação',
     shortName: 'Comunicação',
     match: ['comunicação', 'comunicacao'],
-    color: '#2dd4bf', // teal
+    color: '#2dd4bf',
     emissive: '#0f766e',
+    theme: 'default',
   },
 ];
 

@@ -37,7 +37,11 @@ export default function InfoPanel({ building, mode, onClose }) {
           style={{ background: group.color, boxShadow: `0 0 16px ${group.color}66` }}
         />
         <div className="info-panel__titles">
-          <span className="info-panel__eyebrow">Grupo {group.id} · IPCA</span>
+          <span className="info-panel__eyebrow">
+            {String(group.id).startsWith('sel:')
+              ? `Item ${group.code || String(group.id).replace(/^sel:/, '')} · selecionado`
+              : `Grupo ${group.id} · IPCA`}
+          </span>
           <h2>{group.fullName}</h2>
         </div>
         <button
@@ -52,9 +56,13 @@ export default function InfoPanel({ building, mode, onClose }) {
 
       <div className="info-panel__hero" style={{ borderColor: `${group.color}44` }}>
         <div className="info-panel__big" style={{ color: group.color }}>
-          {formatPct(stats.inflationPct)}
+          {stats.noDataYet ? '—' : formatPct(stats.inflationPct)}
         </div>
-        <div className="info-panel__hero-label">{modeLabel}</div>
+        <div className="info-panel__hero-label">
+          {stats.noDataYet
+            ? 'Sem dados nesta data (série começa depois)'
+            : modeLabel}
+        </div>
       </div>
 
       <dl className="info-panel__grid">

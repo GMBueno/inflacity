@@ -1,7 +1,7 @@
 import { formatDateKey } from '../data/inflationMath.js';
 
 /**
- * Controles: data final, modo acumulado/12 meses, reset câmera.
+ * Controles: data final (por ilha), modo, reset câmera.
  */
 export default function TimelineControl({
   periods,
@@ -11,6 +11,8 @@ export default function TimelineControl({
   onModeChange,
   onResetCamera,
   baseDate,
+  islandLabel,
+  limitedHistoryNote,
 }) {
   if (!periods?.length) return null;
 
@@ -23,7 +25,12 @@ export default function TimelineControl({
     <div className="timeline">
       <div className="timeline__row">
         <div className="timeline__field">
-          <label htmlFor="end-date-slider">Data final</label>
+          <label htmlFor="end-date-slider">
+            Data final
+            {islandLabel ? (
+              <span className="timeline__island-tag"> · {islandLabel}</span>
+            ) : null}
+          </label>
           <div className="timeline__slider-wrap">
             <span className="timeline__bound">{minLabel}</span>
             <input
@@ -49,6 +56,9 @@ export default function TimelineControl({
               </span>
             )}
           </div>
+          {limitedHistoryNote && (
+            <p className="timeline__note">{limitedHistoryNote}</p>
+          )}
         </div>
 
         <div className="timeline__modes">

@@ -48,10 +48,14 @@ O workflow roda `npm run build:data` e `npm run build` com `VITE_BASE=/inflacity
 
 | Arquivo | Período | Papel |
 |---------|---------|--------|
-| `public/data/tabela2938.csv` | jul/2006 – dez/2011 | Entrada SIDRA |
-| `public/data/tabela1419.csv` | jan/2012 – dez/2019 | Entrada SIDRA |
-| `public/data/tabela7060.csv` | jan/2020 → | Entrada SIDRA |
-| `public/data/ipca_grupos_unificado.csv` | unificado | **Usado pelo app** |
+| `public/data/tabela2938.csv` | jul/2006 – dez/2011 | Grupos IPCA |
+| `public/data/tabela1419.csv` | jan/2012 – dez/2019 | Grupos IPCA |
+| `public/data/tabela7060.csv` | jan/2020 → | Grupos IPCA |
+| `public/data/selecionados/*.csv` | (varia; hoje ~2020→) | Itens/produtos selecionados |
+| `public/data/ipca_grupos_unificado.csv` | unificado | Ilha dos Grupos |
+| `public/data/ipca_selecionados_unificado.csv` | unificado | Ilha dos Selecionados |
+
+Para estender o histórico dos selecionados até 2006, basta colocar CSVs adicionais (ex. tabela 1419/2938 filtrada nos mesmos itens) em `public/data/selecionados/` e rodar `npm run build:data` de novo.
 
 O script `npm run build:data` (`scripts/build-ipca-dataset.js`):
 
